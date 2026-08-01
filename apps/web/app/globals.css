@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Tokens de marca (ADR-0007). La paleta sale del dominio: los dos estados que
+   el producto muestra todo el tiempo son "vigente" y "vence". */
+@theme {
+  --color-papel: #faf9f6;
+  --color-papel-hondo: #f2f0ea;
+  --color-tinta: #14161a;
+  --color-tenue: #5b6169;
+  --color-borde: #e2e0d9;
+  --color-vigente: #1c7c54;
+  --color-vence: #b45309;
+
+  --font-sans: var(--fuente-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--fuente-display), ui-serif, Georgia, serif;
+}

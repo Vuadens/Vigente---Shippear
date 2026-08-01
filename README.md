@@ -2,7 +2,7 @@
 
 Documento de trabajo para el equipo. Todo lo que está acá es alcance del día. Lo que no está, no se construye.
 
-> **Decisiones de implementación:** las decisiones tomadas sobre este brief están en [`docs/adr/`](docs/adr/). Resumen: monorepo pnpm (ADR-0001), TypeScript en todo incluido el pipeline (ADR-0002), LLM vía Vercel AI Gateway + AI SDK con `generateObject` y fallback determinístico en la demo (ADR-0003), Neon Postgres solo para perfiles (ADR-0004). Glosario del dominio en [`CONTEXT.md`](CONTEXT.md); reglas para agentes en [`CLAUDE.md`](CLAUDE.md)/[`AGENTS.md`](AGENTS.md).
+> **Decisiones de implementación:** las decisiones tomadas sobre este brief están en [`docs/adr/`](docs/adr/). Resumen: monorepo pnpm (ADR-0001), TypeScript en todo incluido el pipeline (ADR-0002), LLM vía Vercel AI Gateway + AI SDK con `generateObject` y fallback determinístico en la demo (ADR-0003), Neon Postgres solo para perfiles (ADR-0004), landing de pitch estática en `/inicio` (ADR-0007). Glosario del dominio en [`CONTEXT.md`](CONTEXT.md); reglas para agentes en [`CLAUDE.md`](CLAUDE.md)/[`AGENTS.md`](AGENTS.md).
 
 ## Setup (una vez)
 
@@ -171,9 +171,11 @@ En un producto legal, inventar es peor que no responder. Un jurado que pregunte 
 
 ## 8. Qué NO se construye
 
-Login. Panel de administración. Formulario dedicado de carga de perfiles (el perfil entra por la consulta del modo pull + botón "guardar mi perfil"; los de la demo van seedeados). Responsive. Manejo de errores. Búsqueda. Filtros. Onboarding. Landing page. Tablas más allá de `perfiles` (ADR-0004): ni normas ni alertas se persisten en BD.
+Login. Panel de administración. Formulario dedicado de carga de perfiles (el perfil entra por la consulta del modo pull + botón "guardar mi perfil"; los de la demo van seedeados). Manejo de errores. Búsqueda. Filtros. Onboarding. Tablas más allá de `perfiles` (ADR-0004): ni normas ni alertas se persisten en BD.
 
 Cada una es media hora que se le saca al único camino que ve el jurado.
+
+**Dos excepciones (ADR-0007).** La **landing** se construye, pero en `/inicio`: el recorrido de la demo no cambia y `/` sigue siendo la app. Es estática y su contenido ya está escrito en §1, §2, §4 y §11, así que es maquetado, no producto. Y es la **única página responsive** del proyecto — se comparte por link y se abre en teléfono; las vistas de la demo se proyectan en una pantalla conocida y siguen sin serlo.
 
 ---
 

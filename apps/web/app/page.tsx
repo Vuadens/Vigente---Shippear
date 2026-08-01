@@ -14,20 +14,27 @@ export default async function Home() {
   const perfil = perfiles[0];
   const obligaciones = match(perfil.perfil, normas);
 
+  // Las clases son el mínimo para conservar jerarquía: el preflight de Tailwind
+  // (ADR-0007) resetea h1/ol/a, y el contenedor ya no vive en el <body>.
   return (
-    <main>
-      <h1>Vigente</h1>
-      <p>
-        Perfil demo: <strong>{perfil.nombre}</strong> — {obligaciones.length} obligaciones
+    <main className="mx-auto max-w-3xl px-6 py-10">
+      <h1 className="font-display text-4xl">Vigente</h1>
+      <p className="mt-2 text-tenue">
+        Perfil demo: <strong className="font-semibold text-tinta">{perfil.nombre}</strong> —{" "}
+        {obligaciones.length} obligaciones
       </p>
-      <ol>
+      <ol className="mt-6 list-decimal space-y-4 pl-5">
         {obligaciones.map((m, i) => (
           <li key={i}>
-            <strong>{m.obligacion.que_hacer}</strong>
-            {m.vence && <> — vence {m.vence}</>}
+            <strong className="font-semibold">{m.obligacion.que_hacer}</strong>
+            {m.vence && <span className="text-vence"> — vence {m.vence}</span>}
             <br />
-            {m.norma.tipo} {m.norma.numero}: {m.norma.resumen_llano}{" "}
-            <a href={m.norma.url_fuente}>fuente</a>
+            <span className="text-tenue">
+              {m.norma.tipo} {m.norma.numero}: {m.norma.resumen_llano}{" "}
+            </span>
+            <a href={m.norma.url_fuente} className="underline underline-offset-2">
+              fuente
+            </a>
           </li>
         ))}
       </ol>
