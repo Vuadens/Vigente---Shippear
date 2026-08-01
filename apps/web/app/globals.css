@@ -1115,3 +1115,107 @@ button {
   margin-top: 3.5rem;
   padding-top: 1.5rem;
 }
+
+/* Novedad entrante por Telegram (ADR-0009): badge, disparo y banner. */
+.panel-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.alerta-badge {
+  flex: none;
+  background: var(--urgent-soft);
+  color: var(--urgent);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.sim-row {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.25rem 0 0.75rem;
+}
+.sim-alerta {
+  background: transparent;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.sim-alerta:hover:not(:disabled) {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.sim-alerta:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.novedad-banner {
+  border: 1px solid var(--urgent);
+  border-left: 4px solid var(--urgent);
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 1rem 1.15rem;
+  margin: 0.5rem 0 1rem;
+  animation: novedad-in 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes novedad-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.novedad-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.novedad-tag {
+  font-weight: 700;
+  color: var(--urgent);
+}
+.novedad-norma {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+.novedad-res {
+  margin: 0.5rem 0 0;
+}
+.novedad-que {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.95rem;
+}
+.novedad-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.novedad-foot a {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.novedad-x {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.novedad-x:hover {
+  color: var(--ink);
+}

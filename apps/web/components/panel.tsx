@@ -15,6 +15,11 @@ const Mapa = dynamic(() => import("./mapa"), {
 
 type Modo = "guardado" | "nuevo";
 
+// Norma-novedad de la demo (ADR-0009): la ordenanza de mesas en la vereda que
+// "llega" como alerta al perfil del bar. Debe existir en data/normas.json y
+// matchear el perfil gastronómico, o el botón no aparece.
+const NOVEDAD_ID = "ord-10608-2024";
+
 export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
   const [perfiles, setPerfiles] = useState<PerfilGuardadoVista[]>(inicial);
   const [modo, setModo] = useState<Modo>("guardado");
@@ -27,6 +32,11 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
   // tecleo del builder — cada síntesis es una llamada LLM.
   const [alerta, setAlerta] = useState<Respuesta | null>(null);
   const [pensando, setPensando] = useState(false);
+  // Novedad entrante por Telegram (ADR-0009): el banner aparece sí o sí; el
+  // envío al bot es best-effort en paralelo.
+  const [novedad, setNovedad] = useState<ResultadoItem | null>(null);
+  const [novedades, setNovedades] = useState(0);
+  const [notificando, setNotificando] = useState(false);
   const debounce = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const correrMatch = useCallback(async (perfil: Perfil) => {
@@ -51,6 +61,7 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
     const sel = perfiles.find((p) => p.id === selId);
     if (!sel) return;
     correrMatch(sel.perfil);
+    setNovedad(null); // la novedad entrante es por perfil; se limpia al cambiar
 
     let vigente = true;
     setAlerta(null);
@@ -75,6 +86,29 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
       vigente = false;
     };
   }, [modo, selId, perfiles, correrMatch]);
+
+  // Disparo de la novedad (paso 9): el presentador simula que entró normativa
+  // nueva. El banner + badge aparecen sí o sí; el POST a Telegram es best-effort
+  // y no bloquea la UI (ADR-0009).
+  async function dispararNovedad() {
+    const sel = perfiles.find((p) => p.id === selId);
+    const item = items.find((i) => i.norma.id === NOVEDAD_ID);
+    if (!sel || !item) return;
+    setNovedad(item);
+    setNovedades((n) => n + 1);
+    setNotificando(true);
+    try {
+      await fetch("/api/notificar", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ nombre: sel.nombre, perfil: sel.perfil, normaId: NOVEDAD_ID }),
+      });
+    } catch {
+      // best-effort: la UI ya se actualizó, la demo no depende del envío.
+    } finally {
+      setNotificando(false);
+    }
+  }
 
   // Builder: re-match con debounce mientras se tipea/togglea.
   function onCambioBuilder(perfil: Perfil) {
@@ -101,10 +135,17 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
 
   return (
     <section className="panel">
-      <p className="lead">
-        Perfiles bajo monitoreo. Cuando aparece normativa nueva que les aplica, cae acá —sin
-        que tengan que buscar nada.
-      </p>
+      <div className="panel-head">
+        <p className="lead">
+          Perfiles bajo monitoreo. Cuando aparece normativa nueva que les aplica, cae acá —sin
+          que tengan que buscar nada.
+        </p>
+        {novedades > 0 && (
+          <span className="alerta-badge" aria-label={`${novedades} alertas nuevas`}>
+            🔔 {novedades}
+          </span>
+        )}
+      </div>
 
       <div className="perfil-bar" role="tablist" aria-label="Perfiles guardados">
         {perfiles.map((p) => (
@@ -137,6 +178,49 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
 
       {modo === "nuevo" && (
         <PerfilBuilder onCambio={onCambioBuilder} onGuardar={onGuardar} guardando={guardando} />
+      )}
+
+      {/* Disparo de demo (ADR-0009): visible solo si la norma-novedad matchea el
+          perfil activo. Honesto: representa el batch detectando el cambio. */}
+      {modo === "guardado" && items.some((i) => i.norma.id === NOVEDAD_ID) && (
+        <div className="sim-row">
+          <button
+            type="button"
+            className="sim-alerta"
+            onClick={dispararNovedad}
+            disabled={notificando}
+          >
+            {notificando ? "Enviando…" : "⚡ Simular normativa entrante"}
+          </button>
+        </div>
+      )}
+
+      {novedad && (
+        <div className="novedad-banner" role="alert">
+          <div className="novedad-head">
+            <span className="novedad-tag">🔔 Nueva ordenanza que te afecta</span>
+            <span className="novedad-norma">
+              {novedad.norma.tipo} {novedad.norma.numero}
+            </span>
+          </div>
+          <p className="novedad-res">{novedad.norma.resumen_llano}</p>
+          <p className="novedad-que">
+            <strong>Qué hacer:</strong> {novedad.obligacion.que_hacer}
+          </p>
+          <div className="novedad-foot">
+            <a href={novedad.norma.url_fuente} target="_blank" rel="noreferrer">
+              Fuente oficial ↗
+            </a>
+            <button
+              type="button"
+              className="novedad-x"
+              onClick={() => setNovedad(null)}
+              aria-label="Descartar alerta"
+            >
+              Descartar
+            </button>
+          </div>
+        </div>
       )}
 
       {modo === "guardado" && pensando && <p className="count">Armando la alerta…</p>}

@@ -48,7 +48,7 @@ es por bloque y un anexo
 > Y lo hace de dos formas, que son las dos mitades del producto:
 >
 > **Pull** — le preguntás en lenguaje natural lo que estás por hacer, y te devuelve tus obligaciones al instante.
-> **Push** — guardás tu perfil una vez, y Vigente te vigila la normativa. Cuando se sanciona una ordenanza nueva, cambia una ley o vence un plazo que te afecta, te avisa. Solo. Sin que vuelvas a preguntar.
+> **Push** — guardás tu perfil una vez, y Vigente te vigila la normativa. Cuando se sanciona una ordenanza nueva, cambia una ley o vence un plazo que te afecta, te avisa. Solo. Sin que vuelvas a preguntar — en la app o directo a tu teléfono.
 >
 > Esa es la diferencia real: el trabajo de estar al día deja de ser tuyo. En una frase: **preguntale lo que estás por hacer, o dejá que te avise cuando cambie lo que ya hacés.**
 >
@@ -63,7 +63,7 @@ es por bloque y un anexo
 > Ver `docs/guion-demo.md`. Los cuatro golpes que no pueden faltar aunque haya que recortar:
 > - **Apertura (pull):** "quiero construir algo en mi casa" → obligaciones en 5 segundos.
 > - **Vigencia:** una norma derogada por otra posterior, y el sistema resolviendo cuál rige hoy. *Esto prueba que no es un buscador.*
-> - **Push (la 2da funcionalidad):** guardar el perfil → cae una alerta de una ordenanza nueva que afecta a ese perfil. *Esto prueba que el producto trabaja solo, aun cuando no le preguntás nada.*
+> - **Push (la 2da funcionalidad):** guardar el perfil → cae una alerta de una ordenanza nueva que afecta a ese perfil, **y en ese momento suena el teléfono: la misma alerta llega por Telegram**, con qué hacer, la consecuencia y el link a la fuente. *Esto prueba que el producto trabaja solo y te alcanza donde estés — no hace falta tener la app abierta.*
 > - **Cierre (perfil en vivo):** tipear dirección y rubro nuevos, la lista cambia. *Esto es lo que hace que se lo crean.*
 
 ---
@@ -95,6 +95,9 @@ es por bloque y un anexo
 
 **"¿Y la base de datos / los usuarios?"**
 > Persistimos una sola cosa: el perfil, para el modo alerta. Las normas viven en el repo, las alertas se computan al leer. No hay login ni cuentas: la consulta *es* el onboarding.
+
+**"¿La alerta de Telegram es real o un video?"**
+> Es real: un bot de Telegram en vivo. El mensaje se arma en el servidor con la obligación tal como está en el corpus — qué hacer, consecuencia y link a la fuente oficial; cero texto inventado, la misma regla que el resto del producto. Lo único simulado es el disparador, porque el corpus de la demo es estático: el botón representa el batch nocturno detectando una norma nueva. En producción, ese disparador es el pipeline corriendo solo.
 
 **"¿Cómo consiguen los primeros clientes?"**
 > El canal son los **contadores**. Cada uno atiende cientos de pymes y hoy absorbe estas consultas gratis y a destiempo. Les damos la herramienta a ellos.
