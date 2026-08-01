@@ -46,7 +46,10 @@ REGLAS (en orden de prioridad):
    NO son obligaciones: lo que la norma le manda al propio Estado (dictar el decreto reglamentario, remitir un informe al Concejo, crear un registro, designar un funcionario, campañas de difusión). Eso lo hace el Estado, no el usuario, y no va en la lista.
    Si la norma solo crea un programa, declara un día conmemorativo o expresa una intención, devolvé obligaciones: [].
 3. "que_hacer" se escribe para alguien sin formación legal: una acción concreta en una frase. Nada de "dese cumplimiento a lo normado en el art. 3".
-4. "confianza" mide QUÉ TAN FIEL es tu extracción al texto que leíste — no si la obligación te parece jurídicamente sólida. Texto claro y explícito: alto. Texto borroso, mal escaneado o ambiguo sobre a quién obliga: bajo.
+4. "confianza" mide UNA sola cosa: qué tan fiel es tu extracción al texto que leíste.
+   Alta (0.85-1.0): pudiste leer el artículo y estás transcribiendo lo que dice.
+   Baja (< 0.7): el texto estaba borroso o mal escaneado, la redacción era ambigua sobre a quién obliga, o tuviste que deducir la obligación en vez de leerla.
+   NO la bajes porque la norma no diga qué pasa si no cumplís, porque no te parezca jurídicamente sólida, o porque el artículo remita a otra norma. Que "si_no_cumplis" quede vacío es un dato sobre la norma, no una duda tuya: si leíste bien el artículo, la confianza es alta igual.
 5. "alcanzados.rubros" responde UNA sola pregunta: ¿en qué rubro tiene que estar el usuario para que esto le aplique? NO es el tema de la norma.
    Solo valores de esta lista cerrada: ${RUBROS.join(", ")}. Ningún sinónimo, plural ni subcategoría.
    Poné un rubro SOLO si la obligación recae sobre quien se dedica a esa actividad: "los locales gastronómicos deben...", "las empresas constructoras deben inscribirse en el registro...".
