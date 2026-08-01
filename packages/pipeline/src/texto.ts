@@ -30,7 +30,10 @@ export function recortar(texto: string): { texto: string; truncado: boolean } {
  */
 export async function desdePdf(pdf: ArrayBuffer): Promise<Extraccion> {
   try {
-    const doc = await getDocumentProxy(new Uint8Array(pdf));
+    // pdf.js se APROPIA del buffer que le pasás y lo deja detached. Si después
+    // caemos al fallback, `pdf` ya no sirve y explota con "detached
+    // ArrayBuffer". Le damos una copia y nos guardamos el original intacto.
+    const doc = await getDocumentProxy(new Uint8Array(pdf.slice(0)));
     const { text } = await extractText(doc, { mergePages: true });
     const { texto, truncado } = recortar(Array.isArray(text) ? text.join("\n") : text);
     if (texto.length >= MIN_CHARS_UTILES) return { modo: "texto", texto, truncado };

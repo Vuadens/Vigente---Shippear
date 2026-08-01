@@ -21,20 +21,48 @@ const MODELO = "anthropic/claude-sonnet-5";
 // no el rate limit; 4 mantiene el log legible y el orden de escritura estable.
 const CONCURRENCIA = 4;
 
+// Vocabulario de condiciones que los perfiles realmente declaran (data/perfiles.json
+// y el modo pull). NO está en @vigente/schema porque el contrato está congelado:
+// es el hermano de RUBROS que todavía no existe, y esa deuda hay que cerrarla con
+// el equipo. Mientras tanto, el pipeline se limita a estas.
+const CONDICIONES_PERFIL = [
+  "local_a_la_calle",
+  "empleados",
+  "manipula_alimentos",
+  "obra_en_vivienda",
+] as const;
+
+// Toda ordenanza del corpus es de Rosario. El matcher hace
+// `direccionDelPerfil.includes(geo.descripcion)`, así que la descripción tiene que
+// ser la etiqueta pelada: "Ciudad de Rosario" no es substring de
+// "Av. Pellegrini 1234, Rosario" y la norma se vuelve invisible.
+const CIUDAD_MUNICIPAL = "Rosario";
+
 const INSTRUCCIONES = `Sos un extractor de normativa argentina. Convertís el texto de una norma al schema, sin interpretarlo.
 
 REGLAS (en orden de prioridad):
 1. No inventes. Todo lo que escribas tiene que estar en el texto que te doy. Si un dato no está, dejá el campo vacío ("") o la lista vacía ([]).
-2. "obligaciones" son cosas concretas que alguien DEBE hacer, con consecuencia por no hacerlas. Si la norma solo crea un programa, designa a un funcionario, declara un día conmemorativo o expresa una intención, devolvé obligaciones: [].
+2. "obligaciones" son cosas concretas que DEBE HACER EL SUJETO REGULADO — una persona o una empresa alcanzada por la norma. Con consecuencia por no hacerlas.
+   NO son obligaciones: lo que la norma le manda al propio Estado (dictar el decreto reglamentario, remitir un informe al Concejo, crear un registro, designar un funcionario, campañas de difusión). Eso lo hace el Estado, no el usuario, y no va en la lista.
+   Si la norma solo crea un programa, declara un día conmemorativo o expresa una intención, devolvé obligaciones: [].
 3. "que_hacer" se escribe para alguien sin formación legal: una acción concreta en una frase. Nada de "dese cumplimiento a lo normado en el art. 3".
 4. "confianza" mide QUÉ TAN FIEL es tu extracción al texto que leíste — no si la obligación te parece jurídicamente sólida. Texto claro y explícito: alto. Texto borroso, mal escaneado o ambiguo sobre a quién obliga: bajo.
 5. "alcanzados.rubros" SOLO puede contener valores de esta lista cerrada: ${RUBROS.join(", ")}. Ningún otro valor, ni sinónimos, ni plurales, ni subcategorías: un bar es "gastronomia", una obra es "construccion". Si la norma alcanza a todos, dejá la lista vacía ([]) — vacío significa "todos", no "no sé".
-6. "geo.tipo" define si la norma llega o no al usuario:
+6. "plazo" se CALCULA, no se narra. Solo hay tres casos:
+   - "dias_desde_publicacion": SOLO si el plazo se cuenta desde la publicación de ESTA norma. Es el caso de las obligaciones de adecuación ("los locales existentes tienen 90 días desde la sanción para adecuarse"). Es raro.
+   - "fecha_fija": el texto da una fecha de calendario concreta.
+   - "permanente": TODO lo demás. Incluye las obligaciones que se cuentan desde un hecho que las dispara: "dentro de los 10 días de mudarte", "dentro de los 30 días de constituida la sociedad", "dentro de los 5 días de recibido el reclamo". Esas son "permanente", y el "dentro de X días de Y" va escrito en "que_hacer".
+   Regla práctica: si el plazo no arranca el día en que se publicó esta norma, es "permanente". Marcarlo mal produce vencimientos absurdos (una obligación de una ley de 1932 vencería en 1933) y arruina el orden de la lista.
+7. "alcanzados.condiciones" es un campo de MATCHEO contra el perfil del usuario, no un resumen de la letra chica. Solo puede contener etiquetas de esta lista: ${CONDICIONES_PERFIL.join(", ")}.
+   Si la condición real de la norma no es ninguna de esas (un mínimo de metros cuadrados, ser frentista, romper la vereda, tener cierta superficie), dejá "condiciones": [] y contá esa condición DENTRO de "que_hacer". Ejemplo correcto: que_hacer = "Acreditar la factibilidad de energía si la obra supera los 500 m2", condiciones = [].
+   Una etiqueta inventada no le matchea a nadie: la obligación desaparece del sistema. Vale más mostrarla con la salvedad escrita que no mostrarla.
+8. "geo.tipo" define si la norma llega o no al usuario:
    - "ciudad": rige en toda la ciudad o el país. Es el caso por defecto de casi toda ordenanza y de TODA ley nacional.
    - "zona": rige en un área nombrada (un barrio, un distrito, una zona portuaria).
    - "tramo" / "punto": rige sobre una calle, un lote o una dirección puntual, y NADA MÁS.
    Elegí "tramo" o "punto" solo si la norma se agota en ese lugar. Si impone una obligación a un rubro en general y además menciona un lugar, es "ciudad" o "zona".
-7. "geo.coords" va SIEMPRE vacío: []. No inventes coordenadas bajo ninguna circunstancia.`;
+9. "geo.descripcion" es una ETIQUETA, no una descripción. Con tipo "ciudad" va solo el nombre de la ciudad: "Rosario". No "Ciudad de Rosario", no "Ejido urbano de Rosario", no una enumeración de barrios. Con tipo "zona", el nombre del barrio o distrito, a secas.
+10. "geo.coords" va SIEMPRE vacío: []. No inventes coordenadas bajo ninguna circunstancia.`;
 
 type Trabajo = {
   id: string;
@@ -86,11 +114,35 @@ async function extraer(
   //  - coords: una coordenada inventada es alucinación pura y termina como un
   //    pin en el mapa. La única fuente legítima es Georef, en geocodificar.ts.
   //  - relaciones nacionales: vienen del CSV oficial de InfoLEG.
+  const municipal = object.jurisdiccion === "municipal";
+  const validas = new Set<string>(CONDICIONES_PERFIL);
+  const descartadas: string[] = [];
+
   const norma: Norma = {
     ...object,
-    geo: { ...object.geo, coords: [] },
+    obligaciones: object.obligaciones.map((o) => {
+      const buenas = o.alcanzados.condiciones.filter((c) => validas.has(c));
+      descartadas.push(...o.alcanzados.condiciones.filter((c) => !validas.has(c)));
+      // Una condición fuera del vocabulario no le matchea a NADIE, así que la
+      // obligación entera desaparece. Vaciar la lista la hace visible para todo
+      // el rubro, y la salvedad concreta vive en "que_hacer" (regla 6 del prompt).
+      return { ...o, alcanzados: { ...o.alcanzados, condiciones: buenas } };
+    }),
+    geo: {
+      ...object.geo,
+      // El matcher hace includes() sobre la dirección del perfil: la descripción
+      // tiene que ser la etiqueta, no prosa. Todo el corpus municipal es Rosario.
+      descripcion:
+        municipal && object.geo.tipo === "ciudad" ? CIUDAD_MUNICIPAL : object.geo.descripcion,
+      coords: [],
+    },
     relaciones: relacionesFijas ?? object.relaciones,
   };
+
+  if (descartadas.length) {
+    // Revisar en la curación que "que_hacer" conserve la salvedad que se cayó de acá.
+    console.warn(`    ⚠ ${norma.id}: condiciones descartadas → ${[...new Set(descartadas)].join(", ")}`);
+  }
   avisarSiNoVaAMatchear(norma);
   return norma;
 }
@@ -113,6 +165,20 @@ function avisarSiNoVaAMatchear(n: Norma) {
   }
   if (n.jurisdiccion === "municipal" && (n.geo.tipo === "punto" || n.geo.tipo === "tramo")) {
     console.warn(`    ⚠ ${n.id}: geo.tipo="${n.geo.tipo}" — solo va al mapa, no matchea a nadie`);
+  }
+  // Un plazo "desde la publicación" en una norma vieja da un vencimiento en el
+  // pasado, y la demo ordena por vencimiento: esas encabezan la lista. Casi
+  // siempre significa que el plazo en realidad corre desde un hecho, no desde
+  // la publicación, y correspondía "permanente" (regla 6 del prompt).
+  const hoy = new Date().toISOString().slice(0, 10);
+  for (const o of n.obligaciones) {
+    if (o.plazo.tipo !== "dias_desde_publicacion") continue;
+    const d = new Date(n.fecha_publicacion);
+    d.setDate(d.getDate() + Number(o.plazo.valor));
+    const vence = d.toISOString().slice(0, 10);
+    if (vence < hoy) {
+      console.warn(`    ⚠ ${n.id}: vencimiento en el pasado (${vence}) — ¿el plazo corre desde un hecho? → "${o.que_hacer.slice(0, 50)}"`);
+    }
   }
 }
 

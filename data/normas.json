@@ -1,0 +1,4912 @@
+[
+  {
+    "id": "ord-10874-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10874/2025",
+    "fecha_publicacion": "2026-03-16",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=258208",
+    "resumen_llano": "La ciudad de Rosario actualiza las reglas para proteger, cuidar y aumentar los árboles públicos, con nuevas obligaciones para obras, empresas de tendidos y prohibiciones para cualquiera que dañe el arbolado.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si vas a construir, refaccionar o modificar un edificio y hay árboles en el frente, tenés que marcarlos con precisión en el proyecto; no podés justificar sacarlos solo porque molestan a la obra, y si es imprescindible extraerlos necesitás autorización previa de la Autoridad de Aplicación y pagar los gastos de extracción, además de plantar otro ejemplar por cada uno que saques.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se aprueba el plano de edificación y los gastos de extracción no autorizada corren por cuenta del propietario; además puede aplicarse reparación ambiental.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Durante una obra particular tenés que armar una zona de protección alrededor de cada árbol (según la proyección de la copa o el tamaño de la cazuela) y no usarla como obrador, depósito de materiales, estacionamiento ni para hacer fuego; tampoco podés circular con vehículos o maquinaria pesada sobre esa zona.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Puede aplicarse reparación ambiental y, si hay daño intencional al árbol frente a una obra en construcción, se puede clausurar la obra.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si tu obra va a tener nuevos tendidos eléctricos o de servicios (aéreos o subterráneos) que afecten árboles, tenés que presentar el proyecto a la Municipalidad con anticipación y ajustarlo a lo que te indiquen para proteger el arbolado.",
+        "alcanzados": {
+          "rubros": [
+            "construccion",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El proyecto no se aprueba si no se ajusta a las modificaciones indicadas por la Autoridad de Aplicación.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "No podés podar, talar, extraer árboles públicos, clavar cosas en ellos, hormigonar o rellenar sus cazuelas, tirarles residuos o elementos extraños, ni hacer fuego cerca de la base de los árboles, sin autorización previa de la Autoridad de Aplicación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones según el Código de Convivencia Ciudadana (Ordenanza 10.267), reparación ambiental con entrega de ejemplares de vivero, y posibilidad de clausura de obra si el daño es frente a una construcción.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "deroga",
+        "norma": "ord-5118-1991"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-7010-2001"
+      }
+    ]
+  },
+  {
+    "id": "ord-10877-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10877/2025",
+    "fecha_publicacion": "2026-02-26",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=257549",
+    "resumen_llano": "Los establecimientos gastronómicos, salones de fiestas, gimnasios y centros deportivos de Rosario deben capacitar a su personal en primeros auxilios, RCP y maniobra de Heimlich.",
+    "obligaciones": [
+      {
+        "que_hacer": "Capacitar al personal en primeros auxilios, maniobra de Heimlich y RCP básica, a través de los cursos que brinda la Municipalidad de Rosario, dentro de los 90 días desde la promulgación de esta ordenanza",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "servicios"
+          ],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "dias_desde_publicacion",
+          "valor": "90"
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.6
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10889-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10889/2025",
+    "fecha_publicacion": "2026-02-03",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=257005",
+    "resumen_llano": "Las guarderías náuticas de Rosario deben exhibir carteles con medidas de seguridad, recomendaciones y teléfonos de emergencia para embarcaciones deportivas y recreativas.",
+    "obligaciones": [
+      {
+        "que_hacer": "Exhibir en un lugar visible al público (preferentemente en la entrada principal y en el área de botado) carteles resistentes a la intemperie con los elementos de seguridad obligatorios para embarcaciones, recomendaciones de navegación segura, teléfonos de emergencia y prevención de incendios y cuidado ambiental",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "dias_desde_publicacion",
+          "valor": "60"
+        },
+        "si_no_cumplis": "Sanciones a definir por reglamentación del Departamento Ejecutivo Municipal",
+        "confianza": 0.9
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10842-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10842/2025",
+    "fecha_publicacion": "2025-12-17",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=255408",
+    "resumen_llano": "La ordenanza regula la habilitación y funcionamiento de guarderías y pensionados de perros y/o gatos en Rosario, fijando requisitos de infraestructura, higiene, atención sanitaria, ubicación y personal.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si tenés una guardería o pensionado de perros y/o gatos, tramitar la habilitación municipal cumpliendo los requisitos de infraestructura, higiene, atención sanitaria, alimentación, comunicación con tutores, ficha identificatoria de cada animal y protocolo de retiro autorizado.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga o se pierde la habilitación para funcionar como guardería o pensionado.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Contar con un médico veterinario matriculado en el Colegio de Médicos Veterinarios de la 2ª Circunscripción de Santa Fe, designado por la guardería, que avale su contratación y extienda certificados de salud cuando lo requiera la inspección.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Incumplimiento de requisito obligatorio para la habilitación.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Ubicar el establecimiento a no menos de 100 metros (radio) desde sus deslindes parcelarios de hospitales, escuelas, salas velatorias y geriátricos habilitados, y a no menos de 50 metros de vecinos residenciales (salvo consentimiento expreso de estos).",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga la habilitación del establecimiento.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos tutor/a de un perro o gato, para ingresarlo a una guardería presentar libreta sanitaria actualizada, informar microchip si tiene, acreditar identidad y datos de contacto, indicar fecha y hora de retiro, acordar régimen de comunicación, dar indicaciones de alimentación, proveer collar y chapa identificatoria, y proporcionar bozal si el perro tuvo antecedentes de mordedura o presenta riesgo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se admite el ingreso o permanencia del animal en el establecimiento.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Quienes trabajen en la guardería deben capacitarse en bienestar animal y cuidado responsable, y no pueden desempeñarse quienes tengan antecedentes penales por maltrato animal o infrinjan la Ordenanza 7445/2002.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Prohibición de desempeñar funciones en la guardería o pensionado.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10834-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10834/2025",
+    "fecha_publicacion": "2025-12-15",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=255324",
+    "resumen_llano": "Rosario suma al Reglamento de Edificación un sistema optativo de Etiquetado de Eficiencia Energética para viviendas, adhiriendo a la ley provincial que lo crea.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos profesional Certificador de Eficiencia Energética, confeccionar la etiqueta según la planilla modelo con las siete categorías (A a G) de la Ley Provincial 13.903 y tramitar la inscripción en la Secretaría de Energía de Santa Fe y luego el registro correspondiente en la Municipalidad de Rosario",
+        "alcanzados": {
+          "rubros": [
+            "construccion",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.5
+      },
+      {
+        "que_hacer": "Si le hacés una modificación a una vivienda que tiene Certificado de Eficiencia Energética vigente, someterla a un nuevo procedimiento de verificación por un profesional habilitado e informarlo a la oficina municipal correspondiente",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.5
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-4975-1990"
+      }
+    ]
+  },
+  {
+    "id": "ord-10837-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10837/2025",
+    "fecha_publicacion": "2025-11-27",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=254824",
+    "resumen_llano": "Rosario crea un sistema de \"Derechos de Edificación Transferibles\" para que dueños de edificios patrimoniales puedan vender el permiso de construir más altura a terrenos en ciertos corredores urbanos, a cambio de restaurar sus edificios históricos.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos propietario de un inmueble patrimonial que quiere sumarse al régimen DET, tenés que firmar un Convenio Patrimonial con el Municipio antes de recibir el certificado, comprometiéndote a restaurar el edificio en los plazos pactados.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Se ejecuta la garantía de cumplimiento (seguro de caución), el Municipio puede hacer las obras a tu costa, y se aplican las sanciones del Código de Convivencia Municipal (multas de 40.000 a 80.000 UF para protección 1, y de 20.000 a 40.000 UF para protección 2).",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si sos propietario de un inmueble emisor adherido al régimen, tenés que constituir un seguro de caución u otra garantía equivalente a favor del Municipio que asegure la realización de las obras de restauración.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El Municipio ejecuta la garantía y puede realizar las tareas de restauración a costa y cargo del propietario.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si sos titular de un inmueble receptor y compraste un certificado DET, tenés que presentarlo ante el Municipio al momento de tramitar el Permiso de Edificación de tu proyecto.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el Permiso de Edificación sin la presentación del certificado DET.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si cedés o recibís derechos de edificación transferibles (DET), tenés que avisar de inmediato al Municipio enviando copia de los documentos de la cesión, para actualizar el Registro de Inmuebles Emisores.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sin ese aviso la operación no es válida administrativamente y no comienzan a correr los plazos ni los efectos urbanísticos.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-10267-2025"
+      }
+    ]
+  },
+  {
+    "id": "ord-10813-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10813/2025",
+    "fecha_publicacion": "2025-09-26",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=251898",
+    "resumen_llano": "Define y regula una nueva tipología edilicia de \"torre\" (edificación de perímetro libre) aplicable en ciertas áreas de Rosario, con requisitos de retiros, alturas, cobertura vegetal y compensaciones urbanísticas, y deroga el régimen anterior de proyectos edilicios especiales.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si construís una torre de perímetro libre, respetar los retiros mínimos de 6 metros respecto a los deslindes parcelarios y de 5 metros respecto a la Línea Municipal, y no superar la altura máxima según el sector urbano (por ejemplo 120 m en Área Central, 80 m en AT1, entre otros).",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Si el proyecto de torre supera los 100 metros de altura en zonas donde se admite hasta 120 metros, someterlo a evaluación de la Secretaría de Planeamiento en el marco de la Comisión Evaluadora de Proyectos Urbanos (CEPU), que puede reducir la altura proyectada.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.55
+      },
+      {
+        "que_hacer": "Destinar al menos el 30% de la superficie total de la parcela a cobertura vegetal (cubierta verde o terreno natural con vegetación), cumpliendo los requisitos técnicos establecidos (por ejemplo, 40 cm de sustrato mínimo en cubiertas verdes).",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "No usar la planta baja de la torre para estacionamiento ni para uso residencial en locales con frente a la vía pública, y mantener una altura mínima de 4 metros en la planta baja.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.55
+      },
+      {
+        "que_hacer": "Asegurar y completar las obras necesarias para la correcta prestación de servicios públicos antes de solicitar el final de obra y/o las habilitaciones correspondientes.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el final de obra ni las habilitaciones correspondientes.",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Pagar la contribución por aprovechamiento exceptivo en altura (10% del precio base por metro cuadrado) cuando la construcción supere los niveles autorizados para el sector, calculada sobre el 100% de la superficie cubierta y el 50% de la semicubierta excedente.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.55
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "deroga",
+        "norma": "ord-8692-2025"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ord-8244-2025"
+      }
+    ]
+  },
+  {
+    "id": "ord-10801-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10801/2025",
+    "fecha_publicacion": "2025-09-03",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=250744",
+    "resumen_llano": "Rosario deroga las viejas normas de jardines maternales y de infantes particulares y crea un nuevo régimen completo de habilitación, funcionamiento, condiciones edilicias, personal e inspección para esos establecimientos.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si operás un jardín maternal o de infantes particular, tramitar el permiso de habilitación del establecimiento y de la actividad ante la Secretaría de Gobierno y la Secretaría de Desarrollo Humano y Hábitat.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Si el jardín funciona sin habilitación se procede a la clausura preventiva hasta que la obtenga.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Mantener vigentes de manera simultánea el Certificado de Habilitación del establecimiento y el Certificado aprobatorio para Jardines de Infantes.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La falta de vigencia de cualquiera de estos certificados impide el funcionamiento del establecimiento.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Someterse a una inspección integral intermedia a los 5 años de otorgado el permiso de habilitación.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción directa, pero es requisito para el sostenimiento de la habilitación.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Presentar informes de verificación de instalación eléctrica y de gas confeccionados por profesionales matriculados para obtener el permiso de habilitación.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el permiso de habilitación sin estos informes.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si el establecimiento cuenta con juegos infantiles, presentar verificación técnica de juegos infantiles y someterse a inspección presencial cada 2 años.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción directa en el texto.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Cumplir con las disposiciones del Cuerpo Central de Bomberos en materia de prevención de incendios.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción directa, sujeto a las penalidades generales de la Ordenanza (Código de Convivencia).",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Realizar desinfección, desinsectación y desratización del inmueble cada 3 meses y exhibir el certificado correspondiente ante requerimiento de la autoridad.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sujeto a las penalidades del Código de Convivencia por infracción a la Ordenanza.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Contar con póliza de seguro de responsabilidad civil vigente, contratar servicio de asistencia médica de urgencias y disponer de botiquín de primeros auxilios visible y accesible.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sujeto a las penalidades del Código de Convivencia por infracción a la Ordenanza.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Capacitar al personal docente y auxiliar en RCP, primeros auxilios pediátricos y accionar en evacuación e incendios, asegurando al menos 2 personas capacitadas presentes mientras el jardín esté abierto.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sujeto a las penalidades del Código de Convivencia por infracción a la Ordenanza.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "El personal que cocine o manipule alimentos debe contar con carnet de manipulación segura de alimentos.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "manipula_alimentos",
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sujeto a las penalidades del Código de Convivencia por infracción a la Ordenanza.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "El personal debe realizar examen médico/psicológico al momento de incorporarse y presentar certificado de antecedentes penales.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sujeto a las penalidades del Código de Convivencia por infracción a la Ordenanza.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si el jardín funciona sin habilitación, será clausurado preventivamente; si funciona bajo dirección de persona sin título habilitante, será clausurado definitivamente e inhabilitado.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura preventiva o definitiva e inhabilitación, según el caso.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Colocar vallas de contención removibles frente a puertas de acceso y salida durante el horario de funcionamiento, conforme a la Ordenanza 10.561.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sujeto a las penalidades del Código de Convivencia por infracción a la Ordenanza.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "deroga",
+        "norma": "ord-5814-1994"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-4689-1989"
+      }
+    ]
+  },
+  {
+    "id": "ord-10720-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10720/2024",
+    "fecha_publicacion": "2025-01-23",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=240260",
+    "resumen_llano": "Antes de habilitar edificaciones grandes en Rosario hay que tramitar y acreditar la factibilidad de servicios de energía, agua y cloacas según la superficie de la obra, y demostrar su provisión efectiva al pedir el final de obra.",
+    "obligaciones": [
+      {
+        "que_hacer": "Antes de obtener el Permiso de Edificación o Ampliación sin Final, iniciar y acreditar las gestiones para obtener la factibilidad de provisión de energía eléctrica si la superficie computable de dependencias supera los 500 m2, o de agua y desagües cloacales si supera los 1000 m2 (se excluyen cocheras complementarias y superficies semicubiertas), presentando la Declaración Jurada del Anexo I.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el Permiso de Edificación o Ampliación.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Acreditar la efectiva provisión de los servicios de energía eléctrica, agua y desagües cloacales al momento de solicitar el Final de Obra.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La Municipalidad puede no otorgar el Final de Obra ante la imposibilidad de provisión de servicios públicos esenciales.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si tras obtener la factibilidad las empresas prestatarias indican la necesidad de ejecutar obras dentro del inmueble, el profesional debe presentar la adecuación del proyecto antes de iniciar esas obras.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se verifica el mantenimiento de la condición reglamentaria del proyecto, quedando la obra en incumplimiento.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si la factibilidad resulta no favorable, el propietario debe implementar métodos alternativos aprobados por la repartición competente.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se puede acreditar la provisión de servicios y por ende no se obtiene el Final de Obra.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-4975-1990"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8952-2012"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9897-2018"
+      }
+    ]
+  },
+  {
+    "id": "ord-10660-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10660/2024",
+    "fecha_publicacion": "2024-11-13",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=237309",
+    "resumen_llano": "Prohíbe exhibir, ofertar o promocionar cerca de las cajas de supermercados y negocios en cadena alimentos y bebidas con sellos de exceso en azúcares, grasas saturadas o sodio, o ultraprocesados sin esos sellos.",
+    "obligaciones": [
+      {
+        "que_hacer": "No exhibir, ofrecer, publicitar ni promocionar alimentos y bebidas con sellos de 'Exceso en azúcares', 'Exceso en grasas saturadas' o 'Exceso en sodio', ni alimentos ultraprocesados sin esos sellos, dentro de un radio de 3 metros de las cajas registradoras o áreas de cobro, si el local es un autoservicio, supermercado o negocio minorista en cadena con una superficie mínima de 500 m2",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción cuyo monto se determina según el Art. 235° de la Ordenanza N° 10.267/2021 (Código de Convivencia)",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10677-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10677/2024",
+    "fecha_publicacion": "2024-11-13",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=237305",
+    "resumen_llano": "Rosario crea un programa que permite a empresas habilitadas usar el aceite vegetal usado (AVU) para fabricar otros productos, además de biocombustible, siempre que cumplan las buenas prácticas ambientales.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si tu empresa está habilitada para usar aceite vegetal usado (AVU) en la elaboración de subproductos, cumplir con las medidas de seguridad para su recolección, almacenamiento, transporte y manipulación previstas en la Ordenanza 8.355/2008 y su decreto reglamentario",
+        "alcanzados": {
+          "rubros": [
+            "industria",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto",
+        "confianza": 0.5
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10673-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10673/2024",
+    "fecha_publicacion": "2024-11-06",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=236883",
+    "resumen_llano": "La ordenanza reemplaza todas las normas anteriores sobre estacionamiento y aprueba un nuevo Capítulo IV del Reglamento de Edificación de Rosario que regula garajes, cocheras y estacionamiento de bicicletas.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si construís un edificio nuevo de vivienda colectiva (más de 3 unidades) frentista, oficinas frentistas, hotel/apart hotel, sanatorio/hospital, supermercado de más de 1000m2, u otros usos alcanzados, tenés que construir una superficie de garaje o cocheras para autos y/o bicicletas según la superficie del edificio.",
+        "alcanzados": {
+          "rubros": [
+            "construccion",
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el permiso de edificación ni la habilitación correspondiente.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si vas a construir un garaje o cochera nueva, tenés que instalar módulos de estacionamiento para bicicletas según el uso del edificio, incluso si no se exigen espacios para autos.",
+        "alcanzados": {
+          "rubros": [
+            "construccion",
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el permiso de edificación ni la habilitación correspondiente.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si tenés una cochera que funciona total o parcialmente por hora con más de 20 módulos de estacionamiento para autos, tenés que disponer de un sitio para el estacionamiento gratuito de bicicletas equivalente a un mínimo de 10 módulos, aumentando la exigencia cada 2 módulos de auto adicionales.",
+        "alcanzados": {
+          "rubros": [
+            "servicios",
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si explotás una cochera, tenés que contratar un seguro total contra robo, incendio y daños de los vehículos estacionados y exhibir un cartel indicador del seguro en lugar visible cerca de las entradas.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si tu cochera funciona por hora, tenés que exhibir en lugar bien visible un cartel con las tarifas vigentes (estadía, hora, primera media hora, quince minutos), en tipografía y color claramente legibles.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si tenés una cochera con capacidad de más de 20 módulos de estacionamiento para autos, tenés que destinar entre el 5% y el 15% de la superficie a la guarda de motocicletas (mínimo 2 boxes) y colocar un cartel de 0,30m x 0,30m indicando cantidad de módulos y precio.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si operás una cochera, tenés que mantener un libro de inspección y otro de quejas siempre disponibles para el usuario y el inspector municipal.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si querés instalar o funcionar como cochera o garaje, tenés que iniciar formalmente el trámite de habilitación ante la oficina de habilitaciones municipal correspondiente.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga la habilitación para operar.",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-4975-1990"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-7462-2002"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-7545-2003"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8031-2006"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8078-2006"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8230-2007"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8281-2008"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8467-2009"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8544-2010"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8176-2007"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8415-2009"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-8730-2011"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9239-2014"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9553-2016"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9427-2015"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9699-2016"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9502-2015"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9697-2016"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-9835-2018"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-10022-2019"
+      },
+      {
+        "tipo": "deroga",
+        "norma": "ord-10524-2023"
+      }
+    ]
+  },
+  {
+    "id": "ord-10657-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10657/2024",
+    "fecha_publicacion": "2024-10-29",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=236576",
+    "resumen_llano": "Los comercios de Rosario que venden productos al público deben aceptar pagos con tarjeta de débito y avisarlo con un cartel cerca de la caja.",
+    "obligaciones": [
+      {
+        "que_hacer": "Aceptar el pago con transferencias bancarias mediante tarjeta de débito si vendés cosas muebles a consumidores finales de forma habitual, además de otros medios que ya aceptes.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Colocar un cartel visible cerca de la caja informando que el comercio acepta pago con tarjeta de débito.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10608-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10608/2024",
+    "fecha_publicacion": "2024-06-27",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=227703",
+    "resumen_llano": "Se actualizan las reglas para poner mesas, sillas y sombrillas en la vereda frente a bares y restaurantes de Rosario, manteniendo los criterios de la ordenanza de 2021.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si tenés un bar, confitería, restaurante, comedor, pizzería, heladería o cafetería y querés poner mesas y sillas en la vereda, solo podés hacerlo si la vereda tiene un ancho no menor a 2,70 metros (salvo excepción autorizada por la Secretaría de Planeamiento), dejando siempre libre el espacio de circulación peatonal (1,20m, 2m o 1,50m según ancho de vereda o esquina)",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga o se deja sin efecto el permiso para colocar mobiliario removible en la vereda",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No se puede colocar mesas y sillas en la vereda si el comercio no cuenta con los servicios sanitarios reglamentarios para ambos sexos",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se concede el permiso para la colocación de mesas y sillas en la acera",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Los titulares de los negocios con mobiliario removible en la vereda deben mantener la acera en perfecto estado higiénico",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción concreta en el texto",
+        "confianza": 0.6
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-8336-2008"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ord-10194-2021"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ord-10561-2023"
+      }
+    ]
+  },
+  {
+    "id": "ord-10600-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10600/2024",
+    "fecha_publicacion": "2024-06-25",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=227516",
+    "resumen_llano": "Rosario crea un mapa digital interactivo para mostrar espacios públicos y privados accesibles para personas con discapacidad.",
+    "obligaciones": [],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10561-2023",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10561/2023",
+    "fecha_publicacion": "2023-12-26",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=217360",
+    "resumen_llano": "La ordenanza crea y regula el capítulo del Reglamento de Edificación de Rosario sobre veredas y arbolado público, estableciendo tipos de vereda, materiales, obligación de construirlas y mantenerlas, reglas de mobiliario en la calle y trámites de alcantarillado.",
+    "obligaciones": [
+      {
+        "que_hacer": "Construir y mantener en buen estado la vereda y el sector de suelo absorbente en todo el frente de tu predio (baldío o edificado) que dé a la vía pública, con superficie antideslizante.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto específico.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si rompés la vereda (por obra, conexión de servicios, etc.) tenés que restituirla con los mismos materiales; si rompiste más del 60% del frente, debés rehacerla completa y reglamentariamente.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si tu local es un bar, confitería, restaurante, comedor, pizzería, heladería, cafetería o negocio afín y ponés mesas y sillas en la vereda, tenés que colocar vallas de protección de contención a una distancia mínima de 0,50 metros del cordón.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si tenés un jardín de infantes o salón de fiestas infantiles, debés instalar vallas de protección fijas en las puertas de acceso y salida.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "No coloques mesas y sillas en la vereda si tu comercio gastronómico no cuenta con servicios sanitarios reglamentarios para ambos sexos; y mantené la vereda frente a tu negocio en perfecto estado higiénico si tenés mobiliario en la calle.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorgará o se retirará el permiso de mobiliario removible.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "No coloques vallas, bloques de hormigón u otros elementos sobre la calzada para impedir el estacionamiento frente a cocheras, garajes privados o playas de estacionamiento.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multas que el Código de Faltas establezca.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si sos frentista de una calzada sin cordón cuneta y necesitás construir un acceso que implique entubar parte del canal/zanja de drenaje, tenés que pedir permiso previo a la Dirección de Proyectos de Hidráulica antes de construir la alcantarilla.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Penalidades municipales y responsabilidad por los daños y perjuicios ocasionados; multas según reglamentaciones vigentes por transgresiones a lo establecido en la solicitud, descripción y trámite de alcantarillas.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si vas a construir o ampliar una obra, tenés que identificar en los planos la ubicación de los árboles existentes frente al lote y no proyectar accesos vehiculares, garajes o cocheras frente a árboles existentes; si es imprescindible extraer un árbol, se debe contar con informe autorizante de Parques y Paseos y los gastos de extracción corren por cuenta del propietario.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se aprobará el plano de edificación o ampliación.",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-8336-2008"
+      }
+    ]
+  },
+  {
+    "id": "ord-10440-2022",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10440/2022",
+    "fecha_publicacion": "2023-04-11",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=204106",
+    "resumen_llano": "Los bares, restaurantes, carritos y food trucks de Rosario deben exhibir carteles o folletos que expliquen qué hacer si alguien se atraganta.",
+    "obligaciones": [
+      {
+        "que_hacer": "Exhibir carteles y/o folletos que expliquen los peligros y el protocolo de actuación ante una obstrucción de las vías aéreas (atragantamiento)",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.8
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10434-2022",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10434/2022",
+    "fecha_publicacion": "2023-04-04",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=203832",
+    "resumen_llano": "Rosario crea un registro público que asienta las sanciones firmes por infracciones ambientales contra personas y empresas, y quienes figuren como infractores o reincidentes no podrán obtener nuevas habilitaciones o permisos industriales hasta cumplir con la sanción.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos sancionado por infracción ambiental firme, quedás inscripto en el Registro de Infractores y Reincidentes Ambientales, y mientras figures ahí (por incumplimiento o reincidencia) no podés obtener nuevas autorizaciones, certificados de aptitud ambiental, habilitaciones, concesiones o permisos para ejercicios industriales o productivos hasta acreditar el cumplimiento de la sanción",
+        "alcanzados": {
+          "rubros": [
+            "industria"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorgan nuevas autorizaciones, certificados de aptitud ambiental, habilitaciones, concesiones ni permisos hasta acreditar el cumplimiento fehaciente de la sanción",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-10267-2022"
+      }
+    ]
+  },
+  {
+    "id": "ord-10419-2022",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10419/2022",
+    "fecha_publicacion": "2023-01-24",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=201063",
+    "resumen_llano": "Los negocios que alquilan por hora canchas o espacios para deportes y actividades recreativas (fútbol, paddle, tenis, squash, paintball, karting, etc.) deben tener siempre presente, mientras estén abiertos, a alguien capacitado en RCP y primeros auxilios.",
+    "obligaciones": [
+      {
+        "que_hacer": "Garantizar que, mientras el comercio esté abierto al público, haya al menos una persona capacitada en maniobras de RCP y primeros auxilios presente en el local (la autoridad de aplicación puede exigir más personas capacitadas según el local)",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle",
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "dias_desde_publicacion",
+          "valor": "180"
+        },
+        "si_no_cumplis": "No especificado en el texto",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10216-2021",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10216/2021",
+    "fecha_publicacion": "2021-09-24",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=179654",
+    "resumen_llano": "Prohíbe envolver con film o bandeja de plástico las frutas, verduras y hortalizas con cáscara en comercios y supermercados de Rosario.",
+    "obligaciones": [
+      {
+        "que_hacer": "No usar film ni bandeja plástica para envolver frutas, verduras y hortalizas que tengan cáscara como protección natural.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción por incumplimiento aplicada por el Tribunal de Faltas tras la fiscalización de la Dirección General de Inspección de Comercio e Industria.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10226-2021",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10226/2021",
+    "fecha_publicacion": "2021-08-18",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=177454",
+    "resumen_llano": "Rosario prohíbe usar vasos de plástico o polipapel para vender helado suelto en porciones chicas y regula el uso de cucharas plásticas, para reducir residuos.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si vendés helado suelto (a granel, en bochas) en presentaciones de hasta 1/4 kg para consumir en el local, no podés usar vasos de plástico ni de polipapel: tenés que usar cucuruchos o vasos comestibles de pasta. Esto es obligatorio recién a partir de los 180 días desde la aprobación de la ordenanza, antes es voluntario.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "No exhibas cucharas plásticas sobre el mostrador y entregalas solo si el cliente las pide, sin darlas junto con el helado por defecto. Esto es obligatorio recién a partir de los 180 días desde la aprobación de la ordenanza, antes es voluntario.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10196-2021",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10196/2021",
+    "fecha_publicacion": "2021-07-13",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=175305",
+    "resumen_llano": "Los comercios de comida de Rosario deben permitir que los clientes usen sus propios recipientes reutilizables (táper, ollas, frascos) para llevarse alimentos elaborados o a granel, y se crea una campaña municipal para promoverlo.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si un cliente lo pide, tenés que venderle alimentos elaborados o a granel en el recipiente reutilizable que él te trae, siempre que ese recipiente esté en buenas condiciones, limpio, sin roturas ni fisuras y apto para alimentos.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle",
+            "manipula_alimentos"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.8
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10158-2020",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10158/2020",
+    "fecha_publicacion": "2021-02-22",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=168865",
+    "resumen_llano": "Se prohíbe entregar sorbetes plásticos descartables en los comercios de Rosario, excepto los que ya vienen pegados al envase de fábrica.",
+    "obligaciones": [
+      {
+        "que_hacer": "No entregar sorbetes plásticos de un solo uso a los clientes, salvo que vengan adheridos de fábrica al producto (como los envases tetra-brick)",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Apercibimiento en la primera verificación, multa de 50 a 100 unidades fijas en la segunda, de 100 a 200 en la tercera (reincidencia) y de 500 a 2000 en la cuarta (segunda reincidencia)",
+        "confianza": 0.9
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10034-2020",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10034/2020",
+    "fecha_publicacion": "2020-07-08",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=163794",
+    "resumen_llano": "Los locales de comida dentro de escuelas, públicas o privadas, tienen que ofrecer al menos una opción de menú saludable a quien lo pida.",
+    "obligaciones": [
+      {
+        "que_hacer": "Ofrecer al menos un menú saludable y nutritivo a quien lo solicite, si tenés un local de comidas dentro de un establecimiento educativo público o privado.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-9965-2019",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9965/2019",
+    "fecha_publicacion": "2019-04-25",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=147689",
+    "resumen_llano": "Los locales de venta de autos con atención al público en Rosario deben exhibir un cartel visible con los precios y las condiciones de financiación de los vehículos.",
+    "obligaciones": [
+      {
+        "que_hacer": "Exhibir en un cartel visible para los clientes los precios de los automotores en sus diferentes modalidades de pago y las condiciones de financiación, incluyendo el costo financiero total y las cláusulas de ajuste de las cuotas",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones idénticas a las previstas en el Código de Faltas por no exhibir documentación referente al permiso municipal (art. 603.30)",
+        "confianza": 0.9
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-9897-2018",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9897/2018",
+    "fecha_publicacion": "2018-10-11",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=141186",
+    "resumen_llano": "Si vas a construir o ampliar una obra en Rosario de más de 1000 m2, necesitás un certificado de la empresa de agua que confirme que hay servicio disponible.",
+    "obligaciones": [
+      {
+        "que_hacer": "Presentar el Certificado de Factibilidad de Servicio de Agua y Desagües Cloacales extendido por la empresa proveedora si la obra de edificación o ampliación supera los 1000 m2 cubiertos, para tramitar el Permiso de Edificación",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se otorga el Permiso de Edificación",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-4975-1990"
+      }
+    ]
+  },
+  {
+    "id": "ord-9890-2018",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9890/2018",
+    "fecha_publicacion": "2018-09-26",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=140437",
+    "resumen_llano": "Los organismos públicos o privados y los comercios gastronómicos de Rosario deben dejar usar el baño y dar atención prioritaria a personas que acrediten padecer Enfermedad Intestinal Inflamatoria (Colitis Ulcerosa o Crohn).",
+    "obligaciones": [
+      {
+        "que_hacer": "Permitir el ingreso al baño a personas con Enfermedad Intestinal Inflamatoria (Colitis Ulcerosa o Enfermedad de Crohn) que presenten credencial otorgada por la Secretaría de Salud Pública avalada por FUNDECCU Argentina, aunque no sean clientes o no trabajen en el lugar.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Dar atención prioritaria en cajas de cobro y trámites en general a personas que acrediten la Enfermedad Intestinal Inflamatoria.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.6
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-9871-2018",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9871/2018",
+    "fecha_publicacion": "2018-08-17",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=139415",
+    "resumen_llano": "Las empresas que hagan obras que corten calles o veredas deben poner un cartel en el corralito indicando cuándo empezó la obra y cuándo terminaría aproximadamente.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si tu empresa hace una obra que corta o interfiere el paso de peatones o vehículos, colocar en el cerco o corralito un cartel con la fecha de inicio de la obra y el tiempo aproximado que va a demorar terminarla.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.8
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-9867-2018",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9867/2018",
+    "fecha_publicacion": "2018-07-25",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=138340",
+    "resumen_llano": "Los bancos deben colocar un cartel de advertencia sobre estafas con clonación de tarjetas (skimming) cerca de los cajeros automáticos.",
+    "obligaciones": [
+      {
+        "que_hacer": "Colocar un cartel de advertencia sobre estafas con skimming en el sector de cajeros automáticos, a menos de un metro de éstos, con las medidas y el texto que indica la ordenanza",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-9825-2018",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9825/2018",
+    "fecha_publicacion": "2018-05-24",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=135743",
+    "resumen_llano": "Se crea un registro público de salones de fiestas habilitados en Rosario para que la gente pueda consultarlo antes de contratar uno.",
+    "obligaciones": [],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ley-27430-2017",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "27430",
+    "fecha_publicacion": "2017-12-29",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/305000-309999/305262/texact.htm",
+    "resumen_llano": "La ley modifica en profundidad el Impuesto a las Ganancias: cambia cómo se calculan y gravan las rentas de personas y empresas, las ganancias por venta de acciones, bonos, inmuebles y dividendos, y las reglas para operaciones con el exterior.",
+    "obligaciones": [],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-11179-1921"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11683-1933"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-17117-1967"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-19800-1972"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20628-1973"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-2682-1979"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-22415-1981"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-22426-1981"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23349-1986"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23576-1988"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23877-1990"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23928-1991"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23966-1991"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24083-1992"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24441-1995"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24674-1996"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24769-1997"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-280-1997"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-649-1997"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-518-1998"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24977-1998"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-821-1998"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25239-1999"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-814-2001"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-1009-2001"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26028-2005"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26181-2006"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26573-2009"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26893-2013"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26940-2014"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-27253-2016"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-27346-2016"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-27424-2017"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-27429-2018"
+      }
+    ]
+  },
+  {
+    "id": "ord-9755-2017",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9755/2017",
+    "fecha_publicacion": "2017-08-15",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=125658",
+    "resumen_llano": "Establece los requisitos de seguridad y certificación que deben cumplir los juegos infantiles manuales de uso público en espacios públicos y privados de Rosario.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si instalás o tenés juegos infantiles manuales de uso público (individual o colectivo) en un lugar público o privado, deben cumplir las normas IRAM 3655 (partes 1, 2 y 3) si son de origen nacional, o su equivalente si son importados, y exhibir el certificado de seguridad y calidad correspondiente.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El Municipio puede remover o clausurar los juegos que no se adecuen a la normativa.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Las superficies de las áreas de juego deben ajustarse a la norma europea UNE-EN 1177 sobre superficies absorbedoras de impactos.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El Municipio puede remover o clausurar los juegos que no se adecuen a la normativa.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si tenés clubes, parques, salones de juegos u otras instituciones con juegos infantiles manuales existentes, tenés 90 días desde que el Municipio te informe sobre esta ordenanza para adecuarlos a los requisitos establecidos.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "dias_desde_publicacion",
+          "valor": "90"
+        },
+        "si_no_cumplis": "El Municipio puede remover o clausurar los juegos que no se adecuen a la normativa.",
+        "confianza": 0.5
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ley-27349-2017",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "27349",
+    "fecha_publicacion": "2017-04-12",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/270000-274999/273567/texact.htm",
+    "resumen_llano": "Esta ley nacional crea beneficios impositivos y registros para fomentar el capital emprendedor, regula el financiamiento colectivo (crowdfunding), crea el nuevo tipo societario SAS (Sociedad por Acciones Simplificada) y establece programas de apoyo como el Fondo Semilla.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos una institución o inversor de capital emprendedor y en algún momento dejás de cumplir los requisitos de la ley, informarlo a la autoridad de aplicación dentro de los 30 días de encontrarte en esa situación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Baja de la inscripción en el Registro de Instituciones de Capital Emprendedor e inhabilitación para volver a solicitar la inscripción.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si tu SAS queda comprendida en los supuestos que exigen otro tipo societario (incisos 3, 4 y 5 del art. 299 de la Ley General de Sociedades) o participa en más del 30% del capital de esas sociedades, transformarla en alguno de los tipos regulares de la Ley 19.550 e inscribir la transformación en el registro público dentro de los 6 meses de configurado el supuesto (o desde que se tomó conocimiento si no fue por hecho propio).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Los socios responden frente a terceros en forma solidaria, ilimitada y subsidiaria.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos inversor y deducís aportes de capital emprendedor del impuesto a las ganancias, mantener la inversión total por al menos 2 años desde el primer ejercicio en que se realizó; si pedís la devolución antes, declarar el monto deducido con los intereses resarcitorios en tu declaración jurada de ganancias.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Pierde efecto la deducción y debe incorporarse el monto deducido más intereses resarcitorios en la declaración jurada del impuesto a las ganancias.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos institución de capital emprendedor receptora de inversión, expedir un certificado con carácter de declaración jurada informando al Registro las sumas aportadas por el inversor, respondiendo si esa información resulta falsa o inexacta.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Responsabilidad solidaria e ilimitada con el inversor por el impuesto omitido, más intereses y sanciones, y eventual aplicación de la figura penal del art. 4 de la ley 24.769.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si constituís una SAS, publicar por 1 día en el diario de publicaciones legales del lugar de constitución un aviso con los datos exigidos, tanto al constituirla como al modificar el instrumento constitutivo o disolverla.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Si sos SAS, llevar contabilidad y confeccionar estados contables (situación patrimonial y resultados) asentados en el libro de inventario y balances, además de los libros de actas, registro de acciones y diario.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-19550-1972"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26831-2012"
+      }
+    ]
+  },
+  {
+    "id": "ord-9605-2016",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9605/2016",
+    "fecha_publicacion": "2016-10-12",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=116670",
+    "resumen_llano": "Los comercios de Rosario deben colocar un cartel visible informando que no es obligatorio dar el número de teléfono al pagar con tarjeta de crédito o débito.",
+    "obligaciones": [
+      {
+        "que_hacer": "Colocar en el local, a no más de un metro del área de facturación, un cartel visible con la leyenda 'SR. CONSUMIDOR NO ES OBLIGATORIO DAR A CONOCER SU NUMERO DE TELEFONO EN LAS COMPRAS QUE SE REALICEN CON TARJETAS DE CREDITO Y DEBITO', de al menos 40x40 cm y con el logo del Concejo Municipal de Rosario",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.8
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-9558-2016",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9558/2016",
+    "fecha_publicacion": "2016-08-09",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=115114",
+    "resumen_llano": "Los bares, restaurantes, confiterías y pizzerías de Rosario deben ofrecerle al cliente llevarse la comida que no consumió, avisarlo en la carta y usar envases aptos para eso.",
+    "obligaciones": [
+      {
+        "que_hacer": "Poner a disposición del cliente los alimentos que no haya consumido en el local para que se los pueda llevar",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción consistente en prácticas de concientización medioambiental, según lo determine la reglamentación",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Incluir en las cartas de menú o en otro medio visible del local un aviso claro que informe al cliente que puede pedir llevarse los alimentos no consumidos",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción consistente en prácticas de concientización medioambiental, según lo determine la reglamentación",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Usar envases reciclables, reciclados o reutilizables aptos para uso alimentario para entregar al cliente los alimentos no consumidos",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción consistente en prácticas de concientización medioambiental, según lo determine la reglamentación",
+        "confianza": 0.9
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ley-27264-2016",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "27264/2016",
+    "fecha_publicacion": "2016-08-01",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/260000-264999/263953/texact.htm",
+    "resumen_llano": "Esta ley da carácter permanente a un programa de ayuda para pymes y les otorga beneficios impositivos y de financiamiento, como exención de un impuesto, pago a cuenta por inversiones y bonos de crédito fiscal, con la condición de no reducir empleo para no perder esos beneficios.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos una Micro, Pequeña o Mediana Empresa que redujo el nivel de empleo en el ejercicio fiscal en que computó el beneficio fiscal por inversiones productivas o al siguiente, perdés ese beneficio y debés devolverlo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Debés ingresar el impuesto a las ganancias correspondiente al pago a cuenta indebidamente computado o el bono de crédito fiscal aplicado, con intereses resarcitorios y una multa del 100% del gravamen ingresado en defecto.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "decley-5965-1963"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20091-1973"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-22317-1980"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23576-1988"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24467-1995"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25300-2000"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25413-2001"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "res-481-2002"
+      }
+    ]
+  },
+  {
+    "id": "ley-26940-2014",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "26940/2014",
+    "fecha_publicacion": "2014-06-02",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/230000-234999/230592/texact.htm",
+    "resumen_llano": "Crea un registro público donde se publican las empresas sancionadas por no registrar empleados o infringir normas laborales, y mientras figuren ahí no pueden recibir beneficios, créditos ni contratos del Estado.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si el empleador tiene trabajadores no registrados o mal registrados, debe inscribirlos y regularizar la relación laboral, y pagar la multa correspondiente.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El empleador queda incluido y publicado en el Registro Público de Empleadores con Sanciones Laborales (REPSAL) hasta regularizar y pagar, más 30 días corridos adicionales; mientras figure en el registro no puede acceder a programas, subsidios o créditos públicos, ni contratar con el Estado, ni acceder a los beneficios de reducción de contribuciones previstos en la ley.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si el empleador fue sancionado por obstruir la labor de la inspección del trabajo, debe cesar esa conducta y regularizar su situación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Queda incluido en el REPSAL por el plazo correspondiente, con las restricciones del artículo 13 (sin acceso a programas estatales, créditos públicos, contratos con el Estado ni beneficios de reducción de contribuciones).",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Mientras el empleador figure sancionado en el REPSAL, no puede acceder a programas, subsidios o créditos públicos, ni celebrar contratos con el Estado nacional (compraventa, servicios, obras públicas, concesiones), ni acceder a los beneficios de reducción de contribuciones patronales de esta ley.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Pérdida o imposibilidad de acceso a esos beneficios y contratos mientras dure la inclusión en el registro; en caso de reincidencia, exclusión del Monotributo o imposibilidad de deducir gastos de personal en Ganancias.",
+        "confianza": 0.8
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-19032-1971"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24013-1991"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24241-1993"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24714-1996"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24977-1998"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25191-1999"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25212-2000"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-1023-2001"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25877-2004"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26364-2008"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26390-2008"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-1370-2008"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26425-2008"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26476-2008"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26727-2011"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-26847-2013"
+      }
+    ]
+  },
+  {
+    "id": "ley-26773-2012",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "26773",
+    "fecha_publicacion": "2012-10-26",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/200000-204999/203798/texact.htm",
+    "resumen_llano": "Esta ley reordena cómo se pagan las indemnizaciones por accidentes de trabajo y enfermedades profesionales, sumando un plus del 20% y estableciendo plazos y reglas para notificar y pagar a los trabajadores o sus familias.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos empleador o ART obligado al pago de indemnización por Ley 24.557, notificar de forma fehaciente al trabajador o sus familiares los montos que le corresponden cobrar, dentro de los 15 días de que te avisen de la muerte del trabajador o se determine su incapacidad.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si sos ART y la reparación se termina fijando por otro sistema de responsabilidad (juicio, conciliación o transacción), depositar en el expediente el importe que hubiera correspondido según este régimen, con intereses, y contribuir a las costas en proporción a lo que le hubiera correspondido pagar.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Si sos ART, limitar los gastos de administración y gastos no prestacionales al porcentaje que fijen la SRT y la SSN, que no puede superar el 20% de los ingresos del seguro, ni el 5% en gastos de comercialización o intermediación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No especificado en el texto.",
+        "confianza": 0.6
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-20091-1973"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20744-1974"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "res-21523-1992"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24241-1993"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24557-1995"
+      }
+    ]
+  },
+  {
+    "id": "ord-8952-2012",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "8952/2012",
+    "fecha_publicacion": "2012-10-11",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=86690",
+    "resumen_llano": "Las obras nuevas o ampliaciones de más de 500 m2 en Rosario deben presentar un certificado de la E.P.E. que garantice que hay energía eléctrica suficiente antes de tramitar el permiso de edificación.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si vas a construir o ampliar una obra que supere los 500 m2 cubiertos, presentar junto con el trámite del Permiso de Edificación o Ampliación un Certificado de Factibilidad de Servicio de energía eléctrica emitido por la E.P.E.",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.8
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ord-8127-2007",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "8127/2007",
+    "fecha_publicacion": "2007-04-16",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=44836",
+    "resumen_llano": "Regula el uso de alarmas sonoras (de autos, comercios y domicilios) en Rosario para reducir la contaminación acústica, fijando límites de sonido, horarios y duración máxima de funcionamiento.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si tenés alarma sonora (de auto, comercial o domiciliaria), ajustarla para que no supere los niveles máximos de sonido establecidos y que no se active por causas injustificadas.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "dias_desde_publicacion",
+          "valor": "180"
+        },
+        "si_no_cumplis": "La pena que el Código Municipal de Faltas estipula para los casos de ruidos molestos.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "No hacer sonar tu alarma a propósito, salvo para pruebas o ensayos, y solo entre las 8 y las 20 horas.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La pena que el Código Municipal de Faltas estipula para los casos de ruidos molestos.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "No dejar que tu alarma sonora suene de forma continua por más de 5 minutos; si no se desactiva, puede reactivarse pero solo con destellos luminosos (excepto alarmas contra incendios).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La pena que el Código Municipal de Faltas estipula para los casos de ruidos molestos.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "decreto-46542-1972"
+      }
+    ]
+  },
+  {
+    "id": "ord-7839-2005",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "7839/2005",
+    "fecha_publicacion": "2005-07-01",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=35866",
+    "resumen_llano": "La ordenanza modifica el Código Municipal de Faltas de Rosario agregando sanciones por exceso de capacidad en locales, falta de salidas de emergencia, venta de alcohol a menores, declaraciones juradas falsas, ruidos molestos y presencia de menores en locales prohibidos.",
+    "obligaciones": [
+      {
+        "que_hacer": "No superar la cantidad máxima de personas permitida según la superficie del local (factor ocupacional)",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa y caducidad de la habilitación otorgada, falta calificada como grave",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Contar con salidas de emergencia habilitadas y operables conforme la normativa de evacuación masiva",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $1.000 a $5.000 más clausura de 20 a 90 días; en caso de reincidencia, caducidad de la habilitación",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "No vender bebidas alcohólicas a menores de 18 años",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia",
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $1.000 a $5.000 más clausura de 20 a 90 días; en caso de reincidencia, caducidad de la habilitación, falta grave",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Presentar declaraciones juradas con datos verdaderos ante la Administración Pública Municipal",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Caducidad de la habilitación otorgada, falta calificada como grave",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Cumplir con el Decreto N° 40.542 sobre ruidos molestos",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $1.000 a $5.000 más clausura de 20 a 90 días; en caso de reincidencia, caducidad de la habilitación, falta grave",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "No permitir el ingreso o permanencia de menores en locales donde esté prohibido",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $1.000 a $5.000 más clausura de 20 a 90 días; en caso de reincidencia, caducidad de la habilitación, falta grave",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ord-5845-2005"
+      }
+    ]
+  },
+  {
+    "id": "ley-25877-2004",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "25877/2004",
+    "fecha_publicacion": "2004-03-19",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/90000-94999/93595/texact.htm",
+    "resumen_llano": "Esta ley nacional reordena las reglas del trabajo en Argentina: fija el período de prueba, los plazos de preaviso y las indemnizaciones por despido, regula la negociación colectiva y los conflictos laborales, y crea un sistema nacional de inspección del trabajo.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si despedís a un empleado sin causa habiendo o no dado preaviso, pagarle una indemnización de un mes de sueldo por cada año trabajado o fracción mayor a tres meses, calculada sobre su mejor remuneración mensual normal y habitual del último año.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El empleador queda obligado igualmente al pago de la indemnización correspondiente, que no puede ser inferior a un mes de sueldo.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Antes de despedir o renunciar a un empleado con contrato por tiempo indeterminado, avisarle con anticipación: 15 días si el empleado renuncia, 15 días si está en período de prueba, 1 mes si tiene hasta 5 años de antigüedad, o 2 meses si tiene más de 5 años.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Se debe pagar una indemnización sustitutiva del preaviso, más la integración del mes de despido si la extinción no coincide con el último día del mes.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Registrar formalmente al trabajador desde que comienza a trabajar, incluso durante el período de prueba de los primeros tres meses.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Se entenderá de pleno derecho que el empleador ha renunciado al período de prueba, además de las consecuencias legales del empleo no registrado.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si la empresa tiene más de 300 trabajadores, elaborar todos los años un balance social con información sobre condiciones de trabajo, costo laboral y prestaciones sociales, y entregarlo al sindicato dentro de los 30 días de elaborado, además de depositar una copia en el Ministerio de Trabajo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica una sanción concreta en el texto para el incumplimiento de esta obligación.",
+        "confianza": 0.5
+      },
+      {
+        "que_hacer": "Si sos inspeccionado por la autoridad laboral, colaborar con el inspector facilitando la información y documentación necesarias, y permitir el ingreso al lugar de trabajo sin exigir notificación previa ni orden judicial.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El lugar de trabajo puede ser clausurado y las tareas suspendidas si implican riesgo grave e inminente, además de aplicarse las sanciones del régimen de infracciones laborales.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-14250-1953"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-16936-1966"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-17183-1967"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18608-1970"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18692-1970"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20638-1974"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20744-1974"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23546-1988"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-2184-1990"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-470-1993"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24467-1995"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25013-1998"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25212-2000"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-105-2000"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-25250-2000"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-843-2000"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-1172-2000"
+      }
+    ]
+  },
+  {
+    "id": "ley-25326-2000",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "25326",
+    "fecha_publicacion": "2000-11-02",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm",
+    "resumen_llano": "Regula cómo las empresas y organismos que manejan datos personales de la gente deben pedirlos, cuidarlos, corregirlos y darlos de baja, y qué puede reclamar cada persona sobre su propia información.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si alguien te pide ver sus datos personales que tenés registrados, entregarle la información dentro de los 10 días corridos de haber sido intimado fehacientemente",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Queda habilitada la acción de hábeas data en tu contra",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si una persona reclama que sus datos están mal o son falsos, corregirlos, actualizarlos o eliminarlos dentro de los 5 días hábiles de recibido el reclamo o de advertido el error",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El interesado puede iniciar sin más la acción de hábeas data en tu contra",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si corregís o borrás datos de una persona que habías cedido a otro, avisarle a quien se los cediste dentro de los 5 días hábiles de hecho el cambio",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Incumplimiento de la obligación legal, sujeto a sanciones",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Inscribir todo archivo, registro o banco de datos (público o privado destinado a dar informes) en el Registro que habilite el organismo de control, declarando solo los datos autorizados",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones administrativas: apercibimiento, suspensión, multa de $1.000 a $100.000, clausura o cancelación del archivo",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Adoptar medidas técnicas y organizativas para garantizar la seguridad y confidencialidad de los datos personales que manejás, evitando pérdida, alteración o acceso no autorizado",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones administrativas: apercibimiento, suspensión, multa, clausura o cancelación del archivo; posible responsabilidad penal",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si tenías un archivo, registro o banco de datos destinado a dar informes ya existente antes de esta ley, inscribirlo y adecuarlo al nuevo régimen dentro de los 180 días establecidos por la reglamentación",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "dias_desde_publicacion",
+          "valor": "180"
+        },
+        "si_no_cumplis": "Sanciones administrativas: apercibimiento, suspensión, multa, clausura o cancelación del archivo",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si prestás servicios de información crediticia, eliminar y no volver a asentar datos de morosidad de personas correspondientes al período entre el 1/1/2000 y el 10/12/2003, siempre que la deuda se haya cancelado o regularizado antes de esta ley o dentro de los 180 días posteriores a su vigencia",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El titular puede ejercer los derechos de acceso, rectificación y actualización, y quedar sujeto a sanciones por incumplimiento de la ley",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-11179-1921"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-16986-1966"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-3992-1985"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24430-1995"
+      }
+    ]
+  },
+  {
+    "id": "ord-6814-1999",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "6814/1999",
+    "fecha_publicacion": "1999-10-01",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=14472",
+    "resumen_llano": "El Departamento Ejecutivo Municipal de Rosario controlará el transporte de mercaderías peligrosas dentro de la ciudad y deberá reglamentar pautas como planes de emergencia, controles y capacitaciones.",
+    "obligaciones": [],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ley-25156-1999",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "25156",
+    "fecha_publicacion": "1999-09-20",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/60016/texact.htm",
+    "resumen_llano": "Establece las reglas que prohíben acuerdos entre empresas para fijar precios, repartirse el mercado o abusar de una posición dominante, y obliga a notificar las fusiones y compras de empresas grandes antes de concretarlas.",
+    "obligaciones": [
+      {
+        "que_hacer": "Notificar al Tribunal de Defensa de la Competencia las fusiones, compras de empresas o adquisiciones de acciones que superen los montos establecidos, antes de concretarlas o dentro de la semana de concluido el acuerdo",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de hasta un millón de pesos ($1.000.000) diarios desde el vencimiento de la obligación de notificar",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "No fijar precios en conjunto con competidores, repartirse zonas o clientes, coordinar posturas en licitaciones, ni otras prácticas que restrinjan la competencia",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de diez mil pesos ($10.000) hasta ciento cincuenta millones de pesos ($150.000.000), que se duplica en caso de reincidencia, y cese de la conducta con eventual disolución, liquidación, desconcentración o división de la empresa",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "No abusar de una posición dominante en el mercado ni obstaculizar la entrada o permanencia de competidores",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Cese de la conducta, remoción de sus efectos y posible disolución, liquidación, desconcentración o división de la empresa infractora, además de multa",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Cumplir con los requerimientos de información y colaboración que solicite el Tribunal durante una investigación",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de hasta quinientos pesos ($500) diarios por obstruir o dificultar la investigación",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-22262-1980"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24240-1993"
+      }
+    ]
+  },
+  {
+    "id": "ley-25065-1998",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "25065",
+    "fecha_publicacion": "1999-01-14",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/55000-59999/55556/texact.htm",
+    "resumen_llano": "Regula los derechos y obligaciones de emisores, titulares y comercios en el sistema de tarjetas de crédito, compra y débito.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si emitís tarjetas de crédito, exhibir al público en todos tus locales la tasa de interés por financiación que aplicás.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La norma no especifica una sanción puntual para este incumplimiento; puede quedar sujeta al régimen general de sanciones de la autoridad de aplicación (apercibimiento, multa o cancelación de la autorización).",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Si emitís tarjetas de crédito, enviar mensualmente al titular un resumen detallado de las operaciones realizadas, recibido con al menos 5 días de anticipación al vencimiento del pago.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El titular puede cuestionar la liquidación y, si el emisor omite los requisitos del resumen, pierde la posibilidad de preparar la vía ejecutiva para reclamar el cobro.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si emitís tarjetas de crédito, notificar al titular en los tres últimos resúmenes antes del vencimiento del contrato la fecha en que opera la renovación, si pactaron prórroga automática.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica una sanción puntual en el texto para este incumplimiento.",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Si emitís tarjetas de crédito, informar de inmediato a los comercios adheridos cuando se cancele una tarjeta antes de su vencimiento, sea cual sea la causa.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La falta de información no perjudica al proveedor, quien queda protegido frente a las consecuencias de la cancelación no informada.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si sos un comercio adherido, aceptar las tarjetas de crédito que cumplan con esta ley, verificar la identidad del portador, no cobrar más caro por pagar con tarjeta que al contado, y pedir autorización en cada operación.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "gastronomia"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El emisor puede resolver su vinculación contractual con el proveedor por incumplimiento de estas obligaciones.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si emitís tarjetas de crédito, contar con un sistema telefónico de recepción de denuncias por pérdida o robo disponible las 24 horas, registrando cada denuncia con hora y número correlativo que se le informa al denunciante.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción puntual en el texto para este incumplimiento.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-24240-1993"
+      }
+    ]
+  },
+  {
+    "id": "ley-24977-1998",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "24977",
+    "fecha_publicacion": "1998-07-06",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/50000-54999/51609/texact.htm",
+    "resumen_llano": "Crea el Monotributo: un régimen simple que unifica el pago de Ganancias, IVA y aportes previsionales para pequeños contribuyentes, con categorías según ingresos y otros parámetros.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos pequeño contribuyente adherido al Monotributo, pagar todos los meses el impuesto integrado que corresponda a tu categoría (según tus ingresos, superficie del local, energía consumida y alquileres), hasta que renuncies o cierres tu actividad.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Recategorización de oficio por AFIP, liquidación de la deuda y multa del 50% del impuesto integrado y la cotización previsional que hubiera correspondido; en algunos casos exclusión del régimen.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Al final de cada semestre calendario (enero-junio y julio-diciembre), calcular tus ingresos, energía consumida, alquileres y superficie de los últimos 12 meses y presentar la declaración jurada de recategorización si corresponde cambiar de categoría.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa del 50% del impuesto integrado y la cotización previsional que hubiera correspondido, y recategorización de oficio por AFIP con liquidación de la deuda.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Exigir, emitir y entregar factura por cada venta, locación o prestación de servicio que realices, y conservarlas como respalde tus compras y ventas.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura del local de 1 a 5 días y exclusión de pleno derecho del Monotributo.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Exhibir en tu local, en un lugar visible al público, la placa que indica tu condición y categoría de monotributista junto con el comprobante de pago del último mes vencido.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura del establecimiento de 1 a 5 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si tenés empleados en relación de dependencia, ingresar mensualmente por ellos los aportes y contribuciones a la seguridad social (jubilación, obra social, asignaciones familiares, fondo de empleo y ART) según los regímenes generales.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Quedar sujeto a las sanciones previstas por la ley 11.683 y el régimen general de seguridad social por incumplimiento de aportes.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si estás inscripto como trabajador independiente promovido en el Monotributo Social, pagar mensualmente la cuota de inclusión social como pago a cuenta de tus aportes previsionales.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se computan esos meses como aportes regulares para acceder a las prestaciones de la seguridad social, salvo que luego pagues lo adeudado.",
+        "confianza": 0.7
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-20628-1973"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20631-1973"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-22913-1983"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-23349-1986"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-450-1986"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24241-1993"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-280-1997"
+      }
+    ]
+  },
+  {
+    "id": "ley-24557-1995",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "24557/1995",
+    "fecha_publicacion": "1995-10-04",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/27971/texact.htm",
+    "resumen_llano": "Esta ley nacional obliga a los empleadores a asegurar a sus trabajadores contra accidentes y enfermedades laborales (por medio de una ART o autoseguro), cumplir normas de higiene y seguridad, y establece las prestaciones e indemnizaciones que reciben los trabajadores dañados por el trabajo.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si contratás empleados, tenés que afiliarlos a una ART o cumplir los requisitos para autoasegurarte, para cubrir los riesgos de accidentes y enfermedades del trabajo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Si no te afiliás a una ART ni cumplís los requisitos de autoseguro, respondés directamente y con tu propio patrimonio ante el trabajador por todas las prestaciones que le correspondan.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Como empleador, tenés que cumplir las normas de higiene y seguridad en el trabajo, incluido el plan de mejoramiento que te fije la ART.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Podés recibir una multa de entre 20 y 2000 AMPOs, y si el incumplimiento provoca un accidente, además debés pagar un recargo al Fondo de Garantía de hasta $30.000.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Como empleador, tenés que denunciar ante la ART y la Superintendencia de Riesgos del Trabajo los accidentes y enfermedades profesionales que ocurran en tu establecimiento.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Podés recibir una multa de entre 20 y 2000 AMPOs por incumplimiento de tus obligaciones como empleador.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Como empleador, tenés que pagar todos los meses la cuota que corresponda a la ART para financiar la cobertura de riesgos del trabajo de tus empleados.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Si omitís pagar las cuotas o declararlas, podés recibir prisión de seis meses a cuatro años, además de que la ART puede ejecutarte por lo adeudado.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Como empleador, tenés que notificar a tus trabajadores cuál es la ART a la que están afiliados.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Podés recibir una multa de entre 20 y 2000 AMPOs por incumplimiento de tus obligaciones como empleador.",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-20091-1973"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20744-1974"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24028-1991"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "res-21523-1992"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-24241-1993"
+      }
+    ]
+  },
+  {
+    "id": "ley-24522-1995",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "24522/1995",
+    "fecha_publicacion": "1995-08-09",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25379/texact.htm",
+    "resumen_llano": "Establece el régimen legal argentino de concursos preventivos y quiebras, regulando los procedimientos, requisitos, efectos y trámites para deudores en cesación de pagos.",
+    "obligaciones": [],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-2637-s-f"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11719-1933"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-19550-1972"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-19551-1972"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20744-1974"
+      }
+    ]
+  },
+  {
+    "id": "ley-24467-1995",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "24467",
+    "fecha_publicacion": "1995-03-28",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/15932/texact.htm",
+    "resumen_llano": "Esta ley nacional crea instrumentos de apoyo para las pequeñas y medianas empresas (créditos bonificados, Sociedades de Garantía Recíproca con beneficios impositivos) y establece un régimen laboral especial simplificado para las pequeñas empresas en materia de registro de personal, preaviso, vacaciones y negociación colectiva.",
+    "obligaciones": [
+      {
+        "que_hacer": "Registrar a los trabajadores de la pequeña empresa mediante inscripción en los sistemas que disponga ARCA, sin trámites adicionales ante otra autoridad.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El incumplimiento de las obligaciones registrales puede sancionarse hasta con la exclusión del régimen de la ley, además de las penalidades de las leyes 18.694, 23.771 y 24.013.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Al despedir a un empleado, dar preaviso por escrito con un mes de anticipación como mínimo, cualquiera sea la antigüedad del trabajador (para trabajadores contratados desde la vigencia de esta ley).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.55
+      },
+      {
+        "que_hacer": "Las Sociedades de Garantía Recíproca deben requerir contragarantías a los socios partícipes y terceros que soliciten garantías.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El incumplimiento de las disposiciones del Título II puede dar lugar a apercibimiento, multas de $5.000 a $20.000.000, expulsión del socio, inhabilitación, revocación de la autorización para funcionar como SGR, entre otras sanciones.",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Las Sociedades de Garantía Recíproca no pueden asignar a un mismo socio partícipe o terceros garantías superiores al 5% del valor total del fondo de riesgo, ni más del 25% a obligaciones con el mismo acreedor.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El incumplimiento puede dar lugar a apercibimiento, multas de $5.000 a $20.000.000, expulsión del socio, inhabilitación, revocación de la autorización para funcionar como SGR, entre otras sanciones.",
+        "confianza": 0.6
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-24013-1991"
+      }
+    ]
+  },
+  {
+    "id": "ley-24240-1993",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "24240",
+    "fecha_publicacion": "1993-10-15",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/0-4999/638/texact.htm",
+    "resumen_llano": "Establece los derechos de los consumidores y las obligaciones de quienes venden productos o prestan servicios: información clara, garantías, trato digno, y sanciones para quien no cumpla.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos proveedor de bienes o servicios, tenés que dar información cierta, clara y detallada sobre lo que vendés, en soporte físico salvo que el consumidor elija otro medio, y siempre gratis.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47: apercibimiento, multa, decomiso, clausura de hasta 30 días, suspensión de registros o pérdida de concesiones.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si vendés cosas o servicios riesgosos para la salud, tenés que entregar un manual en idioma nacional sobre uso, instalación y mantenimiento, y brindar asesoramiento adecuado.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47: apercibimiento, multa, decomiso, clausura de hasta 30 días, suspensión de registros o pérdida de concesiones.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si hacés una oferta pública, tenés que indicar la fecha de inicio y fin, y mantenerla vigente durante ese tiempo; si la revocás, avisarlo por medios similares a los usados para publicarla.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La no efectivización de la oferta se considera negativa injustificada de venta, sancionable según el artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si vendés por teléfono, catálogo o correo, tenés que indicar tu nombre, domicilio y CUIT en la publicidad.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47: apercibimiento, multa, decomiso, clausura, suspensión de registros o pérdida de concesiones.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Tenés que dar un trato digno a tus clientes y no exponerlos a situaciones vergonzantes, vejatorias o intimidatorias, ni discriminar a consumidores extranjeros en precios o condiciones.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47 más multa civil (daño punitivo) del artículo 52 bis, extensiva a quien actúe en nombre del proveedor.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si vendés cosas usadas, reconstituidas o con alguna deficiencia en forma pública, tenés que indicarlo de forma precisa y notoria.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si vendés cosas muebles o inmuebles, tenés que entregar un documento de venta con descripción del bien, tus datos, datos del fabricante, garantía, plazos de entrega, precio y costos adicionales, en castellano y completo.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si contrataste un servicio por teléfono, medios electrónicos o similares y el cliente pide la baja, tenés que enviarle sin cargo una constancia de la rescisión dentro de las 72 horas.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No podés cobrar preaviso, mes adelantado ni ningún otro concepto cuando un cliente pide la baja de un servicio.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si vendés cosas muebles no consumibles (nuevas o usadas), tenés que dar garantía legal de 6 meses (o 3 meses si son usadas) por defectos o vicios, y hacerte cargo del flete si hay que trasladar la cosa a taller.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47 y responsabilidad solidaria de productores, importadores, distribuidores y vendedores.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si fabricás, importás o vendés cosas muebles no consumibles, tenés que asegurar servicio técnico y suministro de repuestos.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "industria"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Tenés que entregar un certificado de garantía por escrito con tus datos, identificación del producto, condiciones de uso, validez y lugar de reparación.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Cualquier cláusula que contradiga esto es nula; además sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si reparás algo bajo garantía, tenés que entregar una constancia con el detalle de la reparación, piezas cambiadas y fechas de entrega y devolución.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si prestás un servicio de reparación, mantenimiento o similar, tenés que usar materiales nuevos o adecuados salvo pacto escrito en contrario.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Antes de reparar algo tenés que entregar un presupuesto por escrito con tus datos, descripción del trabajo, materiales, precios, tiempo, garantía y tus números de inscripción impositiva y previsional.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si durante un servicio aparece un gasto adicional no incluido en el presupuesto, tenés que avisarle al cliente antes de hacerlo (salvo que no puedas interrumpir el trabajo sin dañarlo).",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si un servicio que prestaste tiene fallas dentro de los 30 días de terminado, tenés que corregirlas o reemplazar materiales sin cobrar nada extra.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si das garantía sobre un servicio, tenés que documentarla por escrito indicando el trabajo, el tiempo de vigencia y quién la hará efectiva.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si prestás un servicio público domiciliario, tenés que entregar al usuario constancia escrita de las condiciones de la prestación y colocar carteles informando su derecho a reclamar indemnización por facturación indebida.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si prestás un servicio público domiciliario, tenés que habilitar un registro de reclamos y darles atención personalizada a los usuarios, resolviendo en plazos perentorios.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si prestás un servicio público domiciliario, tenés que entregar la factura con al menos 10 días de anticipación al vencimiento.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si se interrumpe el servicio público domiciliario y el usuario reclama, tenés 30 días para demostrar que no fue tu culpa; si no lo probás, tenés que devolver el importe del servicio no prestado.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Obligación de reintegrar el importe total del servicio no prestado.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si vendés algo puerta a puerta o fuera de tu local (venta domiciliaria), tenés que instrumentar el contrato por escrito e informar al consumidor que tiene 10 días corridos para arrepentirse sin costo.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47; la facultad de revocación no puede dispensarse.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No podés enviarle a alguien un producto o servicio no pedido que genere un cargo automático si no se opone.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si otorgás créditos o financiación para consumo, tenés que detallar por escrito el bien, precio de contado, monto financiado, tasa de interés efectiva anual, costo financiero total y forma de pago.",
+        "alcanzados": {
+          "rubros": [
+            "servicios",
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El consumidor puede pedir la nulidad del contrato o de las cláusulas; si falta la tasa de interés efectiva anual, se aplica la tasa pasiva del Banco Central.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si tenés contratos de adhesión con consumidores, tenés que publicar el modelo de contrato en tu sitio web y entregarlo sin cargo a quien lo pida en tus locales, con un cartel visible avisándolo.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanciones del artículo 47.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-22802-1983"
+      }
+    ]
+  },
+  {
+    "id": "ley-22802-1983",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "22802",
+    "fecha_publicacion": "1983-05-11",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/19946/texact.htm",
+    "resumen_llano": "Ley nacional que obliga a rotular correctamente los productos, prohíbe la publicidad engañosa y regula premios, sorteos y garantías en las ventas.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si vendés frutos o productos envasados, imprimir en el envase, etiqueta o envoltorio: nombre del producto, país de origen, calidad/pureza/mezcla y las medidas netas del contenido.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "industria"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si vendés productos manufacturados sin envasar, indicar igualmente su denominación, país de origen y calidad.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "industria"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si comercializás máquinas, equipos o artefactos que consumen energía, cumplir con los estándares de eficiencia energética definidos por la Secretaría de Energía.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "industria"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si fabricás productos o frutos en el país, indicar en el rótulo 'Industria Argentina' o 'Producción Argentina'.",
+        "alcanzados": {
+          "rubros": [
+            "industria",
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si un producto extranjero es fraccionado, armado o terminado en el país sin cambiar su naturaleza, indicar ese proceso en la etiqueta y tratarlo como de industria extranjera.",
+        "alcanzados": {
+          "rubros": [
+            "industria",
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Escribir las inscripciones e indicaciones de los productos en idioma nacional (se permiten términos extranjeros de uso común y marcas registradas).",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "industria"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No usar en la presentación, folletos, envases o publicidad palabras, frases o signos que puedan inducir a error o engaño sobre el origen, calidad, cantidad o características del producto o servicio.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Los comerciantes mayoristas y minoristas no deben vender mercadería cuya identificación incumpla las normas de rotulado, salvo que exhiban documentación que individualice al verdadero responsable.",
+        "alcanzados": {
+          "rubros": [
+            "comercio"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No hacer publicidad o propaganda con inexactitudes u ocultamientos que puedan inducir a error sobre bienes, inmuebles o servicios ofrecidos.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si en un establecimiento se cobran bienes o servicios y surgen diferencias de menos de 5 centavos que no se pueden devolver, esa diferencia debe quedar siempre a favor del cliente, y hay que exhibir un cartel de al menos 15x21 cm informando esto.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "gastronomia",
+            "servicios"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No ofrecer ni entregar premios o regalos sujetos al azar por la compra de mercaderías o contratación de servicios, ni organizar sorteos o concursos condicionados a una compra, ni pagar por el rescate de envases más de su valor corriente.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si ofrecés garantía sobre bienes o servicios, informar claramente al consumidor su alcance; si no la ofrecés en bienes muebles de uso durable o servicios, hay que decirlo expresamente.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $500 a $5.000.000, suspensión de hasta 5 años en registros de proveedores del Estado, pérdida de concesiones o beneficios, y/o clausura del establecimiento hasta 30 días.",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-17016-1966"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-17088-1967"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-19982-1972"
+      }
+    ]
+  },
+  {
+    "id": "ley-20744-1974",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "20744/1974",
+    "fecha_publicacion": "1974-09-27",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm",
+    "resumen_llano": "Esta ley nacional establece las reglas generales que rigen las relaciones de trabajo en Argentina: cómo se forma un contrato de trabajo, qué derechos y obligaciones tienen empleador y trabajador, cómo se paga el salario, las vacaciones, licencias, protección de la maternidad y del trabajo de menores, y la jornada laboral.",
+    "obligaciones": [
+      {
+        "que_hacer": "Registrar a cada trabajador contratado ante la Agencia de Recaudación y Control Aduanero (ARCA), conservando los libros laborales por 10 años.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La falta de registración genera una presunción a favor de las manifestaciones del trabajador y puede derivar en reclamos e indemnizaciones agravadas.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Pagar el salario del trabajador únicamente mediante acreditación en una cuenta bancaria a su nombre (cuenta sueldo), sin costos ni límites de extracción para el trabajador.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El pago realizado de otra forma es nulo.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Entregar recibo de sueldo firmado (en papel o digital) por cada pago de remuneración, con todos los datos exigidos (CUIT, CUIL, remuneración, deducciones, etc.).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Los jueces pueden restarle validez probatoria al recibo que no cumpla los requisitos, perjudicando al empleador en un litigio.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Pagar el sueldo anual complementario (aguinaldo) en dos cuotas, con vencimiento el 30 de junio y el 18 de diciembre de cada año.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El incumplimiento configura mora en el pago de remuneraciones, habilitando reclamos del trabajador.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Otorgar las vacaciones anuales pagas según la antigüedad del trabajador (14 a 35 días corridos), dentro del período entre el 1° de octubre y el 30 de abril, notificando la fecha de inicio con 30 días de anticipación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Si el empleador no notifica la fecha, el trabajador puede tomarse las vacaciones por sí mismo notificando fehacientemente; además debe indemnizar las vacaciones no gozadas al extinguirse el contrato.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Entregar al trabajador, dentro de los 45 días hábiles de finalizada la relación laboral, los certificados de trabajo con los datos de la relación, función desempeñada, capacitaciones y aportes a la seguridad social.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El incumplimiento habilita reclamos judiciales y sanciones conforme a los regímenes de infracciones laborales.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Conservar la vigencia de la licencia por maternidad de 45 días antes y 45 días después del parto, sin poder despedir a la trabajadora por causa de embarazo o parto.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El despido dentro del plazo protegido se presume por causa de embarazo y obliga a pagar una indemnización especial además de la común.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No emplear a personas menores de 16 años en ningún tipo de actividad, y respetar los límites horarios y prohibición de trabajo nocturno para menores de 16 a 18 años.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El accidente o enfermedad derivado de tareas prohibidas se considera responsabilidad del empleador sin admitir prueba en contrario.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-2637-s-f"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11317-1924"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11729-1934"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11932-1934"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-12713-1941"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-112995-1942"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-14538-1944"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-1740-1945"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-33302-1945"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-2446-1956"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-5568-1957"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-2406-1958"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-15984-1961"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-17258-1967"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18204-1969"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18345-1969"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18523-1970"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18596-1970"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18624-1970"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-18913-1971"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-20163-1973"
+      }
+    ]
+  },
+  {
+    "id": "ley-19550-1972",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "19550",
+    "fecha_publicacion": "1972-04-25",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25553/texact.htm",
+    "resumen_llano": "Establece las reglas generales para constituir, organizar, administrar, transformar, fusionar y liquidar sociedades comerciales en Argentina.",
+    "obligaciones": [
+      {
+        "que_hacer": "Presentar el contrato constitutivo de la sociedad ante el Registro Público dentro de los 20 días del acto constitutivo, y completar el trámite de inscripción en un plazo adicional de 30 días.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La inscripción tardía solo se admite si no hay oposición de parte interesada; la sociedad no se considera regularmente constituida hasta su inscripción.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Publicar por un día en el diario de publicaciones legales un aviso con los datos de constitución (socios, fecha, razón social, domicilio, objeto, plazo, capital, órganos, representación, cierre de ejercicio), si la sociedad es de responsabilidad limitada o por acciones.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se detalla sanción específica en el texto más allá de la falta de publicidad exigida.",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Hacer constar en toda la documentación que emane de la sociedad la dirección de su sede y los datos de inscripción en el Registro.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se especifica sanción directa en el texto para este punto.",
+        "confianza": 0.5
+      },
+      {
+        "que_hacer": "Integrar el aporte de créditos como suma de dinero dentro de los 30 días si el crédito aportado no puede cobrarse a su vencimiento.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La obligación del socio se convierte en la de aportar una suma de dinero equivalente.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Enajenar dentro de los 6 meses siguientes a la aprobación del balance las participaciones en otra sociedad que excedan el límite de reservas libres y mitad del capital y reservas legales, y comunicar la constatación a la sociedad participada dentro de los 10 días de aprobado el balance.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Pérdida de los derechos de voto y a las utilidades correspondientes a las participaciones en exceso hasta que se cumpla la enajenación.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Reducir el capital indebidamente integrado por participaciones recíprocas dentro de los 3 meses.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La sociedad queda disuelta de pleno derecho si no se reduce el capital en ese plazo; los fundadores, administradores, directores y síndicos responden ilimitada y solidariamente.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Efectuar una reserva legal no menor al 5% de las ganancias realizadas y líquidas de cada ejercicio, hasta alcanzar el 20% del capital social, en sociedades de responsabilidad limitada y por acciones.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No pueden distribuirse ganancias hasta reintegrar la reserva legal disminuida.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Confeccionar dentro de los 30 días de asumido el cargo un inventario y balance del patrimonio social, al iniciar la liquidación de la sociedad (prorrogable a 120 días por los socios).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Causal de remoción del liquidador, pérdida del derecho a remuneración y responsabilidad por daños y perjuicios.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Los administradores solo pueden atender asuntos urgentes y deben iniciar la liquidación de la sociedad una vez vencido el plazo de duración o declarada una causal de disolución.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Cualquier operación ajena a esos fines genera responsabilidad ilimitada y solidaria de los administradores frente a terceros y socios.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Publicar por 3 días un aviso de fusión en el diario de publicaciones legales de cada sociedad y en un diario de mayor circulación, permitiendo a los acreedores oponerse dentro de los 15 días desde la última publicación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El acuerdo definitivo de fusión no puede otorgarse hasta 20 días después del vencimiento del plazo de oposición si hay acreedores no garantizados.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Inscribir en el Registro Público el instrumento de transformación de la sociedad dentro de los 3 meses de celebrado el acuerdo de transformación.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El acuerdo de transformación caduca; si hubo publicación debe anunciarse la caducidad; los administradores son responsables solidaria e ilimitadamente por los perjuicios derivados del incumplimiento.",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": [
+      {
+        "tipo": "modifica",
+        "norma": "ley-2637-s-f"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-5125-1907"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-8875-1912"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11645-1932"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-11719-1933"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "decley-15349-1946"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "dec-5567-1956"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-17318-1967"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ley-19060-1971"
+      }
+    ]
+  },
+  {
+    "id": "ley-11683-1932",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "11683",
+    "fecha_publicacion": "1933-01-12",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/18771/texact.htm",
+    "resumen_llano": "Es la ley que regula cómo se pagan, declaran, verifican y fiscalizan los impuestos nacionales en Argentina, y qué sanciones (multas, clausura) aplica la AFIP a quien no cumple.",
+    "obligaciones": [
+      {
+        "que_hacer": "Presentar las declaraciones juradas de impuestos y pagar los tributos en los plazos y formas que fije la AFIP.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $220.000 (o $440.000 para sociedades y establecimientos del exterior) por no presentar la declaración jurada dentro del plazo general.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si ya presentaste alguna vez una declaración jurada u otra comunicación a la AFIP, avisar a la AFIP dentro de los 10 días de cualquier cambio de tu domicilio fiscal.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Quedás sujeto a las sanciones de la ley (multas).",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Llevar libros o registros de tus operaciones y conservar los comprobantes y duplicados de tus operaciones por 10 años (o más si la AFIP lo exige), a disposición de la AFIP en tu domicilio fiscal.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $150.000 a $2.500.000 por incumplir deberes formales de determinación, verificación y fiscalización.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Emitir factura o comprobante equivalente por cada operación comercial, industrial, agropecuaria o de servicios que realices, y conservar los comprobantes de tus compras.",
+        "alcanzados": {
+          "rubros": [
+            "comercio",
+            "gastronomia",
+            "industria",
+            "servicios",
+            "construccion",
+            "transporte"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura de 2 a 6 días del local, oficina o establecimiento si el valor de los bienes o servicios supera los $20.000.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Llevar registro de tus compras, ventas o prestaciones de servicios en forma completa, según lo exige la AFIP.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura de 2 a 6 días del establecimiento.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Inscribirte como contribuyente o responsable ante la AFIP si tu actividad te obliga a hacerlo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura de 2 a 6 días del establecimiento.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Registrar y declarar correctamente a los trabajadores que tengas en relación de dependencia.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de $200.000 a $7.500.000 por trabajadores no registrados, y clausura de 2 a 6 días si al menos el 50% del personal relevado en un establecimiento de 10 o más empleados está sin registrar.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "No violar ni quebrantar una clausura ya impuesta (no romper los sellos o precintos colocados).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Arresto de 10 a 30 días y nueva clausura por el doble de tiempo de la anterior.",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
+    "id": "ley-11544-1929",
+    "jurisdiccion": "nacional",
+    "tipo": "Ley",
+    "numero": "11544",
+    "fecha_publicacion": "1929-09-17",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/63368/texact.htm",
+    "resumen_llano": "Establece que la jornada laboral no puede superar las 8 horas diarias o 48 semanales, con límites especiales para trabajo nocturno o insalubre, y sanciona con multas a quienes no lo cumplan.",
+    "obligaciones": [
+      {
+        "que_hacer": "No hacer trabajar a los empleados más de 8 horas diarias o 48 semanales, salvo las excepciones previstas (dirección, vigilancia, trabajo por equipos, accidentes o fuerza mayor)",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de doscientos a diez mil pesos moneda nacional por cada persona ocupada en infracción",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "No hacer trabajar de noche (entre las 21 y las 6 horas) más de 7 horas, o si el lugar es insalubre, no más de 6 horas diarias o 36 semanales",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de doscientos a diez mil pesos moneda nacional por cada persona ocupada en infracción",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Pagar las horas suplementarias con un recargo de al menos 50% sobre el salario normal, y 100% si son en días feriados",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de doscientos a diez mil pesos moneda nacional por cada persona ocupada en infracción",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Comunicar de inmediato a la autoridad de aplicación cuando se prolongue la jornada por accidente, trabajo urgente en instalaciones o fuerza mayor",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de doscientos a diez mil pesos moneda nacional por cada persona ocupada en infracción",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Permitir el ingreso de los representantes de la autoridad de aplicación al establecimiento para verificar el cumplimiento de la jornada laboral",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa de doscientos a diez mil pesos moneda nacional por cada persona ocupada en infracción",
+        "confianza": 0.75
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Argentina",
+      "coords": []
+    },
+    "relaciones": []
+  }
+]

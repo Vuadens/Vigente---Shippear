@@ -18,6 +18,8 @@ ADR-0003 fijó `anthropic/claude-sonnet-4.5` como modelo vía Vercel AI Gateway.
 
 ## Consecuencias
 
-- `MODELO` es una constante única en `extraer.ts`. Si el gateway no expone el slug, volver a `anthropic/claude-sonnet-4.5` es una línea.
-- No verificamos el slug contra el gateway al escribir esto (hace falta `AI_GATEWAY_API_KEY`). Es el primer punto a chequear si el pipeline falla en la primera corrida.
+- **Verificado contra el gateway el 2026-08-01:** `anthropic/claude-sonnet-5` responde y devuelve el objeto bien formado (~3 s, 776 tokens en una prueba mínima).
+- **No hay fallback a 4.5.** `anthropic/claude-sonnet-4.5` devuelve *"Free tier users do not have access to this model"* con la misma key. O sea que la vuelta atrás que este ADR daba por sentada **no existe**: Sonnet 5 está disponible en free tier y 4.5 no. Si Sonnet 5 dejara de servir, hay que buscar otro modelo del gateway, no volver al anterior.
+- El gateway **no sirve ningún request hasta que la cuenta de Vercel tenga una tarjeta cargada**, ni siquiera contra los créditos gratis. El error es explícito (`AI Gateway requires a valid credit card on file`) y no tiene nada que ver con el código.
+- `MODELO` sigue siendo una constante única en `extraer.ts`.
 - `apps/web` (modo pull) no está cubierto por este ADR: es otro workspace y otro dueño.
