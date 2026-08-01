@@ -46,6 +46,20 @@ for (const n of validas) {
       console.warn(`⚠ ${n.id} ${r.tipo} → ${r.norma} (no está en el JSON; no entra al grafo de vigencia)`);
     }
   }
+  // modifica + deroga al mismo destino = casi seguro derogación PARCIAL que el
+  // extractor etiquetó también como total. A nivel norma, deroga borra al
+  // destino entero del matcher (caso real: 10561 vs 8336, el Reglamento de
+  // Edificación desaparecía). Se cura a mano dejando solo "modifica".
+  const destinos = new Map<string, Set<string>>();
+  for (const r of n.relaciones) {
+    (destinos.get(r.norma) ?? destinos.set(r.norma, new Set()).get(r.norma)!).add(r.tipo);
+  }
+  for (const [destino, tipos] of destinos) {
+    if (tipos.has("modifica") && tipos.has("deroga") && ids.has(destino)) {
+      errores++;
+      console.error(`✗ ${n.id} modifica Y deroga a ${destino}: derogación parcial etiquetada como total — dejar solo "modifica"`);
+    }
+  }
 }
 
 const totalObligaciones = validas.reduce((acc, n) => acc + n.obligaciones.length, 0);
