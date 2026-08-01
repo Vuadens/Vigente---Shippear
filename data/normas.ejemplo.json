@@ -6,7 +6,7 @@
     "numero": "10800/2025",
     "fecha_publicacion": "2025-11-10",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=260001",
-    "resumen_llano": "Nuevo permiso obligatorio para poner mesas y sillas en la vereda.",
+    "resumen_llano": "Nuevo permiso obligatorio para poner mesas y sillas en la vereda; reemplaza el régimen anterior de declaración jurada.",
     "obligaciones": [
       {
         "que_hacer": "Tramitar el permiso de uso de espacio público para mesas en la vereda",
@@ -20,7 +20,7 @@
       }
     ],
     "geo": { "tipo": "ciudad", "descripcion": "Rosario", "coords": [-32.9468, -60.6393] },
-    "relaciones": [{ "tipo": "modifica", "norma": "ord-9027-2012" }]
+    "relaciones": [{ "tipo": "deroga", "norma": "ord-9027-2012" }]
   },
   {
     "id": "ord-9027-2012",
