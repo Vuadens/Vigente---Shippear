@@ -2,6 +2,18 @@
 
 Documento de trabajo para el equipo. Todo lo que está acá es alcance del día. Lo que no está, no se construye.
 
+> **Decisiones de implementación:** las decisiones tomadas sobre este brief están en [`docs/adr/`](docs/adr/). Resumen: monorepo pnpm (ADR-0001), TypeScript en todo incluido el pipeline (ADR-0002), LLM vía Vercel AI Gateway + AI SDK con `generateObject` y fallback determinístico en la demo (ADR-0003), Neon Postgres solo para perfiles (ADR-0004). Glosario del dominio en [`CONTEXT.md`](CONTEXT.md); reglas para agentes en [`CLAUDE.md`](CLAUDE.md)/[`AGENTS.md`](AGENTS.md).
+
+## Setup (una vez)
+
+```bash
+pnpm install        # raíz del repo; instala los 5 workspaces
+cp .env.example .env  # completar AI_GATEWAY_API_KEY (Franco); DATABASE_URL solo Joako
+pnpm dev            # levanta apps/web en localhost:3000
+```
+
+Estructura: `apps/web` (front, deploy Vercel con root directory `apps/web`) · `packages/schema` (contrato Zod congelado) · `packages/matcher` · `packages/pipeline` · `packages/db` · `data/` (JSON commiteado).
+
 ---
 
 ## 1. Qué es
@@ -37,7 +49,7 @@ Esto elimina de un saque: latencia en la demo, llamadas a API que fallan en el e
 
 Si alguien pregunta en el pitch, la respuesta es que el procesamiento es batch nocturno y esto es el output — que además es como funcionaría en producción.
 
-**Corolario:** no se instala Postgres, no se configura Supabase, no hay auth. Todo es JSON en el repo.
+**Corolario:** no hay auth y las normas son JSON estático en el repo. Única excepción (ADR-0004): una tabla `perfiles` en Neon Postgres para el modo push, con fallback a JSON en memoria si falla.
 
 ---
 
@@ -107,15 +119,14 @@ La base de modificatorias/modificadas de InfoLEG da parte de las aristas del gra
 
 ## 5. Reparto
 
-**Data / pipeline.** Script que toma las 60 normas, las manda al LLM con el schema como structured output, y escribe `data/normas.json`. Que guarde resultados parciales: si falla en la norma 43 no se pierden las 42 anteriores. **Este es el camino crítico.**
+| Quién | Rol | Entregable | Dónde vive |
+|---|---|---|---|
+| **Franco Franzini** | Data / pipeline (**camino crítico**) | Script que toma las 60 normas, las manda al LLM con el schema como structured output y escribe `data/normas.json`. Guarda resultados parciales: si falla en la norma 43 no se pierden las 42 anteriores. | `packages/pipeline` |
+| **Valentino Dentesano** | Matching + vigencia | Función pura: perfil → lista de obligaciones ordenadas por vencimiento. Más el grafo mínimo de relaciones para marcar qué normas fueron modificadas. Trabaja contra `data/normas.ejemplo.json` mientras el pipeline no existe. | `packages/matcher` |
+| **Batista Renaudo + Juanma** | Frontend | Next.js en Vercel, deployado y andando **antes** de escribir lógica. Vistas: input de consulta, lista de obligaciones con cuenta regresiva, detalle de norma, mapa con pines. También la API route de intención (modo pull) y la integración final. | `apps/web` |
+| **Joako** | Pitch + BD + geo + video | Escribe el pitch desde el principio, no al final. Provisiona Neon Postgres desde Vercel Marketplace y expone `getPerfiles()`/`guardarPerfil()` con fallback a JSON (ADR-0004). En paralelo resuelve la geocodificación (solo direcciones puntuales, corte a la hora 4). Graba el video de la demo a la 6:30. | `docs/` + `packages/db` + `packages/pipeline` (geo) |
 
-**Matching + vigencia.** Función pura: perfil → lista de obligaciones ordenadas por vencimiento. Más el grafo mínimo de relaciones para marcar qué normas fueron modificadas. Trabaja contra el JSON de ejemplo mientras el pipeline no existe.
-
-**Frontend.** Next.js en Vercel, deployado y andando **antes** de escribir lógica. Tres vistas: input de consulta, mapa con pines, lista de obligaciones con cuenta regresiva.
-
-**Pitch + geo.** Escribe el pitch desde el principio, no al final. En paralelo resuelve la geocodificación, que es lo que puede comerse horas.
-
-Si son tres, el pitch lo absorbe el de matching. Si son dos, se sacrifica el mapa y queda la lista de obligaciones, que es el core igual.
+Si alguien se atrasa: el mapa es lo primero que se sacrifica; queda la lista de obligaciones, que es el core igual.
 
 ---
 
@@ -160,7 +171,7 @@ En un producto legal, inventar es peor que no responder. Un jurado que pregunte 
 
 ## 8. Qué NO se construye
 
-Login. Panel de administración. Carga de perfiles por formulario en modo push (va hardcodeado en un JSON). Responsive. Manejo de errores. Búsqueda. Filtros. Onboarding. Landing page. Base de datos.
+Login. Panel de administración. Formulario dedicado de carga de perfiles (el perfil entra por la consulta del modo pull + botón "guardar mi perfil"; los de la demo van seedeados). Responsive. Manejo de errores. Búsqueda. Filtros. Onboarding. Landing page. Tablas más allá de `perfiles` (ADR-0004): ni normas ni alertas se persisten en BD.
 
 Cada una es media hora que se le saca al único camino que ve el jurado.
 
@@ -177,7 +188,7 @@ Se escribe antes de codear. Lo que no está en estos pasos, no existe.
 5. Lista de obligaciones ordenadas por vencimiento, la más urgente arriba.
 6. Se clickea una: qué cambió, por qué te afecta, qué hacer, para cuándo, link a la fuente.
 7. Se muestra una norma modificada por otra posterior y cómo el sistema resuelve cuál está vigente.
-8. Se tipea en vivo otra dirección y otro rubro. La lista cambia.
+8. Se tipea en vivo otra dirección y otro rubro. La lista cambia. Se toca "guardar mi perfil" y el perfil queda suscripto en la vista push.
 
 El paso 1 se entiende en cinco segundos sin explicación previa: es la apertura.
 El paso 7 demuestra que no es un buscador.

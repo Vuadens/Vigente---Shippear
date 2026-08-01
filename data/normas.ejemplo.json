@@ -1,0 +1,80 @@
+[
+  {
+    "id": "ord-10800-2025",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10800/2025",
+    "fecha_publicacion": "2025-11-10",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=260001",
+    "resumen_llano": "Nuevo permiso obligatorio para poner mesas y sillas en la vereda.",
+    "obligaciones": [
+      {
+        "que_hacer": "Tramitar el permiso de uso de espacio público para mesas en la vereda",
+        "alcanzados": {
+          "rubros": ["gastronomia"],
+          "condiciones": ["local_a_la_calle"]
+        },
+        "plazo": { "tipo": "dias_desde_publicacion", "valor": "30" },
+        "si_no_cumplis": "Multa de hasta $500.000 y retiro de las mesas",
+        "confianza": 0.92
+      }
+    ],
+    "geo": { "tipo": "ciudad", "descripcion": "Rosario", "coords": [-32.9468, -60.6393] },
+    "relaciones": [{ "tipo": "modifica", "norma": "ord-9027-2012" }]
+  },
+  {
+    "id": "ord-9027-2012",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "9027/2012",
+    "fecha_publicacion": "2012-06-15",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=120001",
+    "resumen_llano": "Régimen anterior de mesas en la vereda: bastaba una declaración jurada anual.",
+    "obligaciones": [
+      {
+        "que_hacer": "Presentar declaración jurada anual por mesas en la vereda",
+        "alcanzados": {
+          "rubros": ["gastronomia"],
+          "condiciones": ["local_a_la_calle"]
+        },
+        "plazo": { "tipo": "permanente", "valor": "" },
+        "si_no_cumplis": "Multa",
+        "confianza": 0.9
+      }
+    ],
+    "geo": { "tipo": "ciudad", "descripcion": "Rosario", "coords": [-32.9468, -60.6393] },
+    "relaciones": []
+  },
+  {
+    "id": "ord-10500-2024",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "10500/2024",
+    "fecha_publicacion": "2024-03-01",
+    "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=250001",
+    "resumen_llano": "Para hacer una obra en una vivienda hay que presentar el permiso de edificación antes de empezar.",
+    "obligaciones": [
+      {
+        "que_hacer": "Presentar el permiso de edificación ante la Municipalidad antes de iniciar la obra",
+        "alcanzados": { "rubros": [], "condiciones": ["obra_en_vivienda"] },
+        "plazo": { "tipo": "permanente", "valor": "" },
+        "si_no_cumplis": "Paralización de la obra y multa proporcional a la superficie",
+        "confianza": 0.88
+      }
+    ],
+    "geo": { "tipo": "ciudad", "descripcion": "Rosario", "coords": [-32.9468, -60.6393] },
+    "relaciones": []
+  },
+  {
+    "id": "res-15-2022",
+    "jurisdiccion": "nacional",
+    "tipo": "Resolución",
+    "numero": "15/2022",
+    "fecha_publicacion": "2022-11-11",
+    "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/370000-374999/374675/norma.htm",
+    "resumen_llano": "Habilitación del cupo de captura de la especie gatuzo para 2022.",
+    "obligaciones": [],
+    "geo": { "tipo": "zona", "descripcion": "Frente marítimo", "coords": [] },
+    "relaciones": [{ "tipo": "modifica", "norma": "res-6-2022" }]
+  }
+]

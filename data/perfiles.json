@@ -1,0 +1,22 @@
+[
+  {
+    "nombre": "Bar La Maquinita",
+    "perfil": {
+      "tipo_sujeto": "comercio",
+      "rubro": "gastronomia",
+      "ubicacion": { "direccion": "Av. Pellegrini 1234, Rosario", "coords": [-32.9521, -60.6483] },
+      "condiciones": ["local_a_la_calle", "empleados", "manipula_alimentos"],
+      "intencion": ""
+    }
+  },
+  {
+    "nombre": "Vecino zona centro",
+    "perfil": {
+      "tipo_sujeto": "persona_fisica",
+      "rubro": "",
+      "ubicacion": { "direccion": "Bv. Oroño 800, Rosario", "coords": [-32.9403, -60.6544] },
+      "condiciones": ["obra_en_vivienda"],
+      "intencion": "construir en mi casa"
+    }
+  }
+]
