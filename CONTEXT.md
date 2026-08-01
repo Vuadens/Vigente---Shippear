@@ -24,11 +24,11 @@ Consulta por intención: una pregunta en lenguaje natural se convierte en **Perf
 _Avoid_: chatbot, búsqueda
 
 **Modo push**:
-Vista de **Alertas** para un **Perfil** persistido en la BD. No implica entrega (mail/notificación); eso es narrativa de pitch, no alcance.
-_Avoid_: notificaciones, mailing
+Vista de **Alertas** para un **Perfil** persistido en la BD. La entrega existe como canal delgado (Telegram, ADR-0009), pero la **Alerta** se sigue computando al leer y no se persiste.
+_Avoid_: notificaciones, mailing, suscripción
 
 **Alerta**:
-Una **Obligación** nueva o modificada recientemente que matchea un **Perfil**. Se computa al leer; nunca se persiste.
+Una **Obligación** nueva o modificada recientemente que matchea un **Perfil**. Se computa al leer; nunca se persiste. Puede entregarse por **Telegram** a un chat fijo de demo (ADR-0009); la entrega es best-effort y no cambia que la Alerta no se persista.
 
 **Matcher**:
 Función pura `(perfil, normas) → obligaciones ordenadas por vencimiento`. Sin LLM, sin I/O.
@@ -61,9 +61,9 @@ Los schemas Zod de `packages/schema` (norma, obligación, perfil). Congelado; es
 > **Dev:** "¿Cuando el jurado tipea una pregunta creamos un usuario?"
 > **Domain expert:** "No existe 'usuario'. La pregunta produce un **Perfil** efímero que entra al **Matcher**; solo se persiste si tocan 'guardar mi perfil', y ahí aparece en el **modo push**."
 > **Dev:** "¿Y le mandamos el mail de alerta?"
-> **Domain expert:** "No hay mails. Una **Alerta** es lo que se renderiza en la vista push; la entrega real es pitch, no demo."
+> **Domain expert:** "Mail no. Una **Alerta** se renderiza en la vista push y además se entrega por **Telegram** a un chat fijo de demo (ADR-0009). Sigue sin persistirse: se computa al leer y el envío es best-effort."
 
 ## Flagged ambiguities
 
-- "push" se usaba como entrega de notificaciones — resuelto: es una **vista** por perfil persistido; la entrega no se construye (ADR-0004).
+- "push" se usaba como entrega de notificaciones — resuelto: es una **vista** por perfil persistido. La entrega sí existe, pero como canal delgado de demo por Telegram (ADR-0009), sin persistir la Alerta.
 - "BD" se usaba como "persistencia general" — resuelto: solo tabla `perfiles`; normas y alertas nunca tocan la BD.
