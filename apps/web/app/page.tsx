@@ -1,13 +1,12 @@
 import { match } from "@vigente/matcher";
 import { getPerfiles } from "@vigente/db";
 import type { Norma } from "@vigente/schema";
-import normasEjemplo from "../../../data/normas.ejemplo.json";
+import normasReales from "../../../data/normas.json";
 
 // Placeholder de arranque (dueños: Batista + Juanma). Ya integra matcher + db
-// contra el seed — reemplazar por las vistas reales del recorrido de la demo.
-// Cuando exista data/normas.json, cambiar el import.
+// contra el corpus real — reemplazar por las vistas reales del recorrido de la demo.
 
-const normas = normasEjemplo as Norma[];
+const normas = normasReales as Norma[];
 
 export default async function Home() {
   const perfiles = await getPerfiles();
