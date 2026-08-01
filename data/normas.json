@@ -3168,80 +3168,21 @@
     ]
   },
   {
-    "id": "ley-25065-1998",
+    "id": "ley-25065-1999",
     "jurisdiccion": "nacional",
     "tipo": "Ley",
     "numero": "25065",
     "fecha_publicacion": "1999-01-14",
     "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/55000-59999/55556/texact.htm",
-    "resumen_llano": "Regula los derechos y obligaciones de emisores, titulares y comercios en el sistema de tarjetas de crédito, compra y débito.",
+    "resumen_llano": "Esta ley regula el funcionamiento de las tarjetas de crédito, compra y débito: qué deben contener los contratos, cómo se calculan intereses, cómo se envían y pueden impugnarse los resúmenes, y qué obligaciones tienen los emisores y los comercios adheridos.",
     "obligaciones": [
       {
-        "que_hacer": "Si emitís tarjetas de crédito, exhibir al público en todos tus locales la tasa de interés por financiación que aplicás.",
-        "alcanzados": {
-          "rubros": [
-            "servicios"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "La norma no especifica una sanción puntual para este incumplimiento; puede quedar sujeta al régimen general de sanciones de la autoridad de aplicación (apercibimiento, multa o cancelación de la autorización).",
-        "confianza": 0.6
-      },
-      {
-        "que_hacer": "Si emitís tarjetas de crédito, enviar mensualmente al titular un resumen detallado de las operaciones realizadas, recibido con al menos 5 días de anticipación al vencimiento del pago.",
-        "alcanzados": {
-          "rubros": [
-            "servicios"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "El titular puede cuestionar la liquidación y, si el emisor omite los requisitos del resumen, pierde la posibilidad de preparar la vía ejecutiva para reclamar el cobro.",
-        "confianza": 0.8
-      },
-      {
-        "que_hacer": "Si emitís tarjetas de crédito, notificar al titular en los tres últimos resúmenes antes del vencimiento del contrato la fecha en que opera la renovación, si pactaron prórroga automática.",
-        "alcanzados": {
-          "rubros": [
-            "servicios"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se especifica una sanción puntual en el texto para este incumplimiento.",
-        "confianza": 0.6
-      },
-      {
-        "que_hacer": "Si emitís tarjetas de crédito, informar de inmediato a los comercios adheridos cuando se cancele una tarjeta antes de su vencimiento, sea cual sea la causa.",
-        "alcanzados": {
-          "rubros": [
-            "comercio"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "La falta de información no perjudica al proveedor, quien queda protegido frente a las consecuencias de la cancelación no informada.",
-        "confianza": 0.75
-      },
-      {
-        "que_hacer": "Si sos un comercio adherido, aceptar las tarjetas de crédito que cumplan con esta ley, verificar la identidad del portador, no cobrar más caro por pagar con tarjeta que al contado, y pedir autorización en cada operación.",
+        "que_hacer": "Si sos comercio adherido al sistema de tarjetas, tenés que aceptar las tarjetas de crédito que cumplan la ley, verificar siempre la identidad de quien presenta la tarjeta, no cobrar más caro por pagar con tarjeta que al contado, y pedir autorización en todas las operaciones.",
         "alcanzados": {
           "rubros": [
             "comercio",
-            "gastronomia"
+            "gastronomia",
+            "servicios"
           ],
           "condiciones": []
         },
@@ -3249,11 +3190,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "El emisor puede resolver su vinculación contractual con el proveedor por incumplimiento de estas obligaciones.",
-        "confianza": 0.75
+        "si_no_cumplis": "El emisor puede resolver el contrato con el proveedor por incumplimiento de estas obligaciones.",
+        "confianza": 0.8
       },
       {
-        "que_hacer": "Si emitís tarjetas de crédito, contar con un sistema telefónico de recepción de denuncias por pérdida o robo disponible las 24 horas, registrando cada denuncia con hora y número correlativo que se le informa al denunciante.",
+        "que_hacer": "Si sos la entidad emisora de tarjetas de crédito, tenés que informar y exhibir al público en todos tus locales la tasa de financiación que aplicás.",
         "alcanzados": {
           "rubros": [
             "servicios"
@@ -3264,7 +3205,59 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se especifica sanción puntual en el texto para este incumplimiento.",
+        "si_no_cumplis": "La autoridad de aplicación puede sancionarte con apercibimiento, multas de hasta 20 veces el importe de la operación o cancelación de la autorización para operar.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si sos la entidad emisora, tenés que enviar mensualmente al titular un resumen detallado de las operaciones, con todos los datos exigidos (identificación, fechas, montos, tasas, límites, etc.), y asegurarte de que llegue al titular con al menos 5 días de anticipación al vencimiento del pago.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Se pierde la posibilidad de preparar la vía ejecutiva contra el titular y podés ser sancionado por la autoridad de aplicación.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si sos la entidad emisora, tenés que contar con un sistema telefónico de denuncias disponible las 24 horas para pérdida o sustracción de tarjetas, registrando cada denuncia con hora y número correlativo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La autoridad de aplicación puede sancionarte con apercibimiento, multas o cancelación de la autorización para operar.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si sos la entidad emisora y el titular impugna su resumen, tenés que acusar recibo dentro de los 7 días y corregir el error o explicar la liquidación dentro de los 15 días siguientes (60 días si son operaciones en el exterior).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Queda expedita la acción judicial para el titular y podés ser sancionado por la autoridad de aplicación.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si sos la entidad emisora, tenés que informar inmediatamente a los proveedores sobre la cancelación de tarjetas de crédito antes de su vencimiento, sea cual sea la causa.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La falta de información no perjudica al proveedor, quien queda protegido frente a operaciones posteriores.",
         "confianza": 0.7
       }
     ],
@@ -4684,16 +4677,16 @@
     ]
   },
   {
-    "id": "ley-11683-1932",
+    "id": "ley-11683-1933",
     "jurisdiccion": "nacional",
     "tipo": "Ley",
     "numero": "11683",
     "fecha_publicacion": "1933-01-12",
     "url_fuente": "http://servicios.infoleg.gob.ar/infolegInternet/anexos/15000-19999/18771/texact.htm",
-    "resumen_llano": "Es la ley que regula cómo se pagan, declaran, verifican y fiscalizan los impuestos nacionales en Argentina, y qué sanciones (multas, clausura) aplica la AFIP a quien no cumple.",
+    "resumen_llano": "Establece las reglas generales de procedimiento tributario en Argentina: cómo se determinan y pagan los impuestos, qué deberes formales tienen los contribuyentes (declarar, registrar, facturar, conservar comprobantes) y qué sanciones (multas, clausura) corresponden si no se cumplen.",
     "obligaciones": [
       {
-        "que_hacer": "Presentar las declaraciones juradas de impuestos y pagar los tributos en los plazos y formas que fije la AFIP.",
+        "que_hacer": "Presentar las declaraciones juradas de impuestos dentro de los plazos que fije la AFIP.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -4702,11 +4695,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Multa de $220.000 (o $440.000 para sociedades y establecimientos del exterior) por no presentar la declaración jurada dentro del plazo general.",
+        "si_no_cumplis": "Multa de $220.000, elevada a $440.000 para sociedades o establecimientos de empresas del exterior.",
         "confianza": 0.9
       },
       {
-        "que_hacer": "Si ya presentaste alguna vez una declaración jurada u otra comunicación a la AFIP, avisar a la AFIP dentro de los 10 días de cualquier cambio de tu domicilio fiscal.",
+        "que_hacer": "Avisar a la AFIP cualquier cambio de domicilio dentro de los 10 días de haberse mudado, si ya presentaste antes una declaración jurada u otra comunicación.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -4715,58 +4708,89 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Quedás sujeto a las sanciones de la ley (multas).",
-        "confianza": 0.85
+        "si_no_cumplis": "Quedás sujeto a las sanciones de la ley (multas por infracciones formales).",
+        "confianza": 0.9
       },
       {
-        "que_hacer": "Llevar libros o registros de tus operaciones y conservar los comprobantes y duplicados de tus operaciones por 10 años (o más si la AFIP lo exige), a disposición de la AFIP en tu domicilio fiscal.",
+        "que_hacer": "Presentar las declaraciones juradas informativas exigidas por los regímenes de información propia o de terceros dentro de los plazos fijados por AFIP.",
         "alcanzados": {
           "rubros": [],
-          "condiciones": [
-            "empleados"
-          ]
+          "condiciones": []
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Multa de $150.000 a $2.500.000 por incumplir deberes formales de determinación, verificación y fiscalización.",
-        "confianza": 0.75
+        "si_no_cumplis": "Multa de hasta $5.000.000, elevada a $10.000.000 para sociedades o establecimientos de empresas del exterior.",
+        "confianza": 0.85
       },
       {
-        "que_hacer": "Emitir factura o comprobante equivalente por cada operación comercial, industrial, agropecuaria o de servicios que realices, y conservar los comprobantes de tus compras.",
+        "que_hacer": "Llevar los libros o registros que exija la AFIP y conservar los comprobantes y documentos de las operaciones por 10 años (o más si la AFIP lo requiere).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa por incumplimiento de deberes formales (entre $150.000 y hasta $35.000.000 según el caso).",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si desarrollás una actividad retribuida (no en relación de dependencia), llevar registraciones respaldadas por comprobantes y emitir facturas o comprobantes por tus ventas o prestaciones.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multa por incumplimiento de deberes formales y posible clausura del local de 2 a 6 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Emitir facturas o comprobantes equivalentes por cada operación comercial, industrial, agropecuaria o de prestación de servicios que realices.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura del establecimiento de 2 a 6 días si el valor de los bienes o servicios supera $20.000, más posible multa.",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Llevar registraciones completas de tus compras, ventas o prestaciones de servicios de industrialización, cumpliendo las formas que exige la AFIP.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura del establecimiento de 2 a 6 días, más posible multa.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si transportás o encargás mercaderías comercialmente, llevar el respaldo documental que exige la AFIP.",
         "alcanzados": {
           "rubros": [
-            "comercio",
-            "gastronomia",
-            "industria",
-            "servicios",
-            "construccion",
-            "transporte"
+            "transporte",
+            "comercio"
           ],
-          "condiciones": [
-            "local_a_la_calle"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "Clausura de 2 a 6 días del local, oficina o establecimiento si el valor de los bienes o servicios supera los $20.000.",
-        "confianza": 0.85
-      },
-      {
-        "que_hacer": "Llevar registro de tus compras, ventas o prestaciones de servicios en forma completa, según lo exige la AFIP.",
-        "alcanzados": {
-          "rubros": [],
           "condiciones": []
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Clausura de 2 a 6 días del establecimiento.",
-        "confianza": 0.8
+        "si_no_cumplis": "Clausura del establecimiento o puesto de venta de 2 a 6 días.",
+        "confianza": 0.85
       },
       {
         "que_hacer": "Inscribirte como contribuyente o responsable ante la AFIP si tu actividad te obliga a hacerlo.",
@@ -4778,11 +4802,24 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Clausura de 2 a 6 días del establecimiento.",
-        "confianza": 0.8
+        "si_no_cumplis": "Clausura del establecimiento de 2 a 6 días.",
+        "confianza": 0.85
       },
       {
-        "que_hacer": "Registrar y declarar correctamente a los trabajadores que tengas en relación de dependencia.",
+        "que_hacer": "Conservar las facturas o comprobantes que acrediten la compra o tenencia de los bienes y servicios que usás en tu actividad.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Clausura del establecimiento de 2 a 6 días.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Registrar y declarar a los trabajadores que emplees en relación de dependencia, con las formalidades que exigen las leyes laborales.",
         "alcanzados": {
           "rubros": [],
           "condiciones": [
@@ -4793,11 +4830,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Multa de $200.000 a $7.500.000 por trabajadores no registrados, y clausura de 2 a 6 días si al menos el 50% del personal relevado en un establecimiento de 10 o más empleados está sin registrar.",
-        "confianza": 0.8
+        "si_no_cumplis": "Multa de $200.000 a $7.500.000 por cada trabajador no registrado.",
+        "confianza": 0.9
       },
       {
-        "que_hacer": "No violar ni quebrantar una clausura ya impuesta (no romper los sellos o precintos colocados).",
+        "que_hacer": "Si sos agente de retención o percepción, retener o percibir el impuesto correspondiente e ingresarlo a la AFIP en el plazo fijado.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -4806,13 +4843,13 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Arresto de 10 a 30 días y nueva clausura por el doble de tiempo de la anterior.",
+        "si_no_cumplis": "Sos responsable solidario por el tributo no retenido o percibido, más multas de hasta el 200% o 300% del impuesto omitido si hay defraudación.",
         "confianza": 0.85
       }
     ],
     "geo": {
       "tipo": "ciudad",
-      "descripcion": "",
+      "descripcion": "Argentina",
       "coords": []
     },
     "relaciones": []
