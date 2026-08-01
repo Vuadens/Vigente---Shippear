@@ -1,12 +1,11 @@
 import { match } from "@vigente/matcher";
 import { PerfilSchema, type Norma } from "@vigente/schema";
-import normasEjemplo from "../../../../../data/normas.ejemplo.json";
+import normasReales from "../../../../../data/normas.json";
 
 // Capa de front (dueños: Batista + Juanma). NO implementa dominio: solo consume
 // match() + vigencia() del matcher y enriquece el resultado para las vistas.
-// Cuando exista data/normas.json, cambiar el import de arriba.
 
-const normas = normasEjemplo as Norma[];
+const normas = normasReales as Norma[];
 
 // Índice id -> etiqueta legible para explicar relaciones en el detalle.
 const etiqueta = new Map(normas.map((n) => [n.id, `${n.tipo} ${n.numero}`]));

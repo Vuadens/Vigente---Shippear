@@ -5,3 +5,5 @@ allowBuilds:
   canvas: false
   esbuild: true
   sharp: true
+minimumReleaseAgeExclude:
+  - "@types/leaflet"

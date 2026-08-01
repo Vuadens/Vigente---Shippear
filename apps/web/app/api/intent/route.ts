@@ -21,7 +21,9 @@ export async function POST(req: Request) {
   if (precomputado) return Response.json({ perfil: precomputado, fuente: "guion" });
 
   const { object } = await generateObject({
-    model: "anthropic/claude-sonnet-4.5", // vía Vercel AI Gateway
+    // Sonnet 5, no 4.5: la key del gateway es free tier y 4.5 devuelve
+    // "Free tier users do not have access to this model" (ADR-0005).
+    model: "anthropic/claude-sonnet-5", // vía Vercel AI Gateway
     schema: PerfilSchema,
     prompt: `Extraé el perfil del sujeto a partir de esta consulta sobre normativa.
 Ciudad por defecto: Rosario. No inventes datos que no estén en la consulta.
