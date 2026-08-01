@@ -31,7 +31,14 @@ Una **Obligación** nueva o modificada recientemente que matchea un **Perfil**. 
 Función pura `(perfil, normas) → obligaciones ordenadas por vencimiento`. Sin LLM, sin I/O.
 
 **Vigencia**:
-El estado efectivo de una **Norma** hoy, resuelto a partir de sus relaciones (modifica / deroga / prorroga) con normas posteriores.
+El estado efectivo de una **Norma** hoy, resuelto a partir de sus relaciones (modifica / deroga / prorroga) con normas posteriores. Se resuelve únicamente dentro del **Corpus**: una modificatoria que no está en el corpus es invisible.
+
+**Corpus**:
+El conjunto curado de **Normas** que el sistema conoce (`data/normas.json`). No es una muestra ni un volcado: se elige norma por norma para que la **Vigencia** sea correcta dentro de él (ADR-0006).
+_Avoid_: base, dataset, índice
+
+**Confianza**:
+Qué tan fielmente una **Obligación** refleja el texto de su **Norma** — mide la extracción, no la certeza jurídica. Un valor bajo significa "el texto era confuso o estaba mal escaneado", nunca "esta obligación quizás no aplique".
 
 **Contrato**:
 Los schemas Zod de `packages/schema` (norma, obligación, perfil). Congelado; es la frontera entre los cuatro workspaces.
@@ -40,6 +47,7 @@ Los schemas Zod de `packages/schema` (norma, obligación, perfil). Congelado; es
 
 - Una **Norma** contiene 0..n **Obligaciones**
 - Una **Norma** se relaciona con otras vía modifica | deroga | prorroga → de ahí sale la **Vigencia**
+- Las relaciones son **salientes** ("esta norma modifica a aquella"). Quién te modificó a vos se deriva invirtiéndolas dentro del **Corpus**; por eso el corpus se cura (ADR-0006)
 - El **Matcher** cruza un **Perfil** contra las **Obligaciones** de las normas vigentes
 - Una **Alerta** = **Obligación** matcheada + novedad reciente
 - La BD (Neon) persiste solo **Perfiles**; las **Normas** viven en `data/normas.json`

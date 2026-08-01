@@ -1,80 +1,246 @@
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
-import { parse } from "csv-parse/sync";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { generateObject } from "ai";
-import { NormaSchema, type Norma } from "@vigente/schema";
-import { ROSARIO } from "./fuentes.js";
+import { NormaSchema, type Norma, type Relacion } from "@vigente/schema";
+import { ROSARIO_SELECCION, NACIONAL_SELECCION } from "./seleccion.js";
+import * as rosario from "./rosario.js";
+import * as infoleg from "./infoleg.js";
+import type { Extraccion } from "./texto.js";
 
-// Camino crítico (dueño: Franco). Toma las normas seleccionadas, las manda al
-// LLM con el schema como structured output y escribe data/normas.json.
+// Camino crítico (dueño: Franco). Toma el corpus curado de seleccion.ts, lo
+// manda al LLM con el schema como structured output y escribe data/normas.json.
 // Guarda resultados parciales: si falla en la 43 no se pierden las 42.
 
 const SALIDA = new URL("../../../data/normas.json", import.meta.url).pathname;
-const MODELO = "anthropic/claude-sonnet-4.5"; // vía Vercel AI Gateway (ADR-0003)
 
-// TODO(Franco): reemplazar por las ~40 municipales + ~20 nacionales elegidas a mano.
-// Para Rosario alcanza el par (NUMERO, ANIO) — el script busca la fila en el CSV.
-const SELECCION_ROSARIO: Array<{ numero: number; anio: number }> = [
-  { numero: 10919, anio: 2026 },
-];
+// Vía Vercel AI Gateway (ADR-0003, actualizado por ADR-0005). Constante única:
+// si el gateway no expone el slug, volver a "anthropic/claude-sonnet-4.5" es
+// cambiar esta línea.
+const MODELO = "anthropic/claude-sonnet-5";
+
+// Cuántas normas se procesan en paralelo. El cuello es la latencia del modelo,
+// no el rate limit; 4 mantiene el log legible y el orden de escritura estable.
+const CONCURRENCIA = 4;
+
+const INSTRUCCIONES = `Sos un extractor de normativa argentina. Convertís el texto de una norma al schema, sin interpretarlo.
+
+REGLAS (en orden de prioridad):
+1. No inventes. Todo lo que escribas tiene que estar en el texto que te doy. Si un dato no está, dejá el campo vacío ("") o la lista vacía ([]).
+2. "obligaciones" son cosas concretas que alguien DEBE hacer, con consecuencia por no hacerlas. Si la norma solo crea un programa, designa a un funcionario, declara un día conmemorativo o expresa una intención, devolvé obligaciones: [].
+3. "que_hacer" se escribe para alguien sin formación legal: una acción concreta en una frase. Nada de "dese cumplimiento a lo normado en el art. 3".
+4. "confianza" mide QUÉ TAN FIEL es tu extracción al texto que leíste — no si la obligación te parece jurídicamente sólida. Texto claro y explícito: alto. Texto borroso, mal escaneado o ambiguo sobre a quién obliga: bajo.
+5. "alcanzados.rubros" vacío significa "todos". Usá etiquetas simples y en minúscula (gastronomia, construccion, comercio).
+6. "geo.coords" va SIEMPRE vacío: []. No inventes coordenadas bajo ninguna circunstancia.`;
+
+type Trabajo = {
+  id: string;
+  etiqueta: string;
+  construir: () => Promise<Norma | null>;
+};
 
 function cargarParciales(): Norma[] {
-  return existsSync(SALIDA) ? JSON.parse(readFileSync(SALIDA, "utf8")) : [];
+  if (!existsSync(SALIDA)) return [];
+  try {
+    return JSON.parse(readFileSync(SALIDA, "utf8")) as Norma[];
+  } catch {
+    console.warn("⚠ data/normas.json ilegible; se arranca de cero");
+    return [];
+  }
 }
 
-async function extraerNorma(fila: Record<string, string>): Promise<Norma> {
-  const idNormativa = fila.TEXTO_VIGENTE_NORMA.match(/idNormativa=(\d+)/)?.[1];
-  const pdf = idNormativa
-    ? await fetch(ROSARIO.pdfNorma(idNormativa)).then((r) => r.arrayBuffer())
-    : null;
+function guardar(normas: Norma[]) {
+  const dir = SALIDA.slice(0, SALIDA.lastIndexOf("/"));
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  const ordenadas = [...normas].sort((a, b) =>
+    b.fecha_publicacion.localeCompare(a.fecha_publicacion),
+  );
+  writeFileSync(SALIDA, `${JSON.stringify(ordenadas, null, 2)}\n`);
+}
+
+/** Llama al LLM. `relacionesFijas` pisa lo que devuelva el modelo (ADR-0006). */
+async function extraer(
+  contexto: string,
+  fuente: Extraccion,
+  relacionesFijas?: Relacion[],
+): Promise<Norma> {
+  const contenido =
+    fuente.modo === "texto"
+      ? [{ type: "text" as const, text: `${contexto}\n\n--- TEXTO DE LA NORMA ---\n${fuente.texto}` }]
+      : [
+          { type: "text" as const, text: `${contexto}\n\nEl texto va adjunto como PDF.` },
+          { type: "file" as const, data: fuente.pdf, mediaType: "application/pdf" as const },
+        ];
 
   const { object } = await generateObject({
     model: MODELO,
     schema: NormaSchema,
-    messages: [
-      {
-        role: "user",
-        content: [
-          {
-            type: "text",
-            text: `Extraé la norma al schema. Metadata del CSV oficial: ${JSON.stringify(fila)}.
-Jurisdicción: municipal (Rosario). El id es "ord-${fila.NUMERO}-${fila.ANIO}".
-url_fuente: ${fila.TEXTO_VIGENTE_NORMA}
-Si el texto no impone obligaciones a nadie, devolvé obligaciones: [].
-No inventes: si un dato no está en el texto, dejá el campo vacío y bajá la confianza.`,
-          },
-          ...(pdf
-            ? [{ type: "file" as const, data: pdf, mediaType: "application/pdf" as const }]
-            : []),
-        ],
-      },
-    ],
+    system: INSTRUCCIONES,
+    messages: [{ role: "user", content: contenido }],
   });
-  return object;
+
+  // Dos cosas no son negociables por prompt, así que se fuerzan acá:
+  //  - coords: una coordenada inventada es alucinación pura y termina como un
+  //    pin en el mapa. La única fuente legítima es Georef, en geocodificar.ts.
+  //  - relaciones nacionales: vienen del CSV oficial de InfoLEG.
+  return {
+    ...object,
+    geo: { ...object.geo, coords: [] },
+    relaciones: relacionesFijas ?? object.relaciones,
+  };
+}
+
+async function trabajosRosario(): Promise<Trabajo[]> {
+  const filas = await rosario.cargarOrdenanzas();
+  const vistos = new Set<string>();
+
+  return ROSARIO_SELECCION.flatMap(({ numero, anio, porque }) => {
+    const id = rosario.idRosario(numero, anio);
+    if (vistos.has(id)) return [];
+    vistos.add(id);
+
+    return [{
+      id,
+      etiqueta: `${id} · ${porque}`,
+      async construir() {
+        const fila = rosario.buscarFila(filas, numero, anio);
+        if (!fila) throw new Error("no está en el CSV de Rosario");
+        const fuente = await rosario.textoDeNorma(fila);
+        if (!fuente) throw new Error("Rosario no publicó el texto (PDF vacío)");
+        if (fuente.modo === "pdf") console.log(`    (sin capa OCR → se manda el PDF)`);
+        else if (fuente.truncado) console.log(`    (texto truncado al tope)`);
+
+        const contexto = [
+          `Jurisdicción: municipal (Rosario, Santa Fe).`,
+          `id exacto a usar: "${id}"`,
+          `tipo: "${fila.TIPO}" · numero: "${numero}/${anio}"`,
+          `fecha_publicacion: "${rosario.fechaIso(fila.FEC_PUBLICACION_BOLETIN)}"`,
+          `url_fuente: "${fila.TEXTO_VIGENTE_NORMA}"`,
+          `Asunto según el índice oficial: "${fila.ASUNTO}"`,
+          ``,
+          `En "relaciones" incluí SOLO las normas que el texto menciona LITERALMENTE`,
+          `como modificadas, derogadas o prorrogadas por ésta. Formato del id:`,
+          `"ord-<numero>-<año>" (ej: la "Ordenanza N° 8.952" es "ord-8952-2012" si`,
+          `el texto da el año; si no lo da, no la incluyas). Si no menciona ninguna,`,
+          `devolvé [].`,
+        ].join("\n");
+
+        return extraer(contexto, fuente);
+      },
+    }];
+  });
+}
+
+async function trabajosNacionales(): Promise<Trabajo[]> {
+  const ids = new Set(NACIONAL_SELECCION.map((n) => n.idNorma));
+  console.log(`  leyendo la base de InfoLEG (${ids.size} normas)...`);
+  const filas = await infoleg.buscarNormas(ids);
+  const relaciones = await infoleg.relacionesSalientes(ids);
+
+  return NACIONAL_SELECCION.map(({ idNorma, porque }) => {
+    const fila = filas.get(idNorma);
+    const id = fila
+      ? infoleg.idNacional(fila.tipo_norma, fila.numero_norma, fila.fecha_sancion)
+      : `infoleg-${idNorma}`;
+
+    return {
+      id,
+      etiqueta: `${id} · ${porque}`,
+      async construir() {
+        if (!fila) throw new Error(`id_norma ${idNorma} no está en la base de InfoLEG`);
+        const fuente = await infoleg.textoDeNorma(fila);
+        if (!fuente) throw new Error("InfoLEG no devolvió texto utilizable");
+        if (fuente.truncado) console.log(`    (texto truncado al tope)`);
+        if (!fuente.consolidado) console.log(`    ⚠ sin texto consolidado`);
+
+        const contexto = [
+          `Jurisdicción: nacional (Argentina).`,
+          `id exacto a usar: "${id}"`,
+          `tipo: "${fila.tipo_norma}" · numero: "${fila.numero_norma}"`,
+          `fecha_publicacion: "${(fila.fecha_boletin || fila.fecha_sancion).slice(0, 10)}"`,
+          `url_fuente: "${fila.texto_actualizado || fila.texto_original}"`,
+          `Título oficial: "${fila.titulo_resumido}"`,
+          fuente.consolidado
+            ? `Este es el TEXTO CONSOLIDADO vigente: ya incorpora todas las modificaciones posteriores.`
+            : `Este es el texto original; puede haber sido modificado después.`,
+          ``,
+          `NO completes "relaciones": devolvé []. Las relaciones de las normas`,
+          `nacionales las aporta la base oficial de InfoLEG, no vos.`,
+        ].join("\n");
+
+        return extraer(contexto, { modo: "texto", texto: fuente.texto, truncado: fuente.truncado }, relaciones.get(idNorma) ?? []);
+      },
+    };
+  });
+}
+
+/** Corre los trabajos de a tandas, guardando después de cada norma. */
+async function correr(trabajos: Trabajo[], normas: Norma[], hechas: Set<string>) {
+  const pendientes = trabajos.filter((t) => !hechas.has(t.id));
+  console.log(`  ${pendientes.length} pendientes (${trabajos.length - pendientes.length} ya estaban)\n`);
+
+  for (let i = 0; i < pendientes.length; i += CONCURRENCIA) {
+    const tanda = pendientes.slice(i, i + CONCURRENCIA);
+    const resultados = await Promise.allSettled(
+      tanda.map(async (t) => {
+        console.log(`  → ${t.etiqueta}`);
+        return { t, norma: await t.construir() };
+      }),
+    );
+
+    for (const r of resultados) {
+      if (r.status === "rejected") {
+        console.error(`  ✗ ${r.reason instanceof Error ? r.reason.message : r.reason}`);
+        continue;
+      }
+      const { t, norma } = r.value;
+      if (!norma) continue;
+      normas.push(norma);
+      hechas.add(t.id);
+      const obs = norma.obligaciones.length;
+      console.log(`  ✓ ${t.id} — ${obs} obligacion${obs === 1 ? "" : "es"} (${normas.length} en total)`);
+    }
+    guardar(normas); // parcial tras cada tanda
+  }
 }
 
 async function main() {
-  const csv = await fetch(ROSARIO.ordenanzasCsv).then((r) => r.text());
-  const filas: Record<string, string>[] = parse(csv, { columns: true });
+  if (!process.env.AI_GATEWAY_API_KEY) {
+    console.error("Falta AI_GATEWAY_API_KEY. Copiá .env.example a .env y completala");
+    console.error("(Vercel dashboard → AI Gateway). Ver ADR-0003.");
+    process.exit(1);
+  }
 
   const normas = cargarParciales();
-  const yaProcesadas = new Set(normas.map((n) => n.id));
+  const hechas = new Set(normas.map((n) => n.id));
+  if (normas.length) console.log(`Retomando: ya hay ${normas.length} normas en data/normas.json\n`);
 
-  for (const { numero, anio } of SELECCION_ROSARIO) {
-    const id = `ord-${numero}-${anio}`;
-    if (yaProcesadas.has(id)) continue;
-    const fila = filas.find((f) => Number(f.NUMERO) === numero && Number(f.ANIO) === anio);
-    if (!fila) {
-      console.error(`✗ ${id}: no está en el CSV`);
-      continue;
-    }
-    try {
-      normas.push(await extraerNorma(fila));
-      writeFileSync(SALIDA, JSON.stringify(normas, null, 2)); // parcial tras cada norma
-      console.log(`✓ ${id} (${normas.length} acumuladas)`);
-    } catch (e) {
-      console.error(`✗ ${id}:`, e);
+  console.log("── MUNICIPAL (Rosario) ──");
+  await correr(await trabajosRosario(), normas, hechas);
+
+  console.log("\n── NACIONAL (InfoLEG) ──");
+  await correr(await trabajosNacionales(), normas, hechas);
+
+  guardar(normas);
+
+  const conObligaciones = normas.filter((n) => n.obligaciones.length > 0);
+  const totalObl = normas.reduce((a, n) => a + n.obligaciones.length, 0);
+  const dudosas = normas.flatMap((n) =>
+    n.obligaciones.filter((o) => o.confianza < 0.7).map((o) => ({ id: n.id, o })),
+  );
+
+  console.log(`\n── LISTO ──`);
+  console.log(`${normas.length} normas · ${conObligaciones.length} con obligaciones · ${totalObl} obligaciones`);
+  console.log(`→ data/normas.json`);
+
+  if (dudosas.length) {
+    // ADR-0006: no se filtra en runtime, se cura a mano. Esta es la lista de revisión.
+    console.log(`\n⚠ ${dudosas.length} obligaciones con confianza < 0.7 — revisar contra la fuente:`);
+    for (const { id, o } of dudosas) {
+      console.log(`   ${id} (${o.confianza.toFixed(2)}) ${o.que_hacer.slice(0, 70)}`);
     }
   }
 }
 
-main();
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
