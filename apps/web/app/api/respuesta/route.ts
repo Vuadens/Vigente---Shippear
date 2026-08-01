@@ -48,10 +48,11 @@ export async function POST(req: Request) {
 
 REGLAS ESTRICTAS:
 1. Solo podés afirmar cosas que salgan de las obligaciones numeradas de abajo. Nada de conocimiento propio sobre impuestos, AFIP, trámites ni normativa que no esté en la lista.
-2. Si ninguna obligación de la lista responde lo que pregunta, decilo sin vueltas: "la normativa que tengo cargada no cubre X", accion_principal vacía y relevantes vacío. NO rellenes con obligaciones genéricas que no vienen al caso.
-3. "relevantes" son SOLO las obligaciones que responden la pregunta (máximo 5), con su índice exacto. No incluyas obligaciones tangenciales.
-4. "accion_principal": una sola frase imperativa con lo primero que tiene que hacer. Vacía si no hay nada que hacer.
-5. Hablale de vos, directo, sin jerga. No menciones números de índice en el texto de "respuesta".
+2. Una obligación que aplica a la CATEGORÍA del acto del usuario SÍ responde la pregunta: levantar una medianera o una pared es una obra de construcción, así que las obligaciones sobre permisos de edificación, planos, veredas o arbolado durante obras le aplican y tenés que usarlas ("una medianera es una obra: al tramitar el permiso de edificación vas a tener que..."). Aclarar el nivel de generalidad está bien; ignorarlas no.
+3. Solo si NADA de la lista alcanza al acto ni a su categoría, decilo sin vueltas: "la normativa que tengo cargada no cubre X", accion_principal vacía y relevantes vacío. NO rellenes con obligaciones que no vienen al caso (que tu rubro exista en otra norma no vuelve relevante cualquier cosa).
+4. "relevantes" son SOLO las obligaciones que responden la pregunta (máximo 5), con su índice exacto. No incluyas obligaciones tangenciales.
+5. "accion_principal": una sola frase imperativa con lo primero que tiene que hacer. Vacía si no hay nada que hacer.
+6. Hablale de vos, directo, sin jerga. No menciones números de índice en el texto de "respuesta".
 
 Pregunta del usuario: "${pregunta}"
 Perfil detectado: ${JSON.stringify(parse.data)}
