@@ -165,8 +165,12 @@ async function trabajosNacionales(): Promise<Trabajo[]> {
 
   return NACIONAL_SELECCION.map(({ idNorma, porque }) => {
     const fila = filas.get(idNorma);
+    // fecha_boletin, no fecha_sancion: las aristas de relacionesSalientes arman
+    // el id del destino con fecha_boletin (la base complementaria no trae la
+    // sanción). Usar otra fecha acá rompe la resolución intra-corpus cuando la
+    // sanción y la publicación caen en años distintos (ej: Ley 11.683).
     const id = fila
-      ? infoleg.idNacional(fila.tipo_norma, fila.numero_norma, fila.fecha_sancion)
+      ? infoleg.idNacional(fila.tipo_norma, fila.numero_norma, fila.fecha_boletin || fila.fecha_sancion)
       : `infoleg-${idNorma}`;
 
     return {

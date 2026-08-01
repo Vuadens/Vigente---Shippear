@@ -1,5 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { existsSync, readFileSync } from "node:fs";
 import type { Norma, Perfil } from "@vigente/schema";
 import { match, alertas, vigencia } from "./index.ts";
 import normasEjemplo from "../../../data/normas.ejemplo.json" with { type: "json" };
@@ -9,11 +10,41 @@ const normas = normasEjemplo as Norma[];
 const bar = perfiles[0].perfil as Perfil;
 const vecino = perfiles[1].perfil as Perfil;
 
-test("bar: ve la ord-10800 nueva, no la ord-9027 modificada", () => {
+test("bar: ve la ord-10800 nueva, no la ord-9027 derogada", () => {
   const r = match(bar, normas);
   const ids = r.map((m) => m.norma.id);
   assert.ok(ids.includes("ord-10800-2025"));
-  assert.ok(!ids.includes("ord-9027-2012"), "la obligación vieja fue reemplazada");
+  assert.ok(!ids.includes("ord-9027-2012"), "la derogada se excluye");
+});
+
+test("modifica NO excluye: ambas visibles, la vieja marcada", () => {
+  const modificatoria: Norma = {
+    id: "ord-88888-2026",
+    jurisdiccion: "municipal",
+    tipo: "Ordenanza",
+    numero: "88888/2026",
+    fecha_publicacion: "2026-05-01",
+    url_fuente: "https://example.com",
+    resumen_llano: "Modifica parcialmente el permiso de edificación.",
+    obligaciones: [
+      {
+        que_hacer: "Presentar además el plano de instalación eléctrica",
+        alcanzados: { rubros: [], condiciones: ["obra_en_vivienda"] },
+        plazo: { tipo: "permanente", valor: "" },
+        si_no_cumplis: "Multa",
+        confianza: 0.9,
+      },
+    ],
+    geo: { tipo: "ciudad", descripcion: "Rosario", coords: [] },
+    relaciones: [{ tipo: "modifica", norma: "ord-10500-2024" }],
+  };
+  const r = match(vecino, [...normas, modificatoria]);
+  const ids = r.map((m) => m.norma.id);
+  assert.ok(ids.includes("ord-10500-2024"), "la modificada sigue visible");
+  assert.ok(ids.includes("ord-88888-2026"));
+  const vieja = r.find((m) => m.norma.id === "ord-10500-2024");
+  assert.equal(vieja?.estado, "modificada");
+  assert.deepEqual(vieja?.afectada_por, ["ord-88888-2026"]);
 });
 
 test("bar: la obligación nueva expone qué reemplaza (demo paso 7)", () => {
@@ -80,6 +111,16 @@ test("orden: vencimiento más urgente primero, permanentes al final", () => {
   if (primerNull !== -1) {
     assert.ok(vences.slice(primerNull).every((v) => v === null));
   }
+});
+
+test("smoke: data/normas.json real (si el pipeline ya corrió)", (t) => {
+  const ruta = new URL("../../../data/normas.json", import.meta.url).pathname;
+  if (!existsSync(ruta)) return t.skip("todavía no existe data/normas.json");
+  const reales = JSON.parse(readFileSync(ruta, "utf8")) as Norma[];
+  assert.ok(Array.isArray(reales) && reales.length > 0);
+  const delBar = match(bar, reales);
+  match(vecino, reales);
+  assert.ok(delBar.length >= 1, "el bar seed debería matchear ≥1 obligación real");
 });
 
 test("alertas: solo normas publicadas desde la fecha dada", () => {

@@ -100,42 +100,34 @@ function fechaVencimiento(norma: Norma, o: Obligacion): string | null {
 export function match(perfil: Perfil, normas: Norma[]): ObligacionMatcheada[] {
   const porId = new Map(normas.map((n) => [n.id, n]));
   const resultado: ObligacionMatcheada[] = [];
-  // Normas modificadas cuyas obligaciones fueron reemplazadas por una posterior
-  // que alcanza al mismo perfil: se excluyen y la nueva expone reemplaza_a.
-  const reemplazadas = new Map<string, Norma>(); // id vieja → norma nueva
 
   for (const norma of normas) {
     const v = vigencia(norma, normas);
     if (v.estado === "derogada") continue;
     if (!aplicaGeo(norma, perfil)) continue;
-    if (!norma.obligaciones.some((o) => aplicaAlcance(o, perfil))) continue;
-    for (const r of norma.relaciones) {
-      if (r.tipo !== "modifica") continue;
-      const vieja = porId.get(r.norma);
-      if (vieja && vieja.fecha_publicacion < norma.fecha_publicacion) {
-        reemplazadas.set(vieja.id, norma);
-      }
-    }
-  }
 
-  for (const norma of normas) {
-    const v = vigencia(norma, normas);
-    if (v.estado === "derogada") continue;
-    if (reemplazadas.has(norma.id)) continue;
-    if (!aplicaGeo(norma, perfil)) continue;
+    // Solo `deroga` excluye a la vieja (arriba). `modifica` NO excluye: en el
+    // corpus real las modificatorias son parciales (ej: la 10608 modifica el
+    // Reglamento de Edificación sin reemplazarlo) — ambas se muestran y la
+    // vieja lleva estado "modificada" + afectada_por para el badge del front.
+    // reemplaza_a expone la derogada que alcanzaba a este perfil ("qué cambió").
+    const derogada = norma.relaciones
+      .filter((r) => r.tipo === "deroga")
+      .map((r) => porId.get(r.norma))
+      .filter((n): n is Norma => n !== undefined)
+      .find((n) => n.obligaciones.some((o) => aplicaAlcance(o, perfil)));
+    const obligacionVieja = derogada?.obligaciones.find((o) => aplicaAlcance(o, perfil));
+
     for (const obligacion of norma.obligaciones) {
       if (!aplicaAlcance(obligacion, perfil)) continue;
-      const nuevaSobre = [...reemplazadas.entries()].find(([, n]) => n.id === norma.id);
-      const vieja = nuevaSobre ? porId.get(nuevaSobre[0]) : undefined;
-      const obligacionVieja = vieja?.obligaciones.find((o) => aplicaAlcance(o, perfil));
       resultado.push({
         norma,
         obligacion,
         vence: fechaVencimiento(norma, obligacion),
         estado: v.estado,
         afectada_por: v.afectada_por,
-        ...(vieja && obligacionVieja
-          ? { reemplaza_a: { norma: vieja, obligacion: obligacionVieja } }
+        ...(derogada && obligacionVieja
+          ? { reemplaza_a: { norma: derogada, obligacion: obligacionVieja } }
           : {}),
       });
     }
