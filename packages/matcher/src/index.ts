@@ -88,13 +88,18 @@ function aplicaAlcance(o: Obligacion, perfil: Perfil): boolean {
 }
 
 function fechaVencimiento(norma: Norma, o: Obligacion): string | null {
-  if (o.plazo.tipo === "fecha_fija") return o.plazo.valor;
+  let vence: string | null = null;
+  if (o.plazo.tipo === "fecha_fija") vence = o.plazo.valor;
   if (o.plazo.tipo === "dias_desde_publicacion") {
     const d = new Date(norma.fecha_publicacion);
     d.setDate(d.getDate() + Number(o.plazo.valor));
-    return d.toISOString().slice(0, 10);
+    vence = d.toISOString().slice(0, 10);
   }
-  return null;
+  // Un plazo de adecuación que expiró hace años (normas viejas del corpus) no es
+  // un vencimiento próximo: la obligación sigue, pero sin fecha. Si la mostráramos,
+  // encabezaría la lista ordenada por urgencia con fechas de 2001.
+  const hoy = new Date().toISOString().slice(0, 10);
+  return vence !== null && vence < hoy ? null : vence;
 }
 
 export function match(perfil: Perfil, normas: Norma[]): ObligacionMatcheada[] {
