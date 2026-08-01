@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { generateObject } from "ai";
-import { NormaSchema, type Norma, type Relacion } from "@vigente/schema";
+import { NormaSchema, RUBROS, type Norma, type Relacion } from "@vigente/schema";
 import { ROSARIO_SELECCION, NACIONAL_SELECCION } from "./seleccion.js";
 import * as rosario from "./rosario.js";
 import * as infoleg from "./infoleg.js";
@@ -28,8 +28,13 @@ REGLAS (en orden de prioridad):
 2. "obligaciones" son cosas concretas que alguien DEBE hacer, con consecuencia por no hacerlas. Si la norma solo crea un programa, designa a un funcionario, declara un día conmemorativo o expresa una intención, devolvé obligaciones: [].
 3. "que_hacer" se escribe para alguien sin formación legal: una acción concreta en una frase. Nada de "dese cumplimiento a lo normado en el art. 3".
 4. "confianza" mide QUÉ TAN FIEL es tu extracción al texto que leíste — no si la obligación te parece jurídicamente sólida. Texto claro y explícito: alto. Texto borroso, mal escaneado o ambiguo sobre a quién obliga: bajo.
-5. "alcanzados.rubros" vacío significa "todos". Usá etiquetas simples y en minúscula (gastronomia, construccion, comercio).
-6. "geo.coords" va SIEMPRE vacío: []. No inventes coordenadas bajo ninguna circunstancia.`;
+5. "alcanzados.rubros" SOLO puede contener valores de esta lista cerrada: ${RUBROS.join(", ")}. Ningún otro valor, ni sinónimos, ni plurales, ni subcategorías: un bar es "gastronomia", una obra es "construccion". Si la norma alcanza a todos, dejá la lista vacía ([]) — vacío significa "todos", no "no sé".
+6. "geo.tipo" define si la norma llega o no al usuario:
+   - "ciudad": rige en toda la ciudad o el país. Es el caso por defecto de casi toda ordenanza y de TODA ley nacional.
+   - "zona": rige en un área nombrada (un barrio, un distrito, una zona portuaria).
+   - "tramo" / "punto": rige sobre una calle, un lote o una dirección puntual, y NADA MÁS.
+   Elegí "tramo" o "punto" solo si la norma se agota en ese lugar. Si impone una obligación a un rubro en general y además menciona un lugar, es "ciudad" o "zona".
+7. "geo.coords" va SIEMPRE vacío: []. No inventes coordenadas bajo ninguna circunstancia.`;
 
 type Trabajo = {
   id: string;
@@ -81,11 +86,34 @@ async function extraer(
   //  - coords: una coordenada inventada es alucinación pura y termina como un
   //    pin en el mapa. La única fuente legítima es Georef, en geocodificar.ts.
   //  - relaciones nacionales: vienen del CSV oficial de InfoLEG.
-  return {
+  const norma: Norma = {
     ...object,
     geo: { ...object.geo, coords: [] },
     relaciones: relacionesFijas ?? object.relaciones,
   };
+  avisarSiNoVaAMatchear(norma);
+  return norma;
+}
+
+/**
+ * Dos formas de que una norma quede bien extraída pero INVISIBLE para el
+ * matcher. No se corrigen solas a propósito: arreglarlas por código cambia el
+ * alcance de la obligación en silencio, que es peor. Se curan a mano.
+ */
+function avisarSiNoVaAMatchear(n: Norma) {
+  const validos = new Set<string>(RUBROS);
+  const invasores = [
+    ...new Set(n.obligaciones.flatMap((o) => o.alcanzados.rubros.filter((r) => !validos.has(r)))),
+  ];
+  if (invasores.length) {
+    // El matcher compara exacto contra RUBROS: un rubro inventado nunca matchea.
+    // No lo borramos: dejar la lista vacía significaría "alcanza a todos" y
+    // pasaríamos de no mostrar la obligación a mostrársela a cualquiera.
+    console.warn(`    ⚠ ${n.id}: rubros fuera del vocabulario → ${invasores.join(", ")}`);
+  }
+  if (n.jurisdiccion === "municipal" && (n.geo.tipo === "punto" || n.geo.tipo === "tramo")) {
+    console.warn(`    ⚠ ${n.id}: geo.tipo="${n.geo.tipo}" — solo va al mapa, no matchea a nadie`);
+  }
 }
 
 async function trabajosRosario(): Promise<Trabajo[]> {
@@ -237,6 +265,18 @@ async function main() {
     for (const { id, o } of dudosas) {
       console.log(`   ${id} (${o.confianza.toFixed(2)}) ${o.que_hacer.slice(0, 70)}`);
     }
+  }
+
+  // Normas que quedaron bien extraídas pero que el matcher no va a devolver nunca.
+  const validos = new Set<string>(RUBROS);
+  const invisibles = normas.filter(
+    (n) =>
+      (n.jurisdiccion === "municipal" && (n.geo.tipo === "punto" || n.geo.tipo === "tramo")) ||
+      n.obligaciones.some((o) => o.alcanzados.rubros.some((r) => !validos.has(r))),
+  );
+  if (invisibles.length) {
+    console.log(`\n⚠ ${invisibles.length} normas que el matcher NO va a devolver (ver avisos arriba):`);
+    for (const n of invisibles) console.log(`   ${n.id} · geo=${n.geo.tipo}`);
   }
 }
 
