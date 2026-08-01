@@ -1,5 +1,5 @@
 import { generateObject } from "ai";
-import { PerfilSchema, RUBROS } from "@vigente/schema";
+import { CONDICIONES, PerfilSchema, RUBROS } from "@vigente/schema";
 
 // Modo pull (ADR-0003): texto → Perfil. Única llamada LLM en runtime.
 // Fallback determinístico: las preguntas del guión no tocan la API.
@@ -27,9 +27,18 @@ export async function POST(req: Request) {
     schema: PerfilSchema,
     prompt: `Extraé el perfil del sujeto a partir de esta consulta sobre normativa.
 Ciudad por defecto: Rosario. No inventes datos que no estén en la consulta.
-El campo "rubro" debe ser exactamente uno de: ${RUBROS.join(", ")} — o vacío si no aplica. Si devolvés otro valor, el matcher no encuentra normativa en vivo.
+El campo "rubro" es la ACTIVIDAD ECONÓMICA del usuario, no el tema de la consulta: exactamente uno de ${RUBROS.join(", ")} — o vacío. Un particular que hace una obra en su casa no tiene rubro.
+El campo "condiciones" SOLO puede contener etiquetas de esta lista cerrada: ${CONDICIONES.join(", ")}. Ninguna otra: una etiqueta inventada no matchea con nada y el usuario pierde obligaciones. Construir, ampliar, refaccionar o levantar una pared/medianera en una vivienda es "obra_en_vivienda".
 Consulta: "${pregunta}"`,
   });
 
-  return Response.json({ perfil: object, fuente: "llm" });
+  // Guardarraíl espejo del pipeline: una condición fuera del vocabulario no
+  // matchea a nadie, así que se filtra en vez de dejar que apague obligaciones.
+  const validas = new Set<string>(CONDICIONES);
+  const perfil = {
+    ...object,
+    condiciones: object.condiciones.filter((c) => validas.has(c)),
+  };
+
+  return Response.json({ perfil, fuente: "llm" });
 }

@@ -59,6 +59,17 @@ export const RUBROS = [
   "servicios",
 ] as const;
 
+// Vocabulario canónico de condiciones del perfil — el hermano de RUBROS.
+// El pipeline solo emite estas etiquetas en alcanzados.condiciones y
+// /api/intent solo puede extraer estas; cualquier otra no matchea a nadie.
+// Aditivo al contrato: no cambia ninguna forma existente.
+export const CONDICIONES = [
+  "local_a_la_calle",
+  "empleados",
+  "manipula_alimentos",
+  "obra_en_vivienda",
+] as const;
+
 export const PerfilSchema = z.object({
   tipo_sujeto: z.enum(["persona_fisica", "comercio"]),
   rubro: z.string().describe("ej: gastronomia; vacío si no aplica"),

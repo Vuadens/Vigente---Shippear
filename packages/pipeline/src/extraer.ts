@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { generateObject } from "ai";
-import { NormaSchema, RUBROS, type Norma, type Relacion } from "@vigente/schema";
+import { CONDICIONES, NormaSchema, RUBROS, type Norma, type Relacion } from "@vigente/schema";
 import { ROSARIO_SELECCION, NACIONAL_SELECCION } from "./seleccion.js";
 import * as rosario from "./rosario.js";
 import * as infoleg from "./infoleg.js";
@@ -21,16 +21,9 @@ const MODELO = "anthropic/claude-sonnet-5";
 // no el rate limit; 4 mantiene el log legible y el orden de escritura estable.
 const CONCURRENCIA = 4;
 
-// Vocabulario de condiciones que los perfiles realmente declaran (data/perfiles.json
-// y el modo pull). NO está en @vigente/schema porque el contrato está congelado:
-// es el hermano de RUBROS que todavía no existe, y esa deuda hay que cerrarla con
-// el equipo. Mientras tanto, el pipeline se limita a estas.
-const CONDICIONES_PERFIL = [
-  "local_a_la_calle",
-  "empleados",
-  "manipula_alimentos",
-  "obra_en_vivienda",
-] as const;
+// Deuda cerrada: el vocabulario de condiciones ahora vive en @vigente/schema
+// (CONDICIONES, aditivo como RUBROS) y lo comparten pipeline y /api/intent.
+const CONDICIONES_PERFIL = CONDICIONES;
 
 // Toda ordenanza del corpus es de Rosario. El matcher hace
 // `direccionDelPerfil.includes(geo.descripcion)`, así que la descripción tiene que

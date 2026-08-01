@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { RUBROS, type Perfil } from "@vigente/schema";
+import { CONDICIONES as CONDICIONES_CANONICAS, RUBROS, type Perfil } from "@vigente/schema";
 
 // Paso 8 de la demo: armar un perfil en vivo. Los cambios disparan un
 // re-match inmediato (lo maneja el padre vía onCambio) y "Guardar" lo persiste.
@@ -22,12 +22,17 @@ const OPCIONES_RUBRO = [
   ...RUBROS.map((r) => ({ value: r, label: RUBRO_LABEL[r] ?? r })),
 ];
 
-const CONDICIONES = [
-  { value: "local_a_la_calle", label: "Local a la calle" },
-  { value: "empleados", label: "Tiene empleados" },
-  { value: "manipula_alimentos", label: "Manipula alimentos" },
-  { value: "obra_en_vivienda", label: "Va a hacer una obra" },
-];
+// Mismo criterio que los rubros: el vocabulario canónico vive en el schema.
+const CONDICION_LABEL: Record<string, string> = {
+  local_a_la_calle: "Local a la calle",
+  empleados: "Tiene empleados",
+  manipula_alimentos: "Manipula alimentos",
+  obra_en_vivienda: "Va a hacer una obra",
+};
+const CONDICIONES = CONDICIONES_CANONICAS.map((c) => ({
+  value: c,
+  label: CONDICION_LABEL[c] ?? c.replace(/_/g, " "),
+}));
 
 // Rosario centro por defecto (coincide con la normativa cargada en la demo).
 const COORDS_DEFAULT: [number, number] = [-32.9468, -60.6393];
