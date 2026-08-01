@@ -2752,6 +2752,442 @@
     "relaciones": []
   },
   {
+    "id": "ord-8336-2008",
+    "jurisdiccion": "municipal",
+    "tipo": "Ordenanza",
+    "numero": "8336/2008",
+    "fecha_publicacion": "2008-12-18",
+    "url_fuente": "https://ssl.rosario.gov.ar/mr/normativa/nuevo-reglamento-de-edificacion/indice",
+    "resumen_llano": "Establece el nuevo Reglamento de Edificación de Rosario, con normas sobre construcción, veredas, arbolado, estacionamiento, garajes y cocheras, circulaciones, instalaciones y otros aspectos de las obras en la ciudad.",
+    "obligaciones": [
+      {
+        "que_hacer": "Si sos dueño de un terreno baldío o edificado con frente a la calle, tenés que construir y mantener en buen estado la vereda de todo el frente, con superficie antideslizante.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si rompiste la vereda (por ejemplo por ser empresa prestataria de servicios o por cualquier obra), tenés que restituirla con los mismos materiales, color y orientación que el resto; si rompiste más del 60% del frente, rehacerla completa y reglamentariamente.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si tu obra afecta una cazuela con arbolado preexistente o el sector de cobertura vegetal, tenés que restablecer la carpeta verde y los canteros al terminar la obra, y reponer los ejemplares dañados si te lo piden.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Al tramitar el Permiso de Edificación tenés que marcar con precisión en los planos la ubicación de los árboles existentes frente a tu lote y prever el espacio para nuevas cazuelas o superficie verde.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se aprueba el plano de edificación o ampliación si el acceso vehicular, garaje o cochera se proyecta frente a árboles existentes.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si necesitás extraer un árbol imprescindible para tu obra, tenés que conseguir el informe de la Dirección General de Parques y Paseos que autorice la extracción, y pagar vos los gastos de extracción.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de un bar, confitería, restaurante, comedor, pizzería, heladería o cafetería y querés poner mesas y sillas en la vereda, solo podés hacerlo si la vereda tiene 2,70 metros de ancho como mínimo (salvo excepción especial), y respetando el espacio de circulación peatonal libre.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si tenés mesas y sillas en la vereda, no podés ponerlas en el espacio de circulación peatonal, en la ochava, en paradas de colectivo, ni a menos de 3 metros de accesos a cines, teatros o locales bailables, ni a menos de 1 metro de garajes particulares, ni a menos de 2 metros de estacionamientos públicos o estaciones de servicio.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si tu comercio no tiene los baños reglamentarios para ambos sexos, no te van a dar permiso para poner mesas y sillas en la vereda.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se concede el permiso para colocar mesas y sillas en la vereda.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de un negocio gastronómico con mesas y sillas en la vereda, tenés que mantener la vereda en perfecto estado higiénico.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de un bar, confitería, restaurante, comedor, pizzería, heladería o cafetería y querés poner mesas y sillas en la vereda, tenés que instalar vallas de protección a una distancia mínima de 0,50 metros del cordón, sin obstaculizar el tránsito peatonal ni el descenso vehicular.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos dueño o responsable de un jardín de infantes o salón de fiestas infantiles, tenés que instalar vallas de protección fijas en las puertas de acceso y salida.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No podés colocar vallas, bloques de hormigón u otros elementos sobre la calzada para impedir el estacionamiento frente a cocheras, garajes privados, playas de estacionamiento, escuelas o clubes.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multas según el Código de Faltas.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos propietario u ocupante frentista a una calzada sin cordón cuneta y necesitás hacer un acceso a tu finca, terreno, corralón o depósito que requiera entubar parcialmente la zanja de drenaje, tenés que pedir permiso previo a la Dirección de Proyectos de Hidráulica antes de hacerlo.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multas municipales y responsabilidad por los daños y perjuicios ocasionados.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Está prohibido rellenar u obstruir los canales o zanjas de drenaje a cielo abierto.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Penalidades municipales y responsabilidad por daños y perjuicios.",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos el responsable de construir una alcantarilla de acceso, te tenés que hacer cargo de su ejecución, mantenimiento y reparación conforme a las reglas técnicas indicadas por la Dirección de Proyectos de Hidráulica.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si tu inmueble está en una cuadra sin cordón cuneta y pedís el Permiso de Edificación, tenés que adjuntar el Certificado de Relevamiento Planialtimétrico del Sistema de Drenaje a Cielo Abierto, elaborado por profesional habilitado y aprobado por la Dirección de Proyectos de Hidráulica.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si transgredís las normas sobre alcantarillas de acceso a propiedades, se te van a labrar actas de comprobación y podés recibir multas.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Multas según las reglamentaciones vigentes.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si construís o ampliás un garaje o cochera, tenés que dotarlo de matafuegos (1 de 10kg cada 200 m2) y 6 baldes de arena o material absorbente cada 300 m2, y cumplir el resto de las exigencias contra incendio.",
+        "alcanzados": {
+          "rubros": [
+            "servicios",
+            "construccion"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si operás una cochera comercial o garaje de uso público, tenés que construir reductores de velocidad físicos en los accesos vehiculares (no aplica a vivienda colectiva u oficinas).",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera que funciona total o parcialmente por hora con más de 20 módulos de auto, tenés que disponer de un espacio gratuito para estacionar bicicletas equivalente a por lo menos 10 módulos.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera mensualizada, tenés que poner un cartel de ESTACIONAMIENTO PRIVADO en el portón y mantenerlo cerrado con llave cuando no entren o salgan vehículos.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera por hora, tenés que exhibir un cartel con las tarifas vigentes (estadía, hora, media hora, 15 minutos) en letra clara y legible.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera, tenés que colocar un cartel indicador de la existencia y modalidad (mensualizada o por hora) con el número de permiso de habilitación, y otro cartel de CUIDADO CON LOS VEHÍCULOS en el acceso.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera por hora, tenés que tener siempre personal responsable durante el horario de actividad, con distintivo que lo identifique, o un sistema automatizado que garantice el funcionamiento.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": [
+            "empleados"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera por hora, tenés que disponer de un baño polivalente con al menos un inodoro y un lavabo.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera, tenés que contratar un seguro contra robo, incendio y daños a los vehículos estacionados, y exhibir un cartel indicador del seguro cerca de las entradas.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera, tenés que tener un libro de inspección y un libro de quejas disponibles para el usuario y el inspector municipal.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si sos titular de una cochera, no podés dejarla abierta fuera del horario de actividad; en las horas de inactividad debe quedar cerrada.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.85
+      }
+    ],
+    "geo": {
+      "tipo": "ciudad",
+      "descripcion": "Rosario",
+      "coords": []
+    },
+    "relaciones": []
+  },
+  {
     "id": "ord-8127-2007",
     "jurisdiccion": "municipal",
     "tipo": "Ordenanza",
