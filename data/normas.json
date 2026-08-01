@@ -6,60 +6,10 @@
     "numero": "10874/2025",
     "fecha_publicacion": "2026-03-16",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=258208",
-    "resumen_llano": "La ciudad de Rosario actualiza las reglas para proteger, cuidar y aumentar los árboles públicos, con nuevas obligaciones para obras, empresas de tendidos y prohibiciones para cualquiera que dañe el arbolado.",
+    "resumen_llano": "Rosario establece nuevas reglas para proteger, cuidar y plantar el arbolado público de la ciudad, prohibiendo dañarlo, podarlo o extraerlo sin autorización, y exigiendo protección del arbolado durante obras y tendidos.",
     "obligaciones": [
       {
-        "que_hacer": "Si vas a construir, refaccionar o modificar un edificio y hay árboles en el frente, tenés que marcarlos con precisión en el proyecto; no podés justificar sacarlos solo porque molestan a la obra, y si es imprescindible extraerlos necesitás autorización previa de la Autoridad de Aplicación y pagar los gastos de extracción, además de plantar otro ejemplar por cada uno que saques.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": [
-            "obra_en_vivienda"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se aprueba el plano de edificación y los gastos de extracción no autorizada corren por cuenta del propietario; además puede aplicarse reparación ambiental.",
-        "confianza": 0.85
-      },
-      {
-        "que_hacer": "Durante una obra particular tenés que armar una zona de protección alrededor de cada árbol (según la proyección de la copa o el tamaño de la cazuela) y no usarla como obrador, depósito de materiales, estacionamiento ni para hacer fuego; tampoco podés circular con vehículos o maquinaria pesada sobre esa zona.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": [
-            "obra_en_vivienda"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "Puede aplicarse reparación ambiental y, si hay daño intencional al árbol frente a una obra en construcción, se puede clausurar la obra.",
-        "confianza": 0.85
-      },
-      {
-        "que_hacer": "Si tu obra va a tener nuevos tendidos eléctricos o de servicios (aéreos o subterráneos) que afecten árboles, tenés que presentar el proyecto a la Municipalidad con anticipación y ajustarlo a lo que te indiquen para proteger el arbolado.",
-        "alcanzados": {
-          "rubros": [
-            "construccion",
-            "servicios"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "El proyecto no se aprueba si no se ajusta a las modificaciones indicadas por la Autoridad de Aplicación.",
-        "confianza": 0.7
-      },
-      {
-        "que_hacer": "No podés podar, talar, extraer árboles públicos, clavar cosas en ellos, hormigonar o rellenar sus cazuelas, tirarles residuos o elementos extraños, ni hacer fuego cerca de la base de los árboles, sin autorización previa de la Autoridad de Aplicación.",
+        "que_hacer": "No podar, talar, cortar, extraer o dañar árboles del arbolado público (veredas, plazas, parques) sin autorización previa de la Autoridad de Aplicación",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -68,7 +18,106 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Sanciones según el Código de Convivencia Ciudadana (Ordenanza 10.267), reparación ambiental con entrega de ejemplares de vivero, y posibilidad de clausura de obra si el daño es frente a una construcción.",
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia Ciudadana (Ordenanza Nº 10.267) y reparación ambiental con entrega de ejemplares de vivero",
+        "confianza": 0.9
+      },
+      {
+        "que_hacer": "Si vas a instalar un tendido nuevo subterráneo o aéreo, presentar el proyecto a la Municipalidad con debida antelación ajustándose a la protección del arbolado existente",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "El proyecto no será aprobado si no se ajusta a la normativa de protección del arbolado",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "No rellenar, revestir ni hormigonar cazuelas o canteros del arbolado público, ni arrojar residuos o apilar materiales sobre las raíces",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia Ciudadana (Ordenanza Nº 10.267)",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No fijar clavos, alambres, hierros, ganchos, carteles, letreros, enredaderas ni otros elementos extraños en los árboles del arbolado público",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia Ciudadana (Ordenanza Nº 10.267)",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No quemar elementos o materiales en la base de los árboles del arbolado público",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia Ciudadana (Ordenanza Nº 10.267)",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Si vas a construir, refaccionar o modificar un edificio con obra que afecte árboles del frente, fijar con precisión los árboles existentes y no usarlos como excusa para su erradicación; si es imprescindible extraer un árbol, tramitar autorización previa de la Autoridad de Aplicación, pagar los gastos de extracción y plantar otro ejemplar por cada árbol extraído",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se aprueba el plano de edificación si la obra daña el arbolado público; los gastos de extracción y reposición corren por cuenta del propietario o solicitante",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "Durante obras particulares, respetar la zona de protección del árbol (proyección de la copa o tamaño de la cazuela): no usarla como obrador, acopio de materiales, estacionamiento, fogones ni para transitar con vehículos o maquinaria; al abrir la vereda, restablecer la carpeta verde y cazuelas al terminar la obra; en obras en altura, colocar bandejas de seguridad sin cortar ni afectar ramas",
+        "alcanzados": {
+          "rubros": [
+            "construccion"
+          ],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Posibilidad de clausura de la obra si se observan daños intencionales al arbolado frente a la obra que no puedan subsanarse en el momento",
+        "confianza": 0.85
+      },
+      {
+        "que_hacer": "No plantar especies arbóreas en espacios verdes, plazas, parques, paseos, veredas o bienes de dominio público sin autorización previa y por escrito de la Autoridad de Aplicación",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La Municipalidad puede disponer el trasplante o extracción del ejemplar sin derecho a reclamo",
         "confianza": 0.85
       }
     ],
@@ -84,7 +133,7 @@
       },
       {
         "tipo": "deroga",
-        "norma": "ord-7010-2001"
+        "norma": "ord-7010"
       }
     ]
   },
@@ -256,15 +305,12 @@
     "numero": "10834/2025",
     "fecha_publicacion": "2025-12-15",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=255324",
-    "resumen_llano": "Rosario suma al Reglamento de Edificación un sistema optativo de Etiquetado de Eficiencia Energética para viviendas, adhiriendo a la ley provincial que lo crea.",
+    "resumen_llano": "Rosario se adhiere a la ley provincial de etiquetado de eficiencia energética de viviendas y agrega una sección optativa al Reglamento de Edificación para certificar el consumo energético de los inmuebles.",
     "obligaciones": [
       {
-        "que_hacer": "Si sos profesional Certificador de Eficiencia Energética, confeccionar la etiqueta según la planilla modelo con las siete categorías (A a G) de la Ley Provincial 13.903 y tramitar la inscripción en la Secretaría de Energía de Santa Fe y luego el registro correspondiente en la Municipalidad de Rosario",
+        "que_hacer": "Si sos profesional Certificador de Eficiencia Energética, confeccionar la etiqueta según la planilla modelo con las siete categorías (A a G) e inscribirte en la Secretaría de Energía de Santa Fe y luego presentar el registro en la Municipalidad de Rosario.",
         "alcanzados": {
-          "rubros": [
-            "construccion",
-            "servicios"
-          ],
+          "rubros": [],
           "condiciones": []
         },
         "plazo": {
@@ -275,11 +321,9 @@
         "confianza": 0.5
       },
       {
-        "que_hacer": "Si le hacés una modificación a una vivienda que tiene Certificado de Eficiencia Energética vigente, someterla a un nuevo procedimiento de verificación por un profesional habilitado e informarlo a la oficina municipal correspondiente",
+        "que_hacer": "Si le hacés una modificación a una vivienda que tiene Certificado de Eficiencia Energética vigente, someterla a un nuevo procedimiento de verificación con un profesional habilitado e informarlo a la oficina municipal correspondiente.",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
+          "rubros": [],
           "condiciones": []
         },
         "plazo": {
@@ -309,10 +353,10 @@
     "numero": "10837/2025",
     "fecha_publicacion": "2025-11-27",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=254824",
-    "resumen_llano": "Rosario crea un sistema de \"Derechos de Edificación Transferibles\" para que dueños de edificios patrimoniales puedan vender el permiso de construir más altura a terrenos en ciertos corredores urbanos, a cambio de restaurar sus edificios históricos.",
+    "resumen_llano": "Rosario crea un sistema por el cual los dueños de edificios patrimoniales protegidos pueden vender sus metros de altura no construidos a proyectos ubicados en ciertos corredores urbanos de la ciudad, a cambio de restaurar sus edificios, y modifica las multas por incumplimiento de convenios urbanísticos.",
     "obligaciones": [
       {
-        "que_hacer": "Si sos propietario de un inmueble patrimonial que quiere sumarse al régimen DET, tenés que firmar un Convenio Patrimonial con el Municipio antes de recibir el certificado, comprometiéndote a restaurar el edificio en los plazos pactados.",
+        "que_hacer": "Si sos propietario de un inmueble patrimonial emisor que se suma al régimen DET, tenés que firmar un Convenio Patrimonial con el Municipio antes de recibir el certificado DET, acreditando estar libre de deuda de Tasa General de Inmuebles y declarando que no se emitieron certificados DET previos para ese inmueble.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -321,11 +365,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Se ejecuta la garantía de cumplimiento (seguro de caución), el Municipio puede hacer las obras a tu costa, y se aplican las sanciones del Código de Convivencia Municipal (multas de 40.000 a 80.000 UF para protección 1, y de 20.000 a 40.000 UF para protección 2).",
-        "confianza": 0.9
+        "si_no_cumplis": "No se emite el Certificado DET y no podés acceder al régimen.",
+        "confianza": 0.8
       },
       {
-        "que_hacer": "Si sos propietario de un inmueble emisor adherido al régimen, tenés que constituir un seguro de caución u otra garantía equivalente a favor del Municipio que asegure la realización de las obras de restauración.",
+        "que_hacer": "Si sos propietario de un inmueble emisor, tenés que ejecutar las obras de restauración y rehabilitación pactadas en el Convenio Patrimonial, en los plazos y condiciones allí fijados, y constituir un seguro de caución u otra garantía a favor del Municipio que asegure el cumplimiento, manteniéndolo vigente hasta el Certificado de Final de Obra Patrimonial.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -334,26 +378,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "El Municipio ejecuta la garantía y puede realizar las tareas de restauración a costa y cargo del propietario.",
-        "confianza": 0.9
-      },
-      {
-        "que_hacer": "Si sos titular de un inmueble receptor y compraste un certificado DET, tenés que presentarlo ante el Municipio al momento de tramitar el Permiso de Edificación de tu proyecto.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se otorga el Permiso de Edificación sin la presentación del certificado DET.",
+        "si_no_cumplis": "El Municipio ejecuta la garantía, puede realizar las obras a costa y cargo del propietario, y se aplican las sanciones del Capítulo V: multa de 40.000 a 80.000 UF para inmuebles con grado de protección 1, y de 20.000 a 40.000 UF para los de grado de protección 2, además de las sanciones del Código de Convivencia Municipal.",
         "confianza": 0.85
       },
       {
-        "que_hacer": "Si cedés o recibís derechos de edificación transferibles (DET), tenés que avisar de inmediato al Municipio enviando copia de los documentos de la cesión, para actualizar el Registro de Inmuebles Emisores.",
+        "que_hacer": "Si cedés Derechos de Edificación Transferibles, total o parcialmente, tenés que instrumentar la cesión de forma fehaciente mediante documento idóneo con todos los datos exigidos (partes, inmueble emisor, convenio, certificado DET, precio) y remitir al Municipio copia de los documentos probatorios inmediatamente de concretada la operación (Aviso de Transferencia de Derechos) para que se incorpore al Registro de Inmuebles Emisores.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -362,8 +391,34 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Sin ese aviso la operación no es válida administrativamente y no comienzan a correr los plazos ni los efectos urbanísticos.",
+        "si_no_cumplis": "Sin el Aviso de Transferencia de Derechos la operación no tiene validez administrativa ni produce efectos urbanísticos para el receptor.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si sos titular de un inmueble receptor y adquiriste un certificado DET, tenés que presentarlo ante el Municipio al momento de tramitar el Permiso de Edificación de tu proyecto.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Es requisito indispensable para obtener el Permiso de Edificación; sin presentarlo no se expide el permiso.",
         "confianza": 0.85
+      },
+      {
+        "que_hacer": "Concluidas las obras de restauración, el propietario emisor debe notificar a la Autoridad de Aplicación para que realice la inspección final del cumplimiento del Convenio Patrimonial.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Si la inspección detecta incumplimientos, el Municipio intima a subsanarlos y retiene la emisión del Certificado de Final de Obra Patrimonial hasta que se corrija.",
+        "confianza": 0.8
       }
     ],
     "geo": {
@@ -385,10 +440,10 @@
     "numero": "10813/2025",
     "fecha_publicacion": "2025-09-26",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=251898",
-    "resumen_llano": "Define y regula una nueva tipología edilicia de \"torre\" (edificación de perímetro libre) aplicable en ciertas áreas de Rosario, con requisitos de retiros, alturas, cobertura vegetal y compensaciones urbanísticas, y deroga el régimen anterior de proyectos edilicios especiales.",
+    "resumen_llano": "Define y regula una nueva tipología de edificio llamado \"torre\" (perímetro libre), estableciendo dónde se puede construir, alturas máximas, retiros, cobertura vegetal obligatoria y compensaciones económicas por superar alturas permitidas en ciertas zonas de Rosario.",
     "obligaciones": [
       {
-        "que_hacer": "Si construís una torre de perímetro libre, respetar los retiros mínimos de 6 metros respecto a los deslindes parcelarios y de 5 metros respecto a la Línea Municipal, y no superar la altura máxima según el sector urbano (por ejemplo 120 m en Área Central, 80 m en AT1, entre otros).",
+        "que_hacer": "Si construís un edificio tipo 'torre' (perímetro libre), tenés que asegurar las obras necesarias para la correcta prestación de servicios públicos, y deben estar completas antes de pedir el final de obra o la habilitación.",
         "alcanzados": {
           "rubros": [
             "construccion"
@@ -399,11 +454,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "",
-        "confianza": 0.6
+        "si_no_cumplis": "No se otorga el final de obra ni la habilitación correspondiente.",
+        "confianza": 0.7
       },
       {
-        "que_hacer": "Si el proyecto de torre supera los 100 metros de altura en zonas donde se admite hasta 120 metros, someterlo a evaluación de la Secretaría de Planeamiento en el marco de la Comisión Evaluadora de Proyectos Urbanos (CEPU), que puede reducir la altura proyectada.",
+        "que_hacer": "Si construís bajo la tipología 'torre', tenés que dejar una superficie mínima de cobertura vegetal (cubierta verde o terreno natural con vegetación) equivalente al 30% de la superficie total de la parcela.",
         "alcanzados": {
           "rubros": [
             "construccion"
@@ -414,11 +469,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "",
-        "confianza": 0.55
+        "si_no_cumplis": "No se detalla sanción específica en el texto; es un requisito para la aprobación del proyecto edilicio bajo este régimen.",
+        "confianza": 0.5
       },
       {
-        "que_hacer": "Destinar al menos el 30% de la superficie total de la parcela a cobertura vegetal (cubierta verde o terreno natural con vegetación), cumpliendo los requisitos técnicos establecidos (por ejemplo, 40 cm de sustrato mínimo en cubiertas verdes).",
+        "que_hacer": "Si tu proyecto de torre supera los niveles de altura autorizados para el sector urbano donde se ubica, tenés que pagar una contribución por aprovechamiento exceptivo en altura, calculada sobre la superficie que supere esa altura.",
         "alcanzados": {
           "rubros": [
             "construccion"
@@ -429,52 +484,7 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "",
-        "confianza": 0.6
-      },
-      {
-        "que_hacer": "No usar la planta baja de la torre para estacionamiento ni para uso residencial en locales con frente a la vía pública, y mantener una altura mínima de 4 metros en la planta baja.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "",
-        "confianza": 0.55
-      },
-      {
-        "que_hacer": "Asegurar y completar las obras necesarias para la correcta prestación de servicios públicos antes de solicitar el final de obra y/o las habilitaciones correspondientes.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se otorga el final de obra ni las habilitaciones correspondientes.",
-        "confianza": 0.6
-      },
-      {
-        "que_hacer": "Pagar la contribución por aprovechamiento exceptivo en altura (10% del precio base por metro cuadrado) cuando la construcción supere los niveles autorizados para el sector, calculada sobre el 100% de la superficie cubierta y el 50% de la semicubierta excedente.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "",
+        "si_no_cumplis": "No se especifica consecuencia concreta en el texto más allá de la obligación de liquidar la contribución.",
         "confianza": 0.55
       }
     ],
@@ -491,6 +501,10 @@
       {
         "tipo": "modifica",
         "norma": "ord-8244-2025"
+      },
+      {
+        "tipo": "modifica",
+        "norma": "ord-9141-2025"
       }
     ]
   },
@@ -731,67 +745,67 @@
     "numero": "10720/2024",
     "fecha_publicacion": "2025-01-23",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=240260",
-    "resumen_llano": "Antes de habilitar edificaciones grandes en Rosario hay que tramitar y acreditar la factibilidad de servicios de energía, agua y cloacas según la superficie de la obra, y demostrar su provisión efectiva al pedir el final de obra.",
+    "resumen_llano": "Antes de sacar el permiso para construir o ampliar, hay que iniciar el trámite de factibilidad de servicios (luz si son más de 500 m2, agua y cloacas si son más de 1000 m2), y recién al pedir el final de obra hay que demostrar que esos servicios ya están efectivamente provistos.",
     "obligaciones": [
       {
-        "que_hacer": "Antes de obtener el Permiso de Edificación o Ampliación sin Final, iniciar y acreditar las gestiones para obtener la factibilidad de provisión de energía eléctrica si la superficie computable de dependencias supera los 500 m2, o de agua y desagües cloacales si supera los 1000 m2 (se excluyen cocheras complementarias y superficies semicubiertas), presentando la Declaración Jurada del Anexo I.",
+        "que_hacer": "Antes de pedir el Permiso de Edificación o Ampliación sin Final, acreditar que iniciaste los trámites para obtener las factibilidades de servicios (energía eléctrica si la superficie computable supera 500 m2, o agua y desagües cloacales si supera 1000 m2), completando la Declaración Jurada del Anexo I",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se otorga el Permiso de Edificación o Ampliación.",
-        "confianza": 0.9
+        "si_no_cumplis": "No se otorga el Permiso de Edificación o Ampliación",
+        "confianza": 0.85
       },
       {
-        "que_hacer": "Acreditar la efectiva provisión de los servicios de energía eléctrica, agua y desagües cloacales al momento de solicitar el Final de Obra.",
+        "que_hacer": "Si al obtener la factibilidad la empresa prestataria exige ejecutar obras dentro del inmueble, presentar la adecuación del proyecto antes de iniciar esas obras",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "La Municipalidad puede no otorgar el Final de Obra ante la imposibilidad de provisión de servicios públicos esenciales.",
-        "confianza": 0.9
-      },
-      {
-        "que_hacer": "Si tras obtener la factibilidad las empresas prestatarias indican la necesidad de ejecutar obras dentro del inmueble, el profesional debe presentar la adecuación del proyecto antes de iniciar esas obras.",
-        "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se verifica el mantenimiento de la condición reglamentaria del proyecto, quedando la obra en incumplimiento.",
+        "si_no_cumplis": "No se verifica la condición reglamentaria del proyecto",
         "confianza": 0.7
       },
       {
-        "que_hacer": "Si la factibilidad resulta no favorable, el propietario debe implementar métodos alternativos aprobados por la repartición competente.",
+        "que_hacer": "Si la factibilidad resulta no favorable, implementar métodos alternativos aprobados por la repartición competente",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se puede acreditar la provisión de servicios y por ende no se obtiene el Final de Obra.",
-        "confianza": 0.7
+        "si_no_cumplis": "No se puede continuar con la obra sin la aprobación de un método alternativo",
+        "confianza": 0.6
+      },
+      {
+        "que_hacer": "Acreditar la efectiva provisión de los servicios de energía eléctrica, agua y desagües cloacales al momento de solicitar el Final de Obra",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "La Municipalidad puede negar el Final de Obra ante la imposibilidad de provisión de servicios públicos esenciales",
+        "confianza": 0.85
       }
     ],
     "geo": {
@@ -888,31 +902,77 @@
     "numero": "10673/2024",
     "fecha_publicacion": "2024-11-06",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=236883",
-    "resumen_llano": "La ordenanza reemplaza todas las normas anteriores sobre estacionamiento y aprueba un nuevo Capítulo IV del Reglamento de Edificación de Rosario que regula garajes, cocheras y estacionamiento de bicicletas.",
+    "resumen_llano": "Rosario aprueba un nuevo Capítulo IV \"Estacionamiento\" del Reglamento de Edificación que unifica y reemplaza todas las normas anteriores sobre garajes, cocheras y estacionamiento de bicicletas en la ciudad.",
     "obligaciones": [
       {
-        "que_hacer": "Si construís un edificio nuevo de vivienda colectiva (más de 3 unidades) frentista, oficinas frentistas, hotel/apart hotel, sanatorio/hospital, supermercado de más de 1000m2, u otros usos alcanzados, tenés que construir una superficie de garaje o cocheras para autos y/o bicicletas según la superficie del edificio.",
+        "que_hacer": "Si tenés un garaje o cochera, instalar y mantener elementos contra incendio: un extintor de 10 kg cada 200 m2 y seis baldes con arena o material absorbente cada 300 m2, cumpliendo el Cuadro de prevención contra incendio del Reglamento de Edificación.",
         "alcanzados": {
-          "rubros": [
-            "construccion",
-            "comercio",
-            "servicios"
-          ],
+          "rubros": [],
           "condiciones": []
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se otorga el permiso de edificación ni la habilitación correspondiente.",
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si tenés un garaje o cochera, disponer de módulos para personas con movilidad reducida según la cantidad total de módulos proyectados (tabla de la ordenanza).",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si construís un nuevo garaje dentro del ejido urbano (excepto vivienda individual), disponer de un sitio para estacionamiento de bicicletas según el uso y cálculo establecido.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si operás una cochera que funciona total o parcialmente por hora con más de 20 módulos de estacionamiento para autos, disponer dentro del ejido urbano de un sitio para estacionamiento gratuito de bicicletas equivalente a un mínimo de 10 módulos.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
         "confianza": 0.8
       },
       {
-        "que_hacer": "Si vas a construir un garaje o cochera nueva, tenés que instalar módulos de estacionamiento para bicicletas según el uso del edificio, incluso si no se exigen espacios para autos.",
+        "que_hacer": "Si construís un nuevo edificio de vivienda colectiva frentista con más de 3 unidades, construir garaje con la cantidad mínima de módulos de estacionamiento para autos y bicicletas según la superficie exclusiva destinada a vivienda.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia; exigencia al momento de solicitar el permiso de edificación.",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si construís un nuevo edificio de oficinas frentista, construir garaje con la cantidad mínima de módulos de estacionamiento para autos y bicicletas según la superficie exclusiva de oficinas.",
         "alcanzados": {
           "rubros": [
-            "construccion",
-            "comercio",
             "servicios"
           ],
           "condiciones": []
@@ -921,14 +981,44 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se otorga el permiso de edificación ni la habilitación correspondiente.",
-        "confianza": 0.75
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia; exigencia al momento de solicitar el permiso de edificación.",
+        "confianza": 0.7
       },
       {
-        "que_hacer": "Si tenés una cochera que funciona total o parcialmente por hora con más de 20 módulos de estacionamiento para autos, tenés que disponer de un sitio para el estacionamiento gratuito de bicicletas equivalente a un mínimo de 10 módulos, aumentando la exigencia cada 2 módulos de auto adicionales.",
+        "que_hacer": "Si construís un nuevo hotel o apart hotel, disponer de garaje y módulos de estacionamiento para autos y bicicletas según la cantidad de habitaciones.",
         "alcanzados": {
           "rubros": [
-            "servicios",
+            "gastronomia",
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia; exigencia al momento de solicitar el permiso de edificación.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si construís un nuevo edificio de sanatorio u hospital, destinar el 10% de la superficie cubierta a estacionamiento para autos y disponer un mínimo de 10 módulos para bicicletas.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia; exigencia al momento de solicitar el permiso de edificación.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si construís un nuevo supermercado con superficie útil mayor o igual a 1000 m2, cumplir con la exigencia de espacios para estacionar autos y un área para bicicletas equivalente al 5% de la superficie de estacionamiento de autos.",
+        "alcanzados": {
+          "rubros": [
             "comercio"
           ],
           "condiciones": []
@@ -937,45 +1027,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
-        "confianza": 0.8
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia; exigencia al momento de solicitar el permiso de edificación.",
+        "confianza": 0.7
       },
       {
-        "que_hacer": "Si explotás una cochera, tenés que contratar un seguro total contra robo, incendio y daños de los vehículos estacionados y exhibir un cartel indicador del seguro en lugar visible cerca de las entradas.",
-        "alcanzados": {
-          "rubros": [
-            "servicios"
-          ],
-          "condiciones": [
-            "local_a_la_calle"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
-        "confianza": 0.8
-      },
-      {
-        "que_hacer": "Si tu cochera funciona por hora, tenés que exhibir en lugar bien visible un cartel con las tarifas vigentes (estadía, hora, primera media hora, quince minutos), en tipografía y color claramente legibles.",
-        "alcanzados": {
-          "rubros": [
-            "servicios"
-          ],
-          "condiciones": [
-            "local_a_la_calle"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
-        "confianza": 0.8
-      },
-      {
-        "que_hacer": "Si tenés una cochera con capacidad de más de 20 módulos de estacionamiento para autos, tenés que destinar entre el 5% y el 15% de la superficie a la guarda de motocicletas (mínimo 2 boxes) y colocar un cartel de 0,30m x 0,30m indicando cantidad de módulos y precio.",
+        "que_hacer": "Si operás una cochera, cumplir con las prescripciones particulares: colocar cartel de tarifas o de estacionamiento privado, mantener el portón cerrado con llave cuando corresponda, numerar los módulos, contar con personal de control en cochera por hora, disponer de servicio sanitario, contratar seguro contra robo e incendio y exhibir el cartel del seguro, llevar libro de inspección y quejas, y no admitir vehículos sin chapa patente.",
         "alcanzados": {
           "rubros": [
             "servicios"
@@ -986,28 +1042,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
-        "confianza": 0.75
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
+        "confianza": 0.8
       },
       {
-        "que_hacer": "Si operás una cochera, tenés que mantener un libro de inspección y otro de quejas siempre disponibles para el usuario y el inspector municipal.",
-        "alcanzados": {
-          "rubros": [
-            "servicios"
-          ],
-          "condiciones": [
-            "empleados"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "Sanción conforme al Código de Convivencia vigente.",
-        "confianza": 0.75
-      },
-      {
-        "que_hacer": "Si querés instalar o funcionar como cochera o garaje, tenés que iniciar formalmente el trámite de habilitación ante la oficina de habilitaciones municipal correspondiente.",
+        "que_hacer": "Si operás una cochera con más de 20 módulos de estacionamiento para autos, disponer como mínimo 10 módulos gratuitos para bicicletas, incrementando 1 módulo cada 2 autos adicionales, y colocar cartel indicador.",
         "alcanzados": {
           "rubros": [
             "servicios"
@@ -1018,7 +1057,52 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se otorga la habilitación para operar.",
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si operás una cochera, destinar entre 5% y 15% de la superficie de módulos para autos (mínimo 2 boxes) a la guarda de motocicletas, con cartel indicando cantidad y precio.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Sanción conforme al Código de Convivencia en vigencia.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si querés instalar un sistema mecanizado, automatizado o semi-automatizado de estacionamiento, registrarlo y habilitarlo ante el Departamento de Equipos de Elevación y Medidores de Energía, cumpliendo las condiciones de seguridad establecidas (tablero con protección, puesta a tierra, detectores de obstáculos, señalización, etc.).",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No autorización del sistema por la autoridad competente.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si querés explotar el rubro cocheras, iniciar formalmente el trámite de habilitación ante la oficina de habilitaciones correspondiente.",
+        "alcanzados": {
+          "rubros": [
+            "servicios"
+          ],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No podrás operar la cochera sin habilitación.",
         "confianza": 0.75
       }
     ],
@@ -1028,10 +1112,6 @@
       "coords": []
     },
     "relaciones": [
-      {
-        "tipo": "modifica",
-        "norma": "ord-4975-1990"
-      },
       {
         "tipo": "deroga",
         "norma": "ord-7462-2002"
@@ -1267,25 +1347,10 @@
     "numero": "10561/2023",
     "fecha_publicacion": "2023-12-26",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=217360",
-    "resumen_llano": "La ordenanza crea y regula el capítulo del Reglamento de Edificación de Rosario sobre veredas y arbolado público, estableciendo tipos de vereda, materiales, obligación de construirlas y mantenerlas, reglas de mobiliario en la calle y trámites de alcantarillado.",
+    "resumen_llano": "Rosario establece un nuevo reglamento detallado sobre cómo deben construirse y mantenerse las veredas, el arbolado público y ciertos elementos en la vía pública (mobiliario, vallas, alcantarillas), derogando las normas anteriores sobre veredas y alcantarillas del Reglamento de Edificación.",
     "obligaciones": [
       {
-        "que_hacer": "Construir y mantener en buen estado la vereda y el sector de suelo absorbente en todo el frente de tu predio (baldío o edificado) que dé a la vía pública, con superficie antideslizante.",
-        "alcanzados": {
-          "rubros": [],
-          "condiciones": [
-            "local_a_la_calle"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto específico.",
-        "confianza": 0.7
-      },
-      {
-        "que_hacer": "Si rompés la vereda (por obra, conexión de servicios, etc.) tenés que restituirla con los mismos materiales; si rompiste más del 60% del frente, debés rehacerla completa y reglamentariamente.",
+        "que_hacer": "Construir y mantener en buen estado la vereda y el sector de suelo absorbente en todo el frente de tu terreno, sea baldío o edificado, con superficie antideslizante.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -1294,11 +1359,63 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto.",
+        "si_no_cumplis": "",
+        "confianza": 0.8
+      },
+      {
+        "que_hacer": "Si rompés la vereda (por ejemplo al hacer una conexión de servicios), restituirla con los mismos materiales, color y orientación; si rompiste más del 60% del frente, rehacerla completa y reglamentariamente.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Para obtener el Permiso de Edificación, indicar con precisión en los planos la ubicación de los árboles existentes frente al lote y prever en el proyecto la ubicación de nuevas cazuelas o superficie verde.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se aprobará el plano de edificación o ampliación si los accesos vehiculares, garajes o cocheras se proyectan frente a árboles existentes.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si necesitás extraer un árbol por ser imprescindible para tu obra, tramitar el informe de autorización de la Dirección General de Parques y Paseos y hacerte cargo de los gastos de extracción.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
         "confianza": 0.7
       },
       {
-        "que_hacer": "Si tu local es un bar, confitería, restaurante, comedor, pizzería, heladería, cafetería o negocio afín y ponés mesas y sillas en la vereda, tenés que colocar vallas de protección de contención a una distancia mínima de 0,50 metros del cordón.",
+        "que_hacer": "Construir a tu cargo las rampas peatonales si tu predio está en esquina con frente a la vía pública, coordinando ubicación y tamaño con la Secretaría de Obras Públicas.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "Si sos titular de un bar, confitería, restaurante, comedor, pizzería, heladería, cafetería o negocio afín y querés poner mesas y sillas en la vereda, colocar vallas de protección a 0,50 metros del cordón sin obstaculizar el tránsito peatonal.",
         "alcanzados": {
           "rubros": [
             "gastronomia"
@@ -1311,11 +1428,45 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto.",
-        "confianza": 0.75
+        "si_no_cumplis": "",
+        "confianza": 0.85
       },
       {
-        "que_hacer": "Si tenés un jardín de infantes o salón de fiestas infantiles, debés instalar vallas de protección fijas en las puertas de acceso y salida.",
+        "que_hacer": "Mantener la acera en perfecto estado higiénico si tenés mobiliario removible (mesas y sillas) en la vereda de tu negocio.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "No colocar mesas y sillas en la vereda si tu comercio no cuenta con servicios sanitarios reglamentarios para ambos sexos.",
+        "alcanzados": {
+          "rubros": [
+            "gastronomia"
+          ],
+          "condiciones": [
+            "local_a_la_calle"
+          ]
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "No se concederá el permiso de colocación de mesas y sillas.",
+        "confianza": 0.7
+      },
+      {
+        "que_hacer": "Si funcionás como jardín de infantes o salón de fiestas infantiles, instalar vallas de protección fijas en las puertas de acceso y salida, a 0,50 metros del cordón de la acera.",
         "alcanzados": {
           "rubros": [
             "servicios"
@@ -1328,41 +1479,11 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se especifica sanción concreta en el texto para este punto.",
-        "confianza": 0.75
-      },
-      {
-        "que_hacer": "No coloques mesas y sillas en la vereda si tu comercio gastronómico no cuenta con servicios sanitarios reglamentarios para ambos sexos; y mantené la vereda frente a tu negocio en perfecto estado higiénico si tenés mobiliario en la calle.",
-        "alcanzados": {
-          "rubros": [
-            "gastronomia"
-          ],
-          "condiciones": [
-            "local_a_la_calle"
-          ]
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "No se otorgará o se retirará el permiso de mobiliario removible.",
-        "confianza": 0.7
-      },
-      {
-        "que_hacer": "No coloques vallas, bloques de hormigón u otros elementos sobre la calzada para impedir el estacionamiento frente a cocheras, garajes privados o playas de estacionamiento.",
-        "alcanzados": {
-          "rubros": [],
-          "condiciones": []
-        },
-        "plazo": {
-          "tipo": "permanente",
-          "valor": ""
-        },
-        "si_no_cumplis": "Multas que el Código de Faltas establezca.",
+        "si_no_cumplis": "",
         "confianza": 0.8
       },
       {
-        "que_hacer": "Si sos frentista de una calzada sin cordón cuneta y necesitás construir un acceso que implique entubar parte del canal/zanja de drenaje, tenés que pedir permiso previo a la Dirección de Proyectos de Hidráulica antes de construir la alcantarilla.",
+        "que_hacer": "No colocar vallas, bloques de hormigón u otros elementos sobre la calzada para impedir el estacionamiento frente a cocheras, garajes, playas de estacionamiento o escuelas.",
         "alcanzados": {
           "rubros": [],
           "condiciones": []
@@ -1371,22 +1492,33 @@
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "Penalidades municipales y responsabilidad por los daños y perjuicios ocasionados; multas según reglamentaciones vigentes por transgresiones a lo establecido en la solicitud, descripción y trámite de alcantarillas.",
+        "si_no_cumplis": "Multas según el Código de Faltas.",
         "confianza": 0.75
       },
       {
-        "que_hacer": "Si vas a construir o ampliar una obra, tenés que identificar en los planos la ubicación de los árboles existentes frente al lote y no proyectar accesos vehiculares, garajes o cocheras frente a árboles existentes; si es imprescindible extraer un árbol, se debe contar con informe autorizante de Parques y Paseos y los gastos de extracción corren por cuenta del propietario.",
+        "que_hacer": "Si tu propiedad está en una cuadra sin cordón cuneta y necesitás hacer un acceso que implique entubar parcialmente la zanja de drenaje, pedir permiso previo a la Dirección de Proyectos de Hidráulica antes de ejecutar la alcantarilla.",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
+          "rubros": [],
           "condiciones": []
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se aprobará el plano de edificación o ampliación.",
+        "si_no_cumplis": "Se labrarán actas de comprobación y se aplicarán multas según las reglamentaciones vigentes.",
+        "confianza": 0.75
+      },
+      {
+        "que_hacer": "No rellenar ni obstruir los canales o zanjas de drenaje a cielo abierto en cuadras sin cordón cuneta.",
+        "alcanzados": {
+          "rubros": [],
+          "condiciones": []
+        },
+        "plazo": {
+          "tipo": "permanente",
+          "valor": ""
+        },
+        "si_no_cumplis": "Penalidades municipales y responsabilidad por los daños y perjuicios ocasionados.",
         "confianza": 0.75
       }
     ],
@@ -1398,6 +1530,10 @@
     "relaciones": [
       {
         "tipo": "modifica",
+        "norma": "ord-8336-2008"
+      },
+      {
+        "tipo": "deroga",
         "norma": "ord-8336-2008"
       }
     ]
@@ -1742,22 +1878,20 @@
     "numero": "9897/2018",
     "fecha_publicacion": "2018-10-11",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=141186",
-    "resumen_llano": "Si vas a construir o ampliar una obra en Rosario de más de 1000 m2, necesitás un certificado de la empresa de agua que confirme que hay servicio disponible.",
+    "resumen_llano": "Las obras de más de 1000 m2 en Rosario ahora necesitan un certificado de factibilidad de agua y cloacas antes de conseguir el permiso de edificación.",
     "obligaciones": [
       {
-        "que_hacer": "Presentar el Certificado de Factibilidad de Servicio de Agua y Desagües Cloacales extendido por la empresa proveedora si la obra de edificación o ampliación supera los 1000 m2 cubiertos, para tramitar el Permiso de Edificación",
+        "que_hacer": "Si el Permiso de Edificación o Ampliación de Obra que tramitás en Rosario supera los 1000 m2 cubiertos, presentar la Certificación de Factibilidad de Servicio de Agua y Desagües Cloacales extendida por la empresa proveedora (ASSA)",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
+          "rubros": [],
           "condiciones": []
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
-        "si_no_cumplis": "No se otorga el Permiso de Edificación",
-        "confianza": 0.75
+        "si_no_cumplis": "",
+        "confianza": 0.85
       }
     ],
     "geo": {
@@ -1824,10 +1958,10 @@
     "numero": "9871/2018",
     "fecha_publicacion": "2018-08-17",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=139415",
-    "resumen_llano": "Las empresas que hagan obras que corten calles o veredas deben poner un cartel en el corralito indicando cuándo empezó la obra y cuándo terminaría aproximadamente.",
+    "resumen_llano": "Las empresas que hagan obras que corten calles o veredas deben poner un cartel en el corralito indicando cuándo empezó y cuándo terminará aproximadamente la obra.",
     "obligaciones": [
       {
-        "que_hacer": "Si tu empresa hace una obra que corta o interfiere el paso de peatones o vehículos, colocar en el cerco o corralito un cartel con la fecha de inicio de la obra y el tiempo aproximado que va a demorar terminarla.",
+        "que_hacer": "Si tu empresa hace una obra que corta o interfiere el paso de peatones o vehículos, colocá en el cerco o corralito un cartel con la fecha de inicio y el tiempo aproximado de finalización de la obra.",
         "alcanzados": {
           "rubros": [
             "construccion"
@@ -1839,7 +1973,7 @@
           "valor": ""
         },
         "si_no_cumplis": "No especificado en el texto.",
-        "confianza": 0.8
+        "confianza": 0.7
       }
     ],
     "geo": {
@@ -2592,22 +2726,22 @@
     "numero": "8952/2012",
     "fecha_publicacion": "2012-10-11",
     "url_fuente": "https://www.rosario.gob.ar/normativa/ver/visualExterna.do?accion=verNormativa&idNormativa=86690",
-    "resumen_llano": "Las obras nuevas o ampliaciones de más de 500 m2 en Rosario deben presentar un certificado de la E.P.E. que garantice que hay energía eléctrica suficiente antes de tramitar el permiso de edificación.",
+    "resumen_llano": "Rosario exige presentar el certificado de factibilidad de suministro eléctrico de la E.P.E. para tramitar permisos de edificación o ampliación de más de 500 m2.",
     "obligaciones": [
       {
-        "que_hacer": "Si vas a construir o ampliar una obra que supere los 500 m2 cubiertos, presentar junto con el trámite del Permiso de Edificación o Ampliación un Certificado de Factibilidad de Servicio de energía eléctrica emitido por la E.P.E.",
+        "que_hacer": "Presentar la Certificación de Factibilidad de Servicio de energía eléctrica emitida por la E.P.E. al tramitar el Permiso de Edificación o Ampliación de Obras, si la superficie supera los 500 m2 cubiertos.",
         "alcanzados": {
-          "rubros": [
-            "construccion"
-          ],
-          "condiciones": []
+          "rubros": [],
+          "condiciones": [
+            "obra_en_vivienda"
+          ]
         },
         "plazo": {
           "tipo": "permanente",
           "valor": ""
         },
         "si_no_cumplis": "",
-        "confianza": 0.8
+        "confianza": 0.7
       }
     ],
     "geo": {

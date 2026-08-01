@@ -47,7 +47,11 @@ REGLAS (en orden de prioridad):
    Si la norma solo crea un programa, declara un día conmemorativo o expresa una intención, devolvé obligaciones: [].
 3. "que_hacer" se escribe para alguien sin formación legal: una acción concreta en una frase. Nada de "dese cumplimiento a lo normado en el art. 3".
 4. "confianza" mide QUÉ TAN FIEL es tu extracción al texto que leíste — no si la obligación te parece jurídicamente sólida. Texto claro y explícito: alto. Texto borroso, mal escaneado o ambiguo sobre a quién obliga: bajo.
-5. "alcanzados.rubros" SOLO puede contener valores de esta lista cerrada: ${RUBROS.join(", ")}. Ningún otro valor, ni sinónimos, ni plurales, ni subcategorías: un bar es "gastronomia", una obra es "construccion". Si la norma alcanza a todos, dejá la lista vacía ([]) — vacío significa "todos", no "no sé".
+5. "alcanzados.rubros" responde UNA sola pregunta: ¿en qué rubro tiene que estar el usuario para que esto le aplique? NO es el tema de la norma.
+   Solo valores de esta lista cerrada: ${RUBROS.join(", ")}. Ningún sinónimo, plural ni subcategoría.
+   Poné un rubro SOLO si la obligación recae sobre quien se dedica a esa actividad: "los locales gastronómicos deben...", "las empresas constructoras deben inscribirse en el registro...".
+   Dejá "rubros": [] si la obligación recae sobre CUALQUIERA que haga el acto, aunque la norma trate de un rubro. Pedir el permiso de edificación le toca a quien construye — una constructora, un comercio que refacciona o un vecino que amplía la cocina —, así que va []. Lo mismo con vender, contratar empleados, tratar datos personales o facturar.
+   Regla práctica: si un vecino sin actividad comercial también tiene que cumplirla, es []. Vacío significa "todos", no "no sé".
 6. "plazo" se CALCULA, no se narra. Solo hay tres casos:
    - "dias_desde_publicacion": SOLO si el plazo se cuenta desde la publicación de ESTA norma. Es el caso de las obligaciones de adecuación ("los locales existentes tienen 90 días desde la sanción para adecuarse"). Es raro.
    - "fecha_fija": el texto da una fecha de calendario concreta.
