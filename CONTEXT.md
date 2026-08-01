@@ -16,6 +16,9 @@ _Avoid_: requisito, trámite
 La descripción de un sujeto (persona física o comercio): rubro, ubicación, condiciones e intención. Mismo objeto lo produce el LLM en modo pull y lo persiste la BD en modo push.
 _Avoid_: usuario, cuenta, suscriptor
 
+**Rubro**:
+Valor cerrado del vocabulario `RUBROS` exportado por `@vigente/schema` (gastronomia, comercio, construccion, transporte, industria, servicios). En el front es un selector, no texto libre; el prompt de `/api/intent` y el del pipeline deben restringirse a esa lista. El matcher compara exacto (normalizando mayúsculas/acentos), sin sinónimos.
+
 **Modo pull**:
 Consulta por intención: una pregunta en lenguaje natural se convierte en **Perfil** (vía LLM) y entra al **Matcher**.
 _Avoid_: chatbot, búsqueda

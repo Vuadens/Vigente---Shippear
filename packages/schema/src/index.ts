@@ -47,6 +47,18 @@ export const NormaSchema = z.object({
   relaciones: z.array(RelacionSchema),
 });
 
+// Vocabulario canónico de rubros. El front lo usa como selector, /api/intent
+// lo pasa al prompt y el matcher compara exacto contra estos valores.
+// Aditivo al contrato: no cambia ninguna forma existente.
+export const RUBROS = [
+  "gastronomia",
+  "comercio",
+  "construccion",
+  "transporte",
+  "industria",
+  "servicios",
+] as const;
+
 export const PerfilSchema = z.object({
   tipo_sujeto: z.enum(["persona_fisica", "comercio"]),
   rubro: z.string().describe("ej: gastronomia; vacío si no aplica"),
