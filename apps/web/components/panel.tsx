@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import type { Perfil } from "@vigente/schema";
+import type { Perfil, Respuesta } from "@vigente/schema";
 import type { MatchResponse, ResultadoItem, PerfilGuardadoVista } from "../lib/tipos";
 import { ListaObligaciones } from "./lista-obligaciones";
 import { PerfilBuilder } from "./perfil-builder";
@@ -23,6 +23,10 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
   const [cargando, setCargando] = useState(false);
   const [buscado, setBuscado] = useState(false);
   const [guardando, setGuardando] = useState(false);
+  // Alerta de accionar (ADR-0008): solo para perfiles guardados, no en cada
+  // tecleo del builder — cada síntesis es una llamada LLM.
+  const [alerta, setAlerta] = useState<Respuesta | null>(null);
+  const [pensando, setPensando] = useState(false);
   const debounce = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const correrMatch = useCallback(async (perfil: Perfil) => {
@@ -41,11 +45,35 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
     }
   }, []);
 
-  // Perfil guardado seleccionado -> match inmediato.
+  // Perfil guardado seleccionado -> match inmediato + alerta sintetizada.
   useEffect(() => {
     if (modo !== "guardado") return;
     const sel = perfiles.find((p) => p.id === selId);
-    if (sel) correrMatch(sel.perfil);
+    if (!sel) return;
+    correrMatch(sel.perfil);
+
+    let vigente = true;
+    setAlerta(null);
+    setPensando(true);
+    const pregunta =
+      sel.perfil.intencion ||
+      "¿Qué tengo que hacer para estar en regla y qué me conviene atender primero?";
+    fetch("/api/respuesta", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ pregunta, perfil: sel.perfil }),
+    })
+      .then((r) => (r.ok ? r.json() : { respuesta: null }))
+      .then(({ respuesta }: { respuesta: Respuesta | null }) => {
+        if (vigente) setAlerta(respuesta);
+      })
+      .catch(() => {})
+      .finally(() => {
+        if (vigente) setPensando(false);
+      });
+    return () => {
+      vigente = false;
+    };
   }, [modo, selId, perfiles, correrMatch]);
 
   // Builder: re-match con debounce mientras se tipea/togglea.
@@ -109,6 +137,15 @@ export function Panel({ inicial }: { inicial: PerfilGuardadoVista[] }) {
 
       {modo === "nuevo" && (
         <PerfilBuilder onCambio={onCambioBuilder} onGuardar={onGuardar} guardando={guardando} />
+      )}
+
+      {modo === "guardado" && pensando && <p className="count">Armando la alerta…</p>}
+      {modo === "guardado" && alerta && (
+        <div className="respuesta">
+          <span className="resumen-label">Tu accionar</span>
+          {alerta.accion_principal && <p className="respuesta-accion">{alerta.accion_principal}</p>}
+          <p className="respuesta-texto">{alerta.respuesta}</p>
+        </div>
       )}
 
       <div className="panel-grid">

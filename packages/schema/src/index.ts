@@ -70,9 +70,31 @@ export const PerfilSchema = z.object({
   intencion: z.string().describe("qué está por hacer, ej: construir en mi casa"),
 });
 
+// Respuesta sintetizada de /api/respuesta (ADR-0008). El modelo solo puede
+// referenciar obligaciones por índice de la lista numerada que recibe: el
+// texto se muestra, pero fuentes y normas salen siempre del corpus.
+// Aditivo al contrato: no cambia ninguna forma existente.
+export const RespuestaSchema = z.object({
+  respuesta: z
+    .string()
+    .describe("2 a 4 frases en lenguaje llano que contestan la pregunta usando SOLO las obligaciones numeradas"),
+  accion_principal: z
+    .string()
+    .describe("la próxima acción concreta del usuario en una frase imperativa; vacío si ninguna obligación responde la pregunta"),
+  relevantes: z
+    .array(
+      z.object({
+        indice: z.number().describe("índice de la obligación en la lista numerada"),
+        motivo: z.string().describe("por qué sostiene la respuesta, una frase"),
+      }),
+    )
+    .describe("las obligaciones que sostienen la respuesta, máximo 5; vacío si ninguna aplica"),
+});
+
 export type Plazo = z.infer<typeof PlazoSchema>;
 export type Obligacion = z.infer<typeof ObligacionSchema>;
 export type Geo = z.infer<typeof GeoSchema>;
 export type Relacion = z.infer<typeof RelacionSchema>;
 export type Norma = z.infer<typeof NormaSchema>;
 export type Perfil = z.infer<typeof PerfilSchema>;
+export type Respuesta = z.infer<typeof RespuestaSchema>;

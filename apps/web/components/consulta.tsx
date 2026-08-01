@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { MatchResponse, ResultadoItem } from "../lib/tipos";
-import type { Perfil } from "@vigente/schema";
+import type { Perfil, Respuesta } from "@vigente/schema";
 import { ListaObligaciones } from "./lista-obligaciones";
 
 const EJEMPLOS = [
@@ -18,12 +18,16 @@ export function Consulta() {
   const [error, setError] = useState<string | null>(null);
   const [perfil, setPerfil] = useState<Perfil | null>(null);
   const [items, setItems] = useState<ResultadoItem[]>([]);
+  // Síntesis (ADR-0008): llega después que la lista, sin bloquearla.
+  const [respuesta, setRespuesta] = useState<Respuesta | null>(null);
+  const [pensando, setPensando] = useState(false);
 
   async function consultar(pregunta: string) {
     const q = pregunta.trim();
     if (!q) return;
     setEstado("cargando");
     setError(null);
+    setRespuesta(null);
     try {
       // 1) Modo pull: texto -> Perfil (única llamada LLM, con fallback de guión).
       const rIntent = await fetch("/api/intent", {
@@ -46,6 +50,25 @@ export function Consulta() {
       setPerfil(data.perfil);
       setItems(data.items);
       setEstado("listo");
+
+      // 3) Síntesis: qué tiene que HACER, sostenido solo en lo matcheado.
+      setRespuesta(null);
+      if (data.items.length > 0) {
+        setPensando(true);
+        try {
+          const rResp = await fetch("/api/respuesta", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ pregunta: q, perfil: p }),
+          });
+          if (rResp.ok) {
+            const { respuesta: resp } = (await rResp.json()) as { respuesta: Respuesta | null };
+            setRespuesta(resp);
+          }
+        } finally {
+          setPensando(false);
+        }
+      }
     } catch (e) {
       setError(e instanceof Error ? e.message : "Algo salió mal.");
       setEstado("error");
@@ -127,10 +150,30 @@ export function Consulta() {
 
           {items.length > 0 ? (
             <>
-              <p className="count">
-                {items.length} {items.length === 1 ? "obligación te aplica" : "obligaciones te aplican"}
-              </p>
-              <ListaObligaciones items={items} />
+              {pensando && <p className="count">Armando la respuesta…</p>}
+              {respuesta && (
+                <div className="respuesta">
+                  <span className="resumen-label">Respuesta</span>
+                  {respuesta.accion_principal && (
+                    <p className="respuesta-accion">{respuesta.accion_principal}</p>
+                  )}
+                  <p className="respuesta-texto">{respuesta.respuesta}</p>
+                  {respuesta.relevantes.length > 0 && (
+                    <ListaObligaciones
+                      items={respuesta.relevantes
+                        .map((r) => items[r.indice])
+                        .filter((it): it is ResultadoItem => it !== undefined)}
+                    />
+                  )}
+                </div>
+              )}
+              <details className="todas" open={!respuesta && !pensando}>
+                <summary className="count">
+                  Ver las {items.length}{" "}
+                  {items.length === 1 ? "obligación que te aplica" : "obligaciones que te aplican"}
+                </summary>
+                <ListaObligaciones items={items} />
+              </details>
             </>
           ) : (
             <div className="empty">

@@ -317,6 +317,34 @@ button {
   margin: 1.5rem 0 0;
 }
 
+/* Respuesta sintetizada (ADR-0008): la contestación va antes que la lista. */
+.respuesta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin: 1.75rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  background: var(--primary-soft);
+}
+.respuesta-accion {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.respuesta-texto {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.todas {
+  margin-top: 1.5rem;
+}
+.todas > summary {
+  cursor: pointer;
+  width: fit-content;
+}
+
 /* ---- Timeline de obligaciones ---- */
 /* En vez de cards: una lista agrupada por horizonte temporal, con la columna
    "para cuándo" a la izquierda y color usado solo para señalar urgencia. */

@@ -27,7 +27,7 @@ pnpm typecheck        # typecheck de todos los workspaces
 ## Reglas duras
 
 1. **Anti-alucinación (README §6):** toda respuesta al usuario se construye SOLO sobre obligaciones de `data/normas.json`, con link a fuente. Si no hay match: "no encontré normativa que aplique". Nunca inventar normativa.
-2. **LLM:** siempre `generateObject()` del AI SDK con schemas de `@vigente/schema`, modelo vía Vercel AI Gateway: `anthropic/claude-sonnet-5` en pipeline y `/api/intent` (ADR-0005: la key free tier no accede a 4.5). Única llamada runtime: `/api/intent`. Todo lo demás es build step (ADR-0003).
+2. **LLM:** siempre `generateObject()` del AI SDK con schemas de `@vigente/schema`, modelo vía Vercel AI Gateway: `anthropic/claude-sonnet-5` en pipeline y `/api/intent` (ADR-0005: la key free tier no accede a 4.5). Llamadas runtime: `/api/intent` y `/api/respuesta` (síntesis grounded, ADR-0008). Todo lo demás es build step (ADR-0003).
 3. **BD:** solo la tabla `perfiles` vía `@vigente/db`. Ni normas ni alertas se persisten. No agregar queries fuera de `packages/db` (ADR-0004).
 4. **Matching geo:** por etiquetas (`ciudad`/`zona`), nunca por coordenadas. `punto`/`tramo` solo van al mapa (CONTEXT.md).
 5. **Fuera de alcance (README §8):** login, admin, búsqueda, filtros, onboarding, manejo de errores elaborado. No los agregues "de paso". Responsive también, **salvo `/inicio`** — la landing de pitch es la única página responsive del proyecto (ADR-0007).
