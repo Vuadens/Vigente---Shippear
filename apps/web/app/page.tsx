@@ -1,42 +1,26 @@
-import { match } from "@vigente/matcher";
-import { getPerfiles } from "@vigente/db";
-import type { Norma } from "@vigente/schema";
-import normasReales from "../../../data/normas.json";
+import Link from "next/link";
+import { Brand } from "../components/brand";
+import { Consulta } from "../components/consulta";
+import { ThemeToggle } from "../components/theme-toggle";
 
-// Placeholder de arranque (dueños: Batista + Juanma). Ya integra matcher + db
-// contra el corpus real — reemplazar por las vistas reales del recorrido de la demo.
+// Vista principal — modo pull (recorrido de demo §9, pasos 1-3 y 6-7).
+// Dueños: Batista + Juanma. El front solo consume /api/intent + /api/match.
 
-const normas = normasReales as Norma[];
-
-export default async function Home() {
-  const perfiles = await getPerfiles();
-  const perfil = perfiles[0];
-  const obligaciones = match(perfil.perfil, normas);
-
-  // Las clases son el mínimo para conservar jerarquía: el preflight de Tailwind
-  // (ADR-0007) resetea h1/ol/a, y el contenedor ya no vive en el <body>.
+export default function Home() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-10">
-      <h1 className="font-display text-4xl">Vigente</h1>
-      <p className="mt-2 text-tenue">
-        Perfil demo: <strong className="font-semibold text-tinta">{perfil.nombre}</strong> —{" "}
-        {obligaciones.length} obligaciones
-      </p>
-      <ol className="mt-6 list-decimal space-y-4 pl-5">
-        {obligaciones.map((m, i) => (
-          <li key={i}>
-            <strong className="font-semibold">{m.obligacion.que_hacer}</strong>
-            {m.vence && <span className="text-vence"> — vence {m.vence}</span>}
-            <br />
-            <span className="text-tenue">
-              {m.norma.tipo} {m.norma.numero}: {m.norma.resumen_llano}{" "}
-            </span>
-            <a href={m.norma.url_fuente} className="underline underline-offset-2">
-              fuente
-            </a>
-          </li>
-        ))}
-      </ol>
+    <main className="wrap">
+      <header className="masthead">
+        <Brand />
+        <nav className="nav">
+          <Link href="/" aria-current="page">
+            Consultar
+          </Link>
+          <Link href="/panel">Monitoreo</Link>
+          <ThemeToggle />
+        </nav>
+      </header>
+
+      <Consulta />
     </main>
   );
 }
